@@ -1,23 +1,20 @@
+# ----------------------------------------------------------------------
+# .htaccess de la RAÍZ (Raíz del proyecto)
+# ----------------------------------------------------------------------
+
 # 1. Activar el motor de reescritura
 RewriteEngine On
 
-# IMPORTANTE: Indica la carpeta base si estás en localhost
+# 2. Definir la base (ajustar si la carpeta del proyecto cambia)
 RewriteBase /cpue-website/
 
-# 2. Eliminar la extensión .php de la URL
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+# 3. Redirigir la raíz directamente a la carpeta public
+RewriteRule ^$ public/ [L]
 
-# 3. Forzar HTTPS (DESACTIVADO PARA LOCALHOST)
-# Solo activa esto cuando subas el sitio a un servidor real con SSL.
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# 4. Redirigir cualquier otra petición a la carpeta public
+# (Solo si no empieza ya con /public/)
+RewriteCond %{REQUEST_URI} !^/cpue-website/public/
+RewriteRule ^(.*)$ public/$1 [L]
 
-# 4. Evitar que se listen los directorios
+# 5. Seguridad: Evitar que se listen los directorios del proyecto
 Options -Indexes
-
-# 5. Proteger el propio archivo .htaccess
-<Files .htaccess>
-    Require all denied
-</Files>

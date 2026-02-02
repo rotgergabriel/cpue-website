@@ -1,0 +1,28 @@
+# ----------------------------------------------------------------------
+# .htaccess de la carpeta PUBLIC
+# ----------------------------------------------------------------------
+
+# 1. Activar el motor de reescritura
+RewriteEngine On
+
+# 2. Definir la base relativa a la carpeta public
+RewriteBase /cpue-website/public/
+
+# 3. Eliminar la extensión .php de la URL
+# Permite que 'tusitio.com/contacto' cargue 'contacto.php' internamente
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# 4. Evitar que se listen directorios dentro de public
+Options -Indexes
+
+# 5. Proteger archivos sensibles que puedan estar en public
+<FilesMatch "\.(json|log|ini|md)$">
+    Require all denied
+</FilesMatch>
+
+# 6. Proteger el propio archivo .htaccess de ser leído
+<Files .htaccess>
+    Require all denied
+</Files>
