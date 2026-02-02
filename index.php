@@ -1,42 +1,21 @@
+<?php
+include 'app/config/config.php';
+$meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
+$title = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
+?>
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benvenuto</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            /* Sfondo blu oscuro */
-            background-color: #001f3f; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Roboto', sans-serif;
-            color: white;
-            overflow: hidden;
-        }
+<!-- Head content -->
+<?php
+include 'app/views/includes/head.php';
+?>
 
-        h1 {
-            /* Dimensione testo 50px */
-            font-size: 50px;
-            margin: 0;
-            text-align: center;
-            font-weight: 700;
-        }
-    </style>
-</head>
 <body>
-
-    <?php
-        // Puoi inserire logica PHP qui se necessario
-        $messaggio = "Benvenuto in cielo!";
-        echo "<h1>$messaggio</h1>";
-    ?>
+    <!-- #root -->
+    <div class="layout">
+    
+    </div>
 
 </body>
+
 </html>
