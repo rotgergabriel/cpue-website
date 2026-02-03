@@ -1,21 +1,28 @@
 <?php
-include '../app/config/config.php';
-$meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
-$title = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
+// 1. CONFIGURAZIONE GENERALE
+// Carichiamo le costanti come BASE_URL
+require_once '../app/config/config.php';
+
+// 2. VARIABILI DI PAGINA
+// Definiamo i dati specifici per questa pagina (Home)
+// $pageTitle = "Chiesa Pentecostale Unita in Europa";
+// $bodyClass = "home-page";
+// $pageDescription = "Associazione Chiesa Pentecostale Unita in Europa - Promuoviamo la fede cristiana e l'unità tra le chiese pentecostali in Europa.";
+// $canonicalUrl = "https://cpue.it/"; // O usa BASE_URL se preferisci dinamismo
+
+// 3. CONNESSIONE AL DATABASE
+// Il percorso esce da 'public' ed entra in 'app/views/includes'
+include '../app/views/includes/db_connect.php';
 ?>
-<!DOCTYPE html>
-<html lang="it">
-<!-- Head content -->
-<?php
-include '../app/views/includes/head.php';
-?>
 
-<body>
-    <!-- #root -->
-    <div class="layout">
-    
-    </div>
+<?php include '../app/views/includes/head.php'; ?>
 
-</body>
+<?php include '../app/views/includes/header.php'; ?>
 
-</html>
+<main>
+    <?php include '../app/views/includes/content.php'; ?>
+</main>
+
+<?php include '../app/views/includes/footer.php'; ?>
+
+<?php include '../app/views/includes/end.php'; ?>

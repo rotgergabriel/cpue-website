@@ -1,20 +1,32 @@
 # ----------------------------------------------------------------------
-# .htaccess de la RAÍZ (Raíz del proyecto)
+# .htaccess della ROOT (Cartella Principale)
 # ----------------------------------------------------------------------
 
-# 1. Activar el motor de reescritura
 RewriteEngine On
 
-# 2. Definir la base (ajustar si la carpeta del proyecto cambia)
-RewriteBase /cpue-website/
+# =============================================================
+# CONFIGURAZIONE AMBIENTE
+# Scegli la coppia di righe giusta (XAMPP o ONLINE)
+# =============================================================
 
-# 3. Redirigir la raíz directamente a la carpeta public
+# --- CASO A: XAMPP (LOCALE) ---
+# Usa queste righe ora:
+RewriteBase /cpue-website/
+RewriteCond %{REQUEST_URI} !^/cpue-website/public/
+
+# --- CASO B: ONLINE (PRODUZIONE) ---
+# Quando sarai su cpue.it, usa queste (togli i # e mettili sopra):
+# RewriteBase /
+# RewriteCond %{REQUEST_URI} !^/public/
+
+# =============================================================
+# REGOLE DI REINDIRIZZAMENTO
+# =============================================================
+
+# Se sei nella root vuota, vai a public
 RewriteRule ^$ public/ [L]
 
-# 4. Redirigir cualquier otra petición a la carpeta public
-# (Solo si no empieza ya con /public/)
-RewriteCond %{REQUEST_URI} !^/cpue-website/public/
+# Se chiedi qualsiasi altra cosa, vai a public
 RewriteRule ^(.*)$ public/$1 [L]
 
-# 5. Seguridad: Evitar que se listen los directorios del proyecto
 Options -Indexes

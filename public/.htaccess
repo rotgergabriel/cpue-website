@@ -1,28 +1,38 @@
 # ----------------------------------------------------------------------
-# .htaccess de la carpeta PUBLIC
+# .htaccess cartella PUBLIC
 # ----------------------------------------------------------------------
 
-# 1. Activar el motor de reescritura
+# 1. Attivare il motore di riscrittura
 RewriteEngine On
 
-# 2. Definir la base relativa a la carpeta public
+# 2. DEFINIZIONE DEL PERCORSO BASE (RewriteBase)
+# -------------------------------------------------------------
+# CASO A: Sviluppo Locale (XAMPP)
+# Se il sito è in http://localhost/cpue-website/public/
 RewriteBase /cpue-website/public/
 
-# 3. Eliminar la extensión .php de la URL
-# Permite que 'tusitio.com/contacto' cargue 'contacto.php' internamente
+# CASO B: Sito Online (cpue.it)
+# Quando caricherai il sito online, metti un # davanti alla riga sopra
+# e togli il # dalla riga qui sotto:
+# RewriteBase /
+# -------------------------------------------------------------
+
+# 3. Rimuovere l'estensione .php dalla URL
+# Esempio: trasforma 'sito.it/contatti' in 'contatti.php'
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-# 4. Evitar que se listen directorios dentro de public
+# 4. Sicurezza: Evita che si vedano le cartelle se manca l'index
 Options -Indexes
 
-# 5. Proteger archivos sensibles que puedan estar en public
-<FilesMatch "\.(json|log|ini|md)$">
+# 5. Protezione file sensibili
+# Blocca l'accesso diretto ai file di log, configurazione o markdown
+<FilesMatch "\.(json|log|ini|md|gitkeep)$">
     Require all denied
 </FilesMatch>
 
-# 6. Proteger el propio archivo .htaccess de ser leído
+# 6. Protezione del file .htaccess stesso
 <Files .htaccess>
     Require all denied
 </Files>
