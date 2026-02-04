@@ -1,28 +1,31 @@
 <?php
-// 1. CONFIGURAZIONE GENERALE
-// Carichiamo le costanti come BASE_URL
+// 1. Carga de configuración global
 require_once '../app/config/config.php';
 
-// 2. VARIABILI DI PAGINA
-// Definiamo i dati specifici per questa pagina (Home)
-// $pageTitle = "Chiesa Pentecostale Unita in Europa";
-// $bodyClass = "home-page";
-// $pageDescription = "Associazione Chiesa Pentecostale Unita in Europa - Promuoviamo la fede cristiana e l'unità tra le chiese pentecostali in Europa.";
-// $canonicalUrl = "https://cpue.it/"; // O usa BASE_URL se preferisci dinamismo
-
-// 3. CONNESSIONE AL DATABASE
-// Il percorso esce da 'public' ed entra in 'app/views/includes'
-include '../app/views/includes/db_connect.php';
+// 2. Metadatos de la página
+$title = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo.";
+$meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
 ?>
+<!DOCTYPE html>
+<html lang="it">
 
-<?php include '../app/views/includes/head.php'; ?>
+<head>
+    <?php include ROOT_PATH . 'app/views/includes/head.php'; ?>
+</head>
 
-<?php include '../app/views/includes/header.php'; ?>
+<body>
 
-<main>
-    <?php include '../app/views/includes/content.php'; ?>
-</main>
+    <?php include ROOT_PATH . 'app/views/includes/header.php'; ?>
 
-<?php include '../app/views/includes/footer.php'; ?>
+    <div class="layout">
+        <main>
+        </main>
+    </div>
 
-<?php include '../app/views/includes/end.php'; ?>
+    <?php include ROOT_PATH . 'app/views/includes/footer.php'; ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= BASE_URL ?>public/js/script.js"></script>
+</body>
+
+</html>

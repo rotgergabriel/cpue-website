@@ -1,31 +1,25 @@
 <?php
-// ====================================================
-// 1. RILEVAMENTO AMBIENTE (Locale vs Online)
-// ====================================================
 
-// Rileva protocollo (http o https)
+// 1. Detección dinámica del protocolo y dominio
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-$domainName = $_SERVER['HTTP_HOST'];
+$domain = $_SERVER['HTTP_HOST'];
 
-// LOGICA INTELLIGENTE:
-// Se siamo su localhost (o 127.0.0.1), aggiungiamo la cartella del progetto.
-// Se siamo online (cpue.it), la cartella è la radice (vuota).
-if ($domainName == 'localhost' || $domainName == '127.0.0.1') {
-    // SVILUPPO LOCALE
-    define('APP_FOLDER', '/cpue-website/'); 
-} else {
-    // PRODUZIONE (ONLINE)
-    define('APP_FOLDER', '/'); 
+// 2. Detección automática de la carpeta del proyecto
+// Esto evita el IF de localhost y funciona tanto en Mac como en Windows
+$script_name = str_replace('\\', '/', $_SERVER['SCRIPT_NAME']);
+$project_folder = '/' . trim(explode('/', $script_name)[1], '/') . '/';
+
+// Si estamos en producción (dominio real), la carpeta es la raíz
+if ($domain !== 'localhost' && $domain !== '127.0.0.1') {
+    $project_folder = '/';
 }
 
-// Costruzione URL
-define('BASE_URL', $protocol . $domainName . APP_FOLDER);
+// 3. Definición de constantes globales
+define('BASE_URL', $protocol . $domain . $project_folder);
+define('ROOT_PATH', realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR);
 
-// ====================================================
-// 2. DATABASE CONFIG (Placeholder)
-// ====================================================
-// Definisci qui le costanti anche se per ora sono spente
+// 4. Configuración de Base de Datos
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_NAME', 'cpue_db'); 
-?>
+define('DB_PASS', 'root');
+define('DB_NAME', 'cpue_db');
