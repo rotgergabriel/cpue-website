@@ -10,12 +10,10 @@ $meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, un
 <html lang="it">
 
 <head>
-    <?php include ROOT_PATH . 'app/views/includes/head.php'; ?>
+
 </head>
 
 <body>
-
-    <?php include ROOT_PATH . 'app/views/includes/header.php'; ?>
 
     <div class="layout">
         <main>
