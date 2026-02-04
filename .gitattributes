@@ -1,0 +1,8 @@
+# Forzar que los archivos de texto siempre usen LF (estándar de Git/Linux/Mac)
+* text=auto eol=lf
+
+# Asegurarse de que los archivos PHP, HTML y CSS mantengan LF
+*.php text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf

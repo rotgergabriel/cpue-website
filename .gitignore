@@ -1,0 +1,29 @@
+# === Archivos de Sistema (El origen del desorden) ===
+# macOS (Basura de su Macbook)
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows (Basura de tu PC)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# === Archivos de Configuración Críticos ===
+# Bloqueamos estos para que no los sobrescriba con sus rutas locales
+config.php
+conexion.php
+.env
+
+# === Editores y Herramientas ===
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# === Logs y Temporales ===
+*.log
+tmp/
+cache/
