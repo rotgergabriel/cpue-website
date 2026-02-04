@@ -1,11 +1,5 @@
 <footer class="footer">
 
-  <div class="footer__mobile-logo-container">
-    <a href="<?= BASE_URL ?>index.php">
-      <img src="<?= BASE_URL ?>public/assets/img/logo-main.webp" alt="Logo CPUE" class="footer__mobile-logo">
-    </a>
-  </div>
-
   <div class="footer__container">
 
     <section class="footer__section footer__accordion-item">
