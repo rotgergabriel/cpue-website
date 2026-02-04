@@ -23,13 +23,17 @@ $meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, un
 
 <body>
     <header>
-        <?php include ROOT_PATH . 'app/views/includes/header.php'; ?>
+        <!-- Navbar section start -->
+        <?php include ROOT_PATH . 'app/views/includes/navbar.php'; ?>
+        <!-- Navbar section end -->
+        
+        <!-- Hero section start -->
+        <?php include ROOT_PATH . 'app/views/includes/hero.php'; ?>
+        <!-- Hero section end -->
     </header>
     <div class="layout">
         <main>
-            <!-- Hero section start -->
-            <?php include ROOT_PATH . 'app/views/includes/hero.php'; ?>
-            <!-- Hero section end -->
+
         </main>
     </div>
     <?php include ROOT_PATH . 'app/views/includes/footer.php'; ?>
