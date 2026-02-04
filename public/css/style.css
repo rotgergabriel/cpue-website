@@ -1,5 +1,5 @@
 /* ========================================
-   1. GLOBAL & RESET
+    1. GLOBAL & RESET
    ======================================== */
 body {
     font-family: 'Inter', sans-serif;
@@ -20,11 +20,22 @@ a {
 }
 
 /* ========================================
-   2. NAVBAR CUSTOM (Mobile First)
+    2. NAVBAR CUSTOM (Mobile First)
    ======================================== */
 .navbar-custom {
-    background-color: #0B0E92;
+    background-color: #11136E;
     padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 1000;
+    box-shadow:
+        0 10px 30px 5px rgba(0, 0, 0, 0.4),
+        inset 0 -10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-custom .navbar-collapse {
+    max-height: 75vh;
+    overflow-y: auto;
+    padding: 1rem 0;
 }
 
 .navbar-brand img {
@@ -105,28 +116,73 @@ a {
 }
 
 /* ========================================
-   3. LAYOUT & SECTIONS
+    3. LAYOUT & SECTIONS
    ======================================== */
 .layout {
-    max-width: 1140px;
+    max-width: 1440px;
     margin: 0 auto;
     width: 100%;
 }
 
-main {
-    flex: 1;
+/* Hero section */
+.hero {
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: space;
+    background-color: #0B0E92;
 }
 
-.hero-section {
-    background-color: #ffffff;
-    color: #080936;
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 2rem;
+}
+
+.hero__img {
+    width: 320px;
+    height: 310px;
+    height: auto;
+    display: block;
+}
+
+.hero__actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__button {
+    width: 80%;
+    display: inline-block;
+    padding: 20px 15px;
+    background-color: #fefefeb0;
+    color: #0B0E92;
+    text-decoration: none;
+    border-radius: 80px;
+    font-weight: bold;
     text-align: center;
-    padding: 50px 20px;
+    font-size: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    backface-visibility: hidden;
+}
+
+.hero__button:hover {
+    transform: scale(1.03);
+    background-color: #fefefeff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero__button:active {
+    transform: scale(0.98);
 }
 
 /* ========================================
-   4. FOOTER
+    4. FOOTER
    ======================================== */
 .footer {
     background-color: #ededed;
@@ -203,13 +259,22 @@ main {
 }
 
 /* ========================================
-   5. RESPONSIVE DESIGN (Media Queries)
+    5. RESPONSIVE DESIGN (Media Queries)
    ======================================== */
 
 /* Desktop (1024px +) */
 @media (min-width: 1024px) {
+
+    /* Header section */
     .navbar {
         height: 100px !important;
+    }
+
+    .navbar-custom .navbar-collapse {
+        max-height: none;
+        overflow-y: visible;
+        padding: 0;
+        display: flex !important;
     }
 
     .navbar-nav {
@@ -228,10 +293,28 @@ main {
         width: auto;
         text-align: left;
     }
+
+    /* Hero section */
+    .hero__img {
+        width: 420px;
+    }
+
+    .hero__button {
+        width: 50%;
+        font-size: 30px;
+    }
+
 }
 
 /* Mobile Accordion (Hasta 768px) */
 @media (max-width: 768px) {
+
+    /* Header section */
+    .navbar-custom .navbar-collapse {
+        max-height: 80vh;
+    }
+
+    /* Footer section */
     .footer__container {
         flex-direction: column;
         gap: 0;
