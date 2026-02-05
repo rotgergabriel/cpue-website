@@ -10,7 +10,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navCPUE">
-            <ul class="navbar-nav text-uppercase fw-semibold">
+            <ul class="navbar-nav fw-semibold">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>

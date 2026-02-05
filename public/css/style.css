@@ -1,27 +1,6 @@
-/* ========================================
-    1. GLOBAL & RESET
-   ======================================== */
-body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    background-color: #ffffff;
-    color: #333333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+/* MOBILE FIRST */
 
-a {
-    color: #3c3d3f;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-/* ========================================
-    2. NAVBAR CUSTOM (Mobile First)
-   ======================================== */
+/* Navbar section */
 .navbar-custom {
     background-color: #11136E;
     padding: 0.5rem 1rem;
@@ -33,7 +12,7 @@ a {
 }
 
 .navbar-custom .navbar-collapse {
-    max-height: 75vh;
+    max-height: 80vh;
     overflow-y: auto;
     padding: 1rem 0;
 }
@@ -66,7 +45,6 @@ a {
     color: white !important;
 }
 
-/* Search Bar in Navbar */
 .search-group-custom {
     width: 100%;
     margin: 1rem 0;
@@ -115,9 +93,7 @@ a {
     border-bottom-right-radius: 50px !important;
 }
 
-/* ========================================
-    3. LAYOUT & SECTIONS
-   ======================================== */
+/* Layout section */
 .layout {
     max-width: 1440px;
     margin: 0 auto;
@@ -130,60 +106,120 @@ a {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: space;
+    align-items: center;
     background-color: #0B0E92;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     gap: 2rem;
+    padding-bottom: 100px;
+    z-index: 2;
+}
+
+.hero__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero__img {
-    width: 320px;
-    height: 310px;
+    width: 250px;
     height: auto;
     display: block;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
 }
 
-.hero__actions {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.hero__button {
-    width: 80%;
-    display: inline-block;
-    padding: 20px 15px;
-    background-color: #fefefeb0;
-    color: #0B0E92;
-    text-decoration: none;
-    border-radius: 80px;
-    font-weight: bold;
+.hero__title {
     text-align: center;
-    font-size: 15px;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-    backface-visibility: hidden;
+    color: white;
+    font-size: clamp(15px, 5vw, 40px);
 }
 
-.hero__button:hover {
-    transform: scale(1.03);
-    background-color: #fefefeff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("../assets/img/wave.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+    z-index: 1;
+    pointer-events: none;
 }
 
-.hero__button:active {
-    transform: scale(0.98);
+/* Directive section */
+.directive {
+    position: relative;
+    z-index: 10;
+    margin-top: -100px;
 }
 
-/* ========================================
-    4. FOOTER
-   ======================================== */
+.directive__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.directive__body {
+    width: 100%;
+    overflow: hidden;
+    clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+.directive__img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+    height: auto;
+    padding: 0 5px;
+}
+
+.directive__text {
+    margin-top: 1.5rem;
+    line-height: 1.2;
+}
+
+.directive__text--title {
+    color: #0223A1;
+    margin: 0;
+    font-size: 28px;
+}
+
+.directive__text p,
+.directive__text h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.directive__text--description {
+    color: #546373;
+    font-size: 12px;
+}
+
+.directive__text--names {
+    color: #080808;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.directive__text--roles {
+    color: #546373;
+    font-size: 12px;
+}
+
+/* Footer section BASE (Mobile) */
 .footer {
     background-color: #ededed;
     padding: 40px 20px 0 20px;
@@ -193,27 +229,68 @@ a {
 
 .footer__container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+    flex-direction: column;
+    gap: 0;
     max-width: 1200px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto;
 }
 
 .footer__section {
-    flex: 1;
-    min-width: 250px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer__section:last-child {
+    border-bottom: none;
 }
 
 .footer__title {
     font-size: 1.1rem;
     font-weight: bold;
-    margin-bottom: 20px;
     color: #000;
     text-transform: uppercase;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.footer__accordion-header {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.footer__accordion-icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.footer__accordion-header.active .footer__accordion-icon {
+    transform: rotate(180deg);
+}
+
+.footer__accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+    opacity: 0;
+}
+
+.footer__accordion-content.active {
+    max-height: 600px;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -246,12 +323,10 @@ a {
     height: 40px;
 }
 
-
 .footer__img {
     height: 150px;
     width: auto;
     display: block;
-    margin: 20px auto;
     margin: 60px auto 20px auto;
     object-fit: contain;
 }
@@ -265,57 +340,83 @@ a {
     background-color: #ededed;
 }
 
-.footer__accordion-icon {
-    display: none;
-}
-
-.footer__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* ========================================
-   5. FLOATING WHATSAPP BUTTON
-   ======================================== */
+/* FLOATING WHATSAPP BUTTON */
 .whatsapp-float {
-    position: fixed; /* Lo rende galleggiante e sempre visibile */
-    bottom: 20px;    /* Distanza dal basso */
-    right: 20px;     /* Distanza da destra */
-    width: 60px;     /* Larghezza del bottone */
-    height: 60px;    /* Altezza del bottone */
-    z-index: 9999;   /* Assicura che stia sopra a tutto (footer, immagini, ecc.) */
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Animazione fluida */
-    
-    /* Opzionale: Aggiunge un'ombra per staccarlo dallo sfondo */
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.1); /* Ingrandisce leggermente al passaggio del mouse */
+    transform: scale(1.1);
 }
 
 .whatsapp-float img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Mantiene le proporzioni dell'SVG */
+    object-fit: contain;
     display: block;
 }
 
+/* RESPONSIVE DESIGN (Media Queries) */
 
-/* ========================================
-   6. RESPONSIVE DESIGN (Media Queries)
-   ======================================== */
+/* Tablet & Desktop (A partir de 769px) */
+@media (min-width: 769px) {
+    .hero__img {
+        width: 320px;
+    }
 
-/* Desktop (1024px +) */
+    .hero::after {
+        height: 300px;
+    }
+
+    /* Reset Footer Accordion to Grid */
+    .footer__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .footer__section {
+        flex: 1;
+        min-width: 200px;
+        border-bottom: none;
+    }
+
+    .footer__accordion-header {
+        cursor: default;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .footer__accordion-icon {
+        display: none;
+    }
+
+    .footer__accordion-content {
+        max-height: none !important;
+        opacity: 1 !important;
+        overflow: visible !important;
+    }
+
+    .whatsapp-float {
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Large Desktop (1024px +) */
 @media (min-width: 1024px) {
 
-    /* Header section */
     .navbar {
         height: 100px !important;
     }
@@ -344,86 +445,31 @@ a {
         text-align: left;
     }
 
-    /* Hero section */
     .hero__img {
         width: 420px;
     }
 
-    .hero__button {
-        width: 50%;
-        font-size: 30px;
+    .directive__body {
+        clip-path: ellipse(60% 100% at 50% 0%);
     }
 
-}
-
-/* Mobile Accordion (Hasta 768px) */
-@media (max-width: 768px) {
-
-    /* Header section */
-    .navbar-custom .navbar-collapse {
-        max-height: 80vh;
+    .directive__img {
+        width: 60%;
     }
 
-    /* Footer section */
-    .footer__container {
-        margin-bottom: 0 !important;
-        flex-direction: column;
-        gap: 0;
+    .directive__text--title {
+        font-size: 40px;
     }
 
-    .footer__section {
-        border-bottom: 1px solid #ccc;
+    .directive__text--description {
+        font-size: 22px;
     }
 
-    .footer__section:last-child {
-        border-bottom: none;
+    .directive__text--names {
+        font-size: 18px;
     }
 
-    .footer__accordion-icon {
-        display: inline-block;
-        font-size: 1.5rem;
-        margin-left: 10px;
-        transition: transform 0.3s ease;
-    }
-
-    .footer__title {
-        margin-top: 20px;
-    }
-
-    .footer__accordion-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: all 0.4s ease-out;
-        opacity: 0;
-    }
-
-    .footer__accordion-content.active {
-        max-height: 500px;
-        opacity: 1;
-        padding-bottom: 20px;
-    }
-
-    .footer__accordion-header {
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 30px;
-        gap: 10px;
-        transition: color 0.3s ease;
-    }
-
-    .footer__accordion-header.active .footer__accordion-icon {
-        transform: rotate(180deg);
-    }
-}
-
-/* Opzionale: Aggiustamento per schermi molto piccoli se necessario */
-@media (max-width: 480px) {
-    .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 15px;
-        right: 15px;
+    .directive__text--roles {
+        font-size: 18px;
     }
 }
