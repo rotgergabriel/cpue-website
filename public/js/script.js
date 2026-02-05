@@ -1,24 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // 1. Seleziona tutti gli elementi che hanno la classe del titolo
+    // Seleziona tutti i titoli
     const accordions = document.querySelectorAll('.footer__accordion-header');
 
-    // 2. Per ogni titolo trovato, aggiungiamo un "ascoltatore" del click
     accordions.forEach(function(accordion) {
         accordion.addEventListener('click', function() {
             
-            // (Opzionale) Controllo: se lo schermo è grande (> 768px), non fare nulla
+            // Controllo Mobile: esegue solo se lo schermo è piccolo
             if (window.innerWidth > 768) return;
 
-            // 3. Toggle della classe 'active' sul titolo cliccato
-            // (Serve per far ruotare l'icona + tramite CSS)
+            // Mette/Toglie la classe 'active' al TITOLO (per ruotare l'icona)
             this.classList.toggle('active');
 
-            // 4. Seleziona l'elemento successivo (il contenuto nascosto)
+            // Trova il contenuto subito sotto
             const content = this.nextElementSibling;
 
-            // 5. Toggle della classe 'active' sul contenuto
-            // (Serve per mostrare il testo tramite CSS max-height)
+            // Mette/Toglie la classe 'active' al CONTENUTO (per aprire la tendina)
             if (content) {
                 content.classList.toggle('active');
             }
