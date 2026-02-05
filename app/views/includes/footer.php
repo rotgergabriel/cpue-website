@@ -5,7 +5,11 @@
     <section class="footer__section footer__accordion-item">
       <h3 class="footer__title footer__accordion-header">
         CHI SIAMO
-        <span class="footer__accordion-icon">+</span>
+        <span class="footer__accordion-icon">
+          <svg viewBox="0 0 96.9 51.25" fill="currentColor" width="16" height="16">
+            <path d="M.75.75h0C1.75-.25,3.35-.25,4.25.75l44.2,44.2L92.65.75c1-1,2.6-1,3.5,0h0c1,1,1,2.6,0,3.5l-46.3,46.4c-.8.8-2,.8-2.8,0L.75,4.35C-.25,3.35-.25,1.75.75.75Z"/>
+          </svg>
+        </span> 
       </h3>
 
       <div class="footer__accordion-content">
@@ -33,19 +37,23 @@
     <section class="footer__section footer__accordion-item">
       <h3 class="footer__title footer__accordion-header">
         SOCIAL NETWORK
-        <span class="footer__accordion-icon">+</span>
+        <span class="footer__accordion-icon">
+          <svg viewBox="0 0 96.9 51.25" fill="currentColor" width="16" height="16">
+            <path d="M.75.75h0C1.75-.25,3.35-.25,4.25.75l44.2,44.2L92.65.75c1-1,2.6-1,3.5,0h0c1,1,1,2.6,0,3.5l-46.3,46.4c-.8.8-2,.8-2.8,0L.75,4.35C-.25,3.35-.25,1.75.75.75Z"/>
+          </svg>
+        </span>  
       </h3>
 
       <div class="footer__accordion-content">
         <div class="footer__social-icons">
+          <a href="https://www.youtube.com/@CpueItalia" target="_blank" class="footer__social-link">
+            <img src="<?= BASE_URL ?>public/assets/icons/youtube.svg" alt="YouTube" class="footer__icon">
+          </a>        
           <a href="https://www.facebook.com/cpueitalia" target="_blank" class="footer__social-link">
             <img src="<?= BASE_URL ?>public/assets/icons/facebook.svg" alt="Facebook" class="footer__icon">
           </a>
           <a href="https://www.instagram.com/cpue_italia" target="_blank" class="footer__social-link">
             <img src="<?= BASE_URL ?>public/assets/icons/instagram.svg" alt="Instagram" class="footer__icon">
-          </a>
-          <a href="https://www.youtube.com/@CpueItalia" target="_blank" class="footer__social-link">
-            <img src="<?= BASE_URL ?>public/assets/icons/youtube.svg" alt="YouTube" class="footer__icon">
           </a>
           <a href="https://wa.me/393494637023" class="footer__social-link">
             <img src="<?= BASE_URL ?>public/assets/icons/whatsapp.svg" alt="WhatsApp" class="footer__icon">
@@ -63,7 +71,11 @@
     <section class="footer__section footer__accordion-item">
       <h3 class="footer__title footer__accordion-header">
         MAIN MENU
-        <span class="footer__accordion-icon">+</span>
+        <span class="footer__accordion-icon">
+          <svg viewBox="0 0 96.9 51.25" fill="currentColor" width="16" height="16">
+            <path d="M.75.75h0C1.75-.25,3.35-.25,4.25.75l44.2,44.2L92.65.75c1-1,2.6-1,3.5,0h0c1,1,1,2.6,0,3.5l-46.3,46.4c-.8.8-2,.8-2.8,0L.75,4.35C-.25,3.35-.25,1.75.75.75Z"/>
+          </svg>
+        </span>      
       </h3>
 
       <div class="footer__accordion-content">
@@ -96,3 +108,8 @@
   </section>
 
 </footer>
+
+<!--icono Gallegiante WhatsApp-->
+<a href="https://wa.me/393494637023" class="whatsapp-float" target="_blank" title="Contattaci su WhatsApp">
+    <img src="<?= BASE_URL ?>assets/icons/whatsapp2.svg" alt="WhatsApp Chat">
+</a>

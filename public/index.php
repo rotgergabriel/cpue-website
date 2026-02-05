@@ -1,16 +1,6 @@
 <?php
-// 1. Carga de configuración global
 require_once '../app/config/config.php';
 
-// 2. Metadatos de la página
-$title = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo.";
-$meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
-?>
-<?php
-// 1. Carga de configuración global
-require_once '../app/config/config.php';
-
-// 2. Metadatos de la página
 $title = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo.";
 $meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
 ?>
@@ -26,7 +16,7 @@ $meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, un
         <!-- Navbar section start -->
         <?php include ROOT_PATH . 'app/views/includes/navbar.php'; ?>
         <!-- Navbar section end -->
-        
+
         <!-- Hero section start -->
         <?php include ROOT_PATH . 'app/views/includes/hero.php'; ?>
         <!-- Hero section end -->
@@ -36,7 +26,9 @@ $meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, un
 
         </main>
     </div>
-    <?php include ROOT_PATH . 'app/views/includes/footer.php'; ?>
+    <footer class="footer">
+        <?php include ROOT_PATH . 'app/views/includes/footer.php'; ?>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?= BASE_URL ?>public/js/script.js"></script>
 </body>
