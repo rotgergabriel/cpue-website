@@ -219,6 +219,7 @@
     font-size: 12px;
 }
 
+/* Info-card section */
 .info-card {
     min-height: 300px;
     margin: 40px 10px;
@@ -269,6 +270,7 @@
     pointer-events: none;
 }
 
+/* Cult-location section */
 .cult-locations {
     background-color: #ffffff;
     margin: 40px 10px;
@@ -280,7 +282,7 @@
 
 .cult-locations__header {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     width: 100%;
     position: relative;
 }
@@ -291,11 +293,11 @@
     color: #20293a;
     line-height: 1.1;
     font-size: clamp(32px, 5vw, 50px);
-    
+
     text-align: left;
     width: 100%;
     max-width: 100%;
-    margin: 100px 0 0 0; 
+    margin: 100px 0 0 0;
     padding: 0 10px;
 }
 
@@ -304,7 +306,7 @@
     max-width: 250px;
     height: auto;
     object-fit: contain;
-    
+
     display: block;
     margin-left: auto;
     margin-right: 0;
@@ -345,7 +347,7 @@
 }
 
 .cult-locations__italy-map {
-    width: 100%; 
+    width: 100%;
     max-width: 1100px;
     height: auto;
     display: block;
@@ -360,7 +362,7 @@
     z-index: 9999;
     cursor: pointer;
     transition: transform 0.3s ease;
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
 }
 
 .whatsapp-float:hover {
@@ -372,190 +374,6 @@
     height: 100%;
     object-fit: contain;
     display: block;
-}
-
-
-/* Footer section BASE (Mobile) */
-
-.footer {
-    background-color: #ededed;
-    padding: 40px 20px 0 20px;
-    color: #333;
-    width: 100%;
-}
-
-.footer__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto 40px auto;
-}
-
-.footer__section {
-    flex: 1;
-    min-width: 250px;
-}
-
-.footer__title {
-    font-family: 'Plus Jakarta Sans', sans-serif; /* Font dal nuovo CSS */
-    font-size: 1.1rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    margin-bottom: 20px;
-    color: #000;
-    text-transform: uppercase;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__item {
-    margin-top: 15px;
-    line-height: 1.5;
-    font-size: 0.95rem;
-    text-align: center;
-}
-
-.footer__link {
-    color: #3c3d3f;
-    text-decoration: none;
-    transition: color 0.3s ease; /* RICHIESTA: Transizione fluida */
-}
-
-.footer__link:hover {
-    color: #0b0e92; /* RICHIESTA: Tuo blu specifico */
-}
-
-.footer__social-icons {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-/* RICHIESTA: Effetto hover su icone social */
-.footer__social-link {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.footer__social-link:hover {
-    transform: translateY(-3px);
-}
-
-.footer__icon {
-    width: 40px;
-    height: 40px;
-}
-
-/* RICHIESTA: Colore specifico per icona WhatsApp footer */
-.footer__icon.footer__icon--wa {
-    fill: #0b0e92 !important; /* Mantenuto il TUO colore, non quello del nuovo file */
-    width: 40px !important;
-    height: 40px !important;
-    display: inline-block;
-}
-
-.footer__img {
-    height: 150px;
-    width: auto;
-    display: block;
-    margin: 20px auto;
-    margin: 60px auto 20px auto;
-    object-fit: contain;
-    transition: transform 0.3s ease; /* RICHIESTA: Animazione logo */
-}
-
-/* RICHIESTA: Effetto hover sul logo principale */
-.footer__img:hover {
-    transform: translateY(-3px);
-}
-
-.footer__bottom {
-    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Bordo più leggero */
-    text-align: center;
-    padding: 30px 20px;
-    font-size: 0.85rem;
-    color: #666;
-    background-color: #ededed;
-    line-height: 1.6;
-}
-
-.footer__accordion-icon {
-    display: none; /* Nascondi icona su desktop */
-}
-
-.footer__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* GESTIONE RESPONSIVE FOOTER (ACCORDION) */
-@media (max-width: 768px) {
-    .footer__container {
-        margin-bottom: 0 !important;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .footer__section {
-        border-bottom: 1px solid #ccc;
-    }
-
-    .footer__section:last-child {
-        border-bottom: none;
-    }
-
-    .footer__accordion-icon {
-        display: inline-block; /* Mostra icona su mobile */
-        font-size: 1.5rem;
-        margin-left: 10px;
-        transition: transform 0.3s ease;
-    }
-
-    .footer__title {
-        margin-top: 20px;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        font-weight: 300;
-        letter-spacing: 0.05em;
-        cursor: pointer; /* Importante per l'UX */
-    }
-
-    .footer__accordion-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: all 0.4s ease-out;
-        opacity: 0;
-    }
-
-    .footer__accordion-content.active {
-        max-height: 500px;
-        opacity: 1;
-        padding-bottom: 20px;
-    }
-
-    .footer__accordion-header {
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 30px;
-        gap: 10px;
-        transition: color 0.3s ease;
-    }
-
-    .footer__accordion-header.active .footer__accordion-icon {
-        transform: rotate(180deg);
-    }
 }
 
 .whatsapp-float {
@@ -581,10 +399,168 @@
     display: block;
 }
 
+/* Footer section */
+.footer {
+    background-color: #ededed;
+    padding: 40px 20px 0 20px;
+    color: #333;
+    width: 100%;
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+.footer__section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__item {
+    margin-top: 15px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.footer__link {
+    color: #3c3d3f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: #0b0e92;
+}
+
+.footer__social-icons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer__social-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer__social-link:hover {
+    transform: translateY(-3px);
+}
+
+.footer__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.footer__icon.footer__icon--wa {
+    fill: #0b0e92 !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: inline-block;
+}
+
+.footer__img {
+    height: 150px;
+    width: auto;
+    display: block;
+    margin: 20px auto;
+    margin: 60px auto 20px auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.footer__img:hover {
+    transform: translateY(-3px);
+}
+
+.footer__bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.85rem;
+    color: #666;
+    background-color: #ededed;
+    line-height: 1.6;
+}
+
+.footer__accordion-icon {
+    display: none;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__icon--wa {
+    fill: #0b0e92;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.footer__section {
+    border-bottom: 1px solid #ccc;
+}
+
+.footer__section:last-child {
+    border-bottom: none;
+}
+
+.footer__accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 30px;
+}
+
+.footer__accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+    opacity: 0;
+}
+
+.footer__accordion-content.active {
+    max-height: 500px;
+    opacity: 1;
+    padding-bottom: 20px;
+}
 
 /* RESPONSIVE DESIGN (Media Queries) */
 
-/* Tablet & Desktop (A partir de 769px) */
+/* Tablet (769px +) */
 @media (min-width: 769px) {
     .hero__img {
         width: 320px;
@@ -594,7 +570,6 @@
         height: 300px;
     }
 
-    /* Reset Footer Accordion to Grid */
     .footer__container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -624,6 +599,32 @@
         overflow: visible !important;
     }
 
+    .footer__container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .footer__section {
+        border-bottom: none;
+        flex: 1;
+    }
+
+    .footer__accordion-icon {
+        display: none;
+    }
+
+    .footer__accordion-content {
+        max-height: none;
+        opacity: 1;
+        overflow: visible;
+    }
+
+    .footer__accordion-header {
+        cursor: default;
+        padding: 0;
+    }
+
     .whatsapp-float {
         width: 60px;
         height: 60px;
@@ -640,22 +641,22 @@
     }
 
     .cult-locations__header {
-        flex-direction: column-reverse; 
-        align-items: flex-end; 
+        flex-direction: column-reverse;
+        align-items: flex-end;
     }
 
     .cult-locations__europe-map {
-        margin-top: 0; 
-        max-width: 200px; 
+        margin-top: 0;
+        max-width: 200px;
         margin-bottom: 20px;
     }
 
     .cult-locations__title {
-        margin-top: 20px; 
+        margin-top: 20px;
         width: 100%;
         max-width: 100%;
     }
-    
+
     .cult-locations__subtitle {
         margin-top: 20px;
     }
@@ -667,9 +668,7 @@
     }
 }
 
-
-
-/* Large Desktop (1024px +) */
+/* Desktop (1024px +) */
 @media (min-width: 1024px) {
 
     .navbar {
@@ -730,13 +729,13 @@
 
     .cult-locations__header {
         min-height: 350px;
-        align-items: flex-start; 
-        justify-content: center; 
+        align-items: flex-start;
+        justify-content: center;
     }
 
     .cult-locations__europe-map {
-        position: absolute; 
-        right: 150px; 
+        position: absolute;
+        right: 150px;
         top: 50%;
         transform: translateY(-50%);
         max-width: 350px;
@@ -748,23 +747,7 @@
         text-align: left;
         width: auto;
         max-width: 600px;
-        margin-right: 0; 
+        margin-right: 0;
         margin-top: 0;
     }
 }
-
-/* Solo con whatsapp blue; codigo pulito svg - non caricato in assets
-   questo è il bottone che va insieme agli altri bottoni social */
-
-.footer__icon--wa {
-    fill: #0b0e92;
-}
-
-
-
-
-
-
-
-
-
