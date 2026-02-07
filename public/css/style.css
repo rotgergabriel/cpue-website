@@ -299,6 +299,203 @@
     transform: translateY(-2px);
 }
 
+/* Contact section */
+
+.contact {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: auto;
+    max-height: auto;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    padding: 40px 10px;
+    box-sizing: border-box;
+}
+
+.contact__container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact__col {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__col--form {
+    background-color: transparent;
+}
+
+.contact__col--map {
+    height: auto;
+    background-color: #ffffff;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.contact__title {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #0a0e92;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.contact__subtitle {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #969696;
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.contact__input {
+    width: 100%;
+    max-width: 500px;
+    height: 47px;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    padding-left: 5px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #969696;
+}
+
+.contact__input::placeholder {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    font-weight: 320;
+    color: #969696;
+    opacity: 1;
+    padding-left: 10px;
+}
+
+.contact__input:focus {
+    outline: none;
+    border-color: #0a0e92;
+}
+
+.contact__input--textarea {
+    min-height: 100px;
+    padding-top: 10px;
+    resize: both;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact__button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px;
+    margin-top: clamp(20px, 3vw, 40px);
+    margin-bottom: 20px;
+    width: fit-content;
+    min-width: 150px;
+    background-color: transparent;
+    color: #3f51b5;
+    border: 1.5px solid #3f51b5;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact__button:hover {
+    background-color: #3f51b5;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.contact__button-text {
+    margin-left: 5px;
+}
+
+.contact__map-box {
+    width: 100%;
+    max-width: 420px;
+    height: 170px;
+    border: none;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+}
+
+.contact__map-frame {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    pointer-events: none;
+}
+
+.contact__info {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 420px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact__info--address {
+    margin-bottom: 20px;
+}
+
+.contact__icon {
+    width: 18px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.contact__text {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    color: #555555;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.contact__col--map {
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
 /* Cult-location section */
 .cult-locations {
     background-color: #ffffff;
@@ -318,15 +515,14 @@
 
 .cult-locations__title {
     font-family: 'Source Sans 3', sans-serif;
-    font-weight: 400;
+    font-weight: 450;
     color: #20293a;
     line-height: 1.1;
-    font-size: clamp(32px, 5vw, 50px);
-
-    text-align: left;
+    font-size: clamp(25px, 5vw, 55px);
+    text-align: center;
     width: 100%;
     max-width: 100%;
-    margin: 100px 0 0 0;
+    margin: 10px 0 0 0;
     padding: 0 10px;
 }
 
@@ -335,13 +531,11 @@
     max-width: 250px;
     height: auto;
     object-fit: contain;
-
     display: block;
     margin-left: auto;
     margin-right: 0;
-    margin-top: 40px;
+    margin-top: -20px;
 }
-
 
 .cult-locations__subtitle {
     font-family: 'Source Sans 3', sans-serif;
@@ -352,7 +546,7 @@
     width: 100%;
     margin-top: 10px;
     margin-bottom: 0;
-    font-size: clamp(22px, 4vw, 30px);
+    font-size: clamp(18px, 4vw, 30px);
 }
 
 .cult-locations__subtitle--grey {
@@ -361,7 +555,7 @@
 
 .cult-locations__info {
     font-family: 'Source Sans 3', sans-serif;
-    font-weight: 400;
+    font-weight: 250;
     color: #20293a;
     text-align: center;
     margin-top: 10px;
@@ -377,34 +571,12 @@
 
 .cult-locations__italy-map {
     width: 100%;
-    max-width: 1100px;
+    max-width: 700px;
     height: auto;
     display: block;
 }
 
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    z-index: 9999;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-}
-
-.whatsapp-float img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
+/* WhatsApp Float */
 .whatsapp-float {
     position: fixed;
     bottom: 15px;
@@ -531,6 +703,7 @@
 }
 
 /* Footer section */
+
 .footer {
     background-color: #ededed;
     padding: 40px 20px 0 20px;
@@ -540,16 +713,22 @@
 
 .footer__container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-    max-width: 1200px;
+    flex-direction: column;
+    /* Mobile stack */
     margin: 0 auto 40px auto;
+    max-width: 1200px;
+    gap: 30px;
 }
 
 .footer__section {
     flex: 1;
     min-width: 250px;
+    border-bottom: 1px solid #ccc;
+    /* Mobile only border */
+}
+
+.footer__section:last-child {
+    border-bottom: none;
 }
 
 .footer__title {
@@ -605,7 +784,8 @@
     height: 40px;
 }
 
-.footer__icon.footer__icon--wa {
+.footer__icon.footer__icon--wa,
+.footer__icon--wa {
     fill: #0b0e92 !important;
     width: 40px !important;
     height: 40px !important;
@@ -616,7 +796,6 @@
     height: 150px;
     width: auto;
     display: block;
-    margin: 20px auto;
     margin: 60px auto 20px auto;
     object-fit: contain;
     transition: transform 0.3s ease;
@@ -636,10 +815,6 @@
     line-height: 1.6;
 }
 
-.footer__accordion-icon {
-    display: none;
-}
-
 .footer__list {
     list-style: none;
     padding: 0;
@@ -650,30 +825,23 @@
     align-items: center;
 }
 
-.footer__icon--wa {
-    fill: #0b0e92;
-}
-
-.footer__container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-}
-
-.footer__section {
-    border-bottom: 1px solid #ccc;
-}
-
-.footer__section:last-child {
-    border-bottom: none;
-}
-
 .footer__accordion-header {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 30px;
+}
+
+.footer__accordion-icon {
+    display: inline-flex;
+    transition: transform 0.3s ease;
+    align-items: center;
+    color: #0b0e92;
+}
+
+.footer__accordion-item.active .footer__accordion-icon {
+    transform: rotate(180deg);
 }
 
 .footer__accordion-content {
@@ -689,6 +857,7 @@
     padding-bottom: 20px;
 }
 
+
 /* RESPONSIVE DESIGN (Media Queries) */
 
 /* Tablet (769px +) */
@@ -701,19 +870,21 @@
         height: 300px;
     }
 
+    /* Footer reset for tablet/desktop */
     .footer__container {
         flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
         flex-wrap: wrap;
-        gap: 30px;
-        margin-bottom: 40px;
     }
 
     .footer__section {
+        border-bottom: none;
         flex: 1;
         min-width: 200px;
-        border-bottom: none;
     }
 
+    /* Disable Accordion behavior */
     .footer__accordion-header {
         cursor: default;
         padding: 0;
@@ -730,39 +901,7 @@
         overflow: visible !important;
     }
 
-    .footer__container {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .footer__section {
-        border-bottom: none;
-        flex: 1;
-    }
-
-    .footer__accordion-icon {
-        display: none;
-    }
-
-    .footer__accordion-content {
-        max-height: none;
-        opacity: 1;
-        overflow: visible;
-    }
-
-    .footer__accordion-header {
-        cursor: default;
-        padding: 0;
-    }
-
-    .whatsapp-float {
-        width: 60px;
-        height: 60px;
-        bottom: 20px;
-        right: 20px;
-    }
-
+    /* Info Card & Maps */
     .info-card {
         width: 80%;
     }
@@ -789,11 +928,12 @@
     }
 
     .cult-locations__italy-wrapper {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 0 5px;
         box-sizing: border-box;
     }
 }
+
+
 
 /* Desktop (1024px +) */
 @media (min-width: 1024px) {
@@ -854,6 +994,57 @@
         font-size: 18px;
     }
 
+    .contact {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .contact__title {
+        font-size: 50px;
+        text-align: left;
+        margin: 0 0 0 5px;
+    }
+
+    .contact__subtitle {
+        text-align: left;
+        margin: 15px 0 15px 0;
+    }
+
+    .contact__container {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 50px;
+        height: auto;
+    }
+
+    .contact__col {
+        width: 550px;
+        min-height: 450px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .contact__col--form {
+        justify-content: flex-start;
+    }
+
+    .contact__form {
+        align-items: flex-start;
+    }
+
+    .contact__map-box {
+        margin-bottom: 25px;
+    }
+
+    .contact__info {
+        align-self: center;
+        margin-left: 0;
+    }
+
+    .contact__col--map {
+        align-self: center;
+    }
+
     .cult-locations__header {
         min-height: 350px;
         align-items: flex-start;
@@ -871,10 +1062,26 @@
 
     .cult-locations__title {
         margin-left: 150px;
-        text-align: left;
+        font-weight: 480;
         width: auto;
         max-width: 600px;
         margin-right: 0;
         margin-top: 0;
+        text-align: left;
+    }
+
+    .cult-locations__subtitle {
+        font-weight: 550;
+        margin-bottom: 15px;
+        font-size: clamp(10px, 7vw, 60px);
+    }
+
+    .cult-locations__subtitle--grey {
+        font-weight: 700;
+        font-size: clamp(10px, 7vw, 60px);
+    }
+
+    .cult-locations__info {
+        font-size: clamp(25px, 3vw, 16px);
     }
 }

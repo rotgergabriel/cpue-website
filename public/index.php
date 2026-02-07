@@ -32,6 +32,10 @@ $meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, un
             <?php include ROOT_PATH . 'app/views/includes/info-card.php'; ?>
             <!-- Info-card section end -->
 
+            <!-- Contact section start -->
+            <?php include ROOT_PATH . 'app/views/includes/contact.php'; ?>
+            <!-- Contact section end -->
+
             <!-- Cult-locations section start -->
             <?php include ROOT_PATH . 'app/views/includes/cult-locations.php'; ?>
             <!-- Cult-locations section end -->

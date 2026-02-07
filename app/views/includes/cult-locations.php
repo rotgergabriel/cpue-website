@@ -9,11 +9,11 @@
         </div>
 
         <h2 class="cult-locations__subtitle">
-            Queste sono le nostre <span class="cult-locations__subtitle--grey">congregazioni</span> da nord a sud.
+            Queste sono le nostre <span class="cult-locations__subtitle--grey">congregazioni</span> <br> da nord a sud.
         </h2>
 
         <p class="cult-locations__info">
-            Questa è una mappa interattiva, si può cliccare sopra per ottenere più informazioni...
+            Interagisci con la mappa per approfondire.
         </p>
 
         <div class="cult-locations__italy-wrapper">
