@@ -16,17 +16,13 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Chi siamo
                     </a>
                     <ul class="dropdown-menu shadow">
-                        <li><a class="dropdown-item" href="#">Missione</a></li>
-                        <li><a class="dropdown-item" href="#">Visione</a></li>
-                        <li><a class="dropdown-item" href="#">Consiglio Direttivo Nazionale</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/views/about.php">Missione</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/views/about.php">Visione</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/views/about.php">Consiglio Direttivo Nazionale</a></li>
                     </ul>
                 </li>
 
