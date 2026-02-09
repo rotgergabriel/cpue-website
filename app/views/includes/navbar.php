@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navCPUE">
             <ul class="navbar-nav fw-semibold">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>public/index.php">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -20,9 +20,9 @@
                         Chi siamo
                     </a>
                     <ul class="dropdown-menu shadow">
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/views/about.php">Missione</a></li>
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/views/about.php">Visione</a></li>
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/views/about.php">Consiglio Direttivo Nazionale</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>public/about.php">Missione</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>public/about.php">Visione</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>public/about.php">Consiglio Direttivo Nazionale</a></li>
                     </ul>
                 </li>
 

@@ -133,3 +133,28 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* 1. Global typography */
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+}
+
+p,
+span,
+a,
+li,
+label {
+    font-family: inherit;
+}
