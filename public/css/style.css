@@ -312,6 +312,7 @@
     transform: translateY(-2px);
 }
 
+
 /* Contact section */
 
 .contact {
@@ -426,7 +427,7 @@
     text-decoration: none;
     text-align: center;
     padding: 10px 25px;
-    margin-top: clamp(20px, 3vw, 40px);
+    margin-top: -10px;
     margin-bottom: 20px;
     width: fit-content;
     min-width: 150px;
@@ -454,7 +455,7 @@
     max-width: 420px;
     height: 170px;
     border: none;
-    margin-top: -10px;
+    margin-top: -20px;
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
@@ -476,7 +477,6 @@
     width: 100%;
     max-width: 420px;
     gap: 10px;
-    margin-bottom: 10px;
 }
 
 .contact__info--address {
@@ -488,6 +488,7 @@
     height: auto;
     flex-shrink: 0;
     margin-top: 3px;
+    transform: translateY(-3px);
 }
 
 .contact__text {
@@ -519,9 +520,10 @@
     flex-direction: column;
 }
 
+
 .cult-locations__header {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
     position: relative;
 }
@@ -536,7 +538,10 @@
     width: 100%;
     max-width: 100%;
     margin: 10px 0 0 0;
+    margin-top: 0px;
+    margin-bottom: 30px;
     padding: 0 10px;
+    transform: translateY(-15px);
 }
 
 .cult-locations__europe-map {
@@ -562,8 +567,24 @@
     font-size: clamp(18px, 4vw, 30px);
 }
 
-.cult-locations__subtitle--grey {
+
+.cult-locations__subtitle--gray {
     color: #727272;
+    position: relative;
+    display: inline-block;
+    z-index: 2;         
+    padding-bottom: 2px;
+}
+.cult-locations__underline-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+    z-index: -1;
+    transform: translateY(-3px);
 }
 
 .cult-locations__info {
@@ -571,7 +592,7 @@
     font-weight: 250;
     color: #20293a;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: clamp(14px, 3vw, 16px);
 }
 
@@ -727,17 +748,44 @@
 .footer__container {
     display: flex;
     flex-direction: column;
-    /* Mobile stack */
     margin: 0 auto 40px auto;
     max-width: 1200px;
-    gap: 30px;
+    gap: 20px;
+}
+
+.footer__section--social {
+    order: -1; 
+    border-bottom: none !important;
+}
+
+.footer__section--info {
+    order: 2;
+}
+
+.footer__section--menu {
+    order: 3;
+}
+
+.footer__section--social .footer__accordion-content {
+    max-height: none !important; 
+    opacity: 1 !important;       
+    overflow: visible !important;
+    padding-bottom: 20px;
+}
+
+.footer__section--social .footer__accordion-icon {
+    display: none; 
+}
+
+.footer__section--social .footer__accordion-header {
+    cursor: default;
+    pointer-events: none;
 }
 
 .footer__section {
     flex: 1;
     min-width: 250px;
     border-bottom: 1px solid #ccc;
-    /* Mobile only border */
 }
 
 .footer__section:last-child {
@@ -749,7 +797,7 @@
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 0.05em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #000;
     text-transform: uppercase;
     text-align: center;
@@ -776,7 +824,7 @@
 }
 
 .footer__social-icons {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -812,10 +860,11 @@
     margin: 60px auto 20px auto;
     object-fit: contain;
     transition: transform 0.3s ease;
+    transform: translateY(-18px);
 }
 
 .footer__img:hover {
-    transform: translateY(-3px);
+    transform: translateY(-21px);
 }
 
 .footer__bottom {
@@ -867,7 +916,7 @@
 .footer__accordion-content.active {
     max-height: 500px;
     opacity: 1;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 /* About section */
@@ -935,6 +984,60 @@
         height: 300px;
     }
 
+
+    .info-card {
+        margin-top: 80px;
+    }
+
+    /* Info Card & Maps */
+    .info-card {
+        width: 80%;
+    }
+
+    .cult-locations__header {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .cult-locations__europe-map {
+        margin-top: -40px;
+        max-width: 200px;
+        margin-bottom: 0px;
+    }
+
+    .cult-locations__title {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cult-locations__subtitle {
+        margin-top: 20px;
+    }
+
+    .cult-locations__subtitle--gray {
+        color: #727272; 
+        position: relative; 
+        display: inline-block; 
+    }
+
+    .cult-locations__underline-img {
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: auto;
+        display: block;
+        pointer-events: none;
+        transform: translateY(-10px);
+    }
+
+    .cult-locations__italy-wrapper {
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+
+
     /* Footer reset for tablet/desktop */
     .footer__container {
         flex-direction: row;
@@ -949,52 +1052,27 @@
         min-width: 200px;
     }
 
-    /* Disable Accordion behavior */
+    .footer__section--social,
+    .footer__section--info,
+    .footer__section--menu {
+        order: 0; 
+    }
+
     .footer__accordion-header {
         cursor: default;
         padding: 0;
         justify-content: center;
+        pointer-events: none; 
     }
 
     .footer__accordion-icon {
-        display: none;
+        display: none !important;
     }
 
     .footer__accordion-content {
         max-height: none !important;
         opacity: 1 !important;
         overflow: visible !important;
-    }
-
-    /* Info Card & Maps */
-    .info-card {
-        width: 80%;
-    }
-
-    .cult-locations__header {
-        flex-direction: column-reverse;
-        align-items: flex-end;
-    }
-
-    .cult-locations__europe-map {
-        margin-top: 0;
-        max-width: 200px;
-        margin-bottom: 20px;
-    }
-
-    .cult-locations__title {
-        margin-top: 20px;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .cult-locations__subtitle {
-        margin-top: 20px;
-    }
-
-    .cult-locations__italy-wrapper {
-        padding: 0 5px;
-        box-sizing: border-box;
     }
 
     .about-feature__container {
@@ -1012,8 +1090,6 @@
         flex: 1;
     }
 }
-
-
 
 /* Desktop (1024px +) */
 @media (min-width: 1024px) {
@@ -1078,9 +1154,19 @@
         font-size: 18px;
     }
 
+    .info-card {
+        margin-top: -40px;
+    }
+
+    .info-card-section {
+        width: 100%;
+        margin-top: 0;
+    }
+
     .contact {
         height: auto;
         padding: 60px 0;
+        margin-top: 0;   
     }
 
     .contact__title {
@@ -1099,10 +1185,12 @@
         align-items: stretch;
         gap: 50px;
         height: auto;
+        justify-content: center;
     }
 
     .contact__col {
-        width: 550px;
+        width: 100%;
+        flex: 1;
         min-height: 450px;
         height: auto;
         justify-content: center;
@@ -1129,6 +1217,10 @@
         align-self: center;
     }
 
+    .cult-locations {
+        margin-top: 40px;    
+    }
+
     .cult-locations__header {
         min-height: 350px;
         align-items: flex-start;
@@ -1147,11 +1239,12 @@
     .cult-locations__title {
         margin-left: 150px;
         font-weight: 480;
-        width: auto;
-        max-width: 600px;
+        max-width: 500px; 
         margin-right: 0;
         margin-top: 0;
         text-align: left;
+        position: relative;
+        z-index: 10;
     }
 
     .cult-locations__subtitle {
@@ -1160,13 +1253,12 @@
         font-size: clamp(10px, 7vw, 60px);
     }
 
-    .cult-locations__subtitle--grey {
-        font-weight: 700;
-        font-size: clamp(10px, 7vw, 60px);
-    }
-
     .cult-locations__info {
         font-size: clamp(25px, 3vw, 16px);
+    }
+
+    .find-us {
+        margin-top: -30px;
     }
 
     .about-feature__title {

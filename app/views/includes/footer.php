@@ -1,22 +1,21 @@
 <div class="footer__container">
 
-  <section class="footer__section footer__accordion-item">
+  <section class="footer__section footer__accordion-item footer__section--info">
     <h3 class="footer__title footer__accordion-header">
-      CHI SIAMO
+      AMMINISTRAZIONE
       <span class="footer__accordion-icon">
         <svg viewBox="0 0 96.9 51.25" fill="currentColor" width="16" height="16">
           <path d="M.75.75h0C1.75-.25,3.35-.25,4.25.75l44.2,44.2L92.65.75c1-1,2.6-1,3.5,0h0c1,1,1,2.6,0,3.5l-46.3,46.4c-.8.8-2,.8-2.8,0L.75,4.35C-.25,3.35-.25,1.75.75.75Z" />
         </svg>
       </span>
     </h3>
-
     <div class="footer__accordion-content">
       <div class="footer__info-group">
         <p class="footer__item"><strong>Chiesa Pentecostale Unita in Europa</strong></p>
         <p class="footer__item">
-          <a href="https://www.google.com/maps/search/?api=1&query=Via+Nomentana+859F+00137+Roma" target="_blank" class="footer__link">
-            Via Nomentana 859/F, 00137 Roma (RM)
-          </a>
+        <a href="https://maps.google.com/?q=INDIRIZZO+DELLA+SEDE" target="_blank" rel="noopener noreferrer" class="footer__link" title="Visualizza la Sede Legale su Google Maps">
+          Via delle Camelie, 19, 20095 Cusano Milano MI        
+        </a>
         </p>
         <p class="footer__item">Codice Fiscale: 94180790480</p>
         <p class="footer__item">
@@ -32,25 +31,23 @@
     </div>
   </section>
 
-  <section class="footer__section footer__accordion-item">
+  <section class="footer__section footer__accordion-item footer__section--social">
     <h3 class="footer__title footer__accordion-header">
-      SOCIAL NETWORK
       <span class="footer__accordion-icon">
         <svg viewBox="0 0 96.9 51.25" fill="currentColor" width="16" height="16">
           <path d="M.75.75h0C1.75-.25,3.35-.25,4.25.75l44.2,44.2L92.65.75c1-1,2.6-1,3.5,0h0c1,1,1,2.6,0,3.5l-46.3,46.4c-.8.8-2,.8-2.8,0L.75,4.35C-.25,3.35-.25,1.75.75.75Z" />
         </svg>
       </span>
     </h3>
-
     <div class="footer__accordion-content">
       <div class="footer__social-icons">
-        <a href="https://www.youtube.com/@CpueItalia" target="_blank" class="footer__social-link">
+        <a href="https://www.youtube.com/@CpueItalia" target="_blank" class="footer__social-link" title="Contattaci su YouTube">
           <img src="<?= BASE_URL ?>public/assets/icons/youtube.svg" alt="YouTube" class="footer__icon">
         </a>
-        <a href="https://www.facebook.com/cpueitalia" target="_blank" class="footer__social-link">
+        <a href="https://www.facebook.com/cpueitalia" target="_blank" class="footer__social-link" title="Contattaci su Facebook">
           <img src="<?= BASE_URL ?>public/assets/icons/facebook.svg" alt="Facebook" class="footer__icon">
         </a>
-        <a href="https://www.instagram.com/cpue_italia" target="_blank" class="footer__social-link">
+        <a href="https://www.instagram.com/cpue_italia" target="_blank" class="footer__social-link" title="Contattaci su Instagram">
           <img src="<?= BASE_URL ?>public/assets/icons/instagram.svg" alt="Instagram" class="footer__icon">
         </a>
         <a href="https://wa.me/393494637023" target="_blank" class="footer__social-link" title="Contattaci su WhatsApp">
@@ -59,7 +56,6 @@
           </svg>
         </a>
       </div>
-
       <div class="footer__desktop-logo">
         <a href="<?= BASE_URL ?>index.php" title="Torna alla Home">
           <img src="<?= BASE_URL ?>public/assets/img/logo-main.webp" class="footer__img" alt="Logo CPUE">
@@ -68,7 +64,7 @@
     </div>
   </section>
 
-  <section class="footer__section footer__accordion-item">
+  <section class="footer__section footer__accordion-item footer__section--menu">
     <h3 class="footer__title footer__accordion-header">
       MAIN MENU
         <span class="footer__accordion-icon">
@@ -77,7 +73,6 @@
           </svg>
         </span> 
     </h3>
-
     <div class="footer__accordion-content">
       <nav class="footer__info-group" aria-label="Menu Footer">
         <ul class="footer__list">
