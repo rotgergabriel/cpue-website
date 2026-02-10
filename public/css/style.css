@@ -174,7 +174,7 @@
 .board {
     position: relative;
     z-index: 10;
-    margin-top: -100px;
+    margin-top: 10px;
 }
 
 .board__content {
@@ -230,6 +230,29 @@
 .board__text--roles {
     color: #546373;
     font-size: 12px;
+}
+
+.board--about .board__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.board--about .board__text--title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFC400;
+    font-size: 40px;
+    line-height: 1.1;
+    z-index: 10;
+}
+
+.board--about .board__body {
+    margin-top: 90px;
 }
 
 /* Info-card section */
@@ -572,9 +595,10 @@
     color: #727272;
     position: relative;
     display: inline-block;
-    z-index: 2;         
+    z-index: 2;
     padding-bottom: 2px;
 }
+
 .cult-locations__underline-img {
     position: absolute;
     left: 0;
@@ -754,7 +778,7 @@
 }
 
 .footer__section--social {
-    order: -1; 
+    order: -1;
     border-bottom: none !important;
 }
 
@@ -767,14 +791,14 @@
 }
 
 .footer__section--social .footer__accordion-content {
-    max-height: none !important; 
-    opacity: 1 !important;       
+    max-height: none !important;
+    opacity: 1 !important;
     overflow: visible !important;
     padding-bottom: 20px;
 }
 
 .footer__section--social .footer__accordion-icon {
-    display: none; 
+    display: none;
 }
 
 .footer__section--social .footer__accordion-header {
@@ -943,6 +967,9 @@
     text-align: center;
     font-size: 40px;
     color: #FFC400;
+    border-top: 1px solid #002395;
+    border-radius: 50px;
+    padding-top: 10px;
 }
 
 .about-feature__text {
@@ -952,6 +979,7 @@
 .about-feature__text--alt {
     font-size: 20px;
     color: #67768E;
+    padding: 0 20px;
 }
 
 .about-feature__text--scripture {
@@ -972,6 +1000,12 @@
     margin: 0 auto;
 }
 
+.about-feature--purpose .about-feature__item {
+    border-left: 1px solid #002395;
+    padding: 10px 0;
+    border-radius: 50px;
+}
+
 /* RESPONSIVE DESIGN (Media Queries) */
 
 /* Tablet (769px +) */
@@ -984,6 +1018,13 @@
         height: 300px;
     }
 
+    .board--about .board__text--title {
+        font-size: 40px;
+    }
+
+    .board--about .board__body {
+        margin-top: 70px;
+    }
 
     .info-card {
         margin-top: 80px;
@@ -1016,9 +1057,9 @@
     }
 
     .cult-locations__subtitle--gray {
-        color: #727272; 
-        position: relative; 
-        display: inline-block; 
+        color: #727272;
+        position: relative;
+        display: inline-block;
     }
 
     .cult-locations__underline-img {
@@ -1055,14 +1096,14 @@
     .footer__section--social,
     .footer__section--info,
     .footer__section--menu {
-        order: 0; 
+        order: 0;
     }
 
     .footer__accordion-header {
         cursor: default;
         padding: 0;
         justify-content: center;
-        pointer-events: none; 
+        pointer-events: none;
     }
 
     .footer__accordion-icon {
@@ -1154,19 +1195,27 @@
         font-size: 18px;
     }
 
+    .board--about .board__text--title {
+        font-size: 48px;
+    }
+
+    .board--about .board__body {
+        margin-top: 60px;
+    }
+
     .info-card {
         margin-top: -40px;
     }
 
     .info-card-section {
         width: 100%;
-        margin-top: 0;
+        margin-top: 100px;
     }
 
     .contact {
         height: auto;
         padding: 60px 0;
-        margin-top: 0;   
+        margin-top: 0;
     }
 
     .contact__title {
@@ -1218,7 +1267,7 @@
     }
 
     .cult-locations {
-        margin-top: 40px;    
+        margin-top: 40px;
     }
 
     .cult-locations__header {
@@ -1239,7 +1288,7 @@
     .cult-locations__title {
         margin-left: 150px;
         font-weight: 480;
-        max-width: 500px; 
+        max-width: 500px;
         margin-right: 0;
         margin-top: 0;
         text-align: left;
@@ -1268,6 +1317,7 @@
     .about-feature__text {
         font-size: 25px;
     }
+
     .about-feature__text--alt {
         font-size: 25px;
     }

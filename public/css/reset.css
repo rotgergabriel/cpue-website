@@ -158,3 +158,10 @@ li,
 label {
     font-family: inherit;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+[id] {
+    scroll-margin-top: 110px;
+}

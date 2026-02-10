@@ -1,4 +1,5 @@
-<section class="board">
+<?php $idAttr = isset($boardId) ? 'id="' . $boardId . '"' : ''; ?>
+<section class="board <?php echo $boardModifier ?>" <?php echo $idAttr; ?>>
     <div class="board__container">
         <figure class="board__content">
             <div class="board__body">

@@ -17,12 +17,13 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Chi siamo
+                        La Chiesa
                     </a>
                     <ul class="dropdown-menu shadow">
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>public/about.php">Missione</a></li>
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>public/about.php">Visione</a></li>
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>public/about.php">Consiglio Direttivo Nazionale</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL ?>public/about.php#chi-siamo">Chi siamo</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL ?>public/about.php#missione">Missione</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>public/about.php#visione">Visione</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>public/about.php#consiglio-direttivo">Consiglio Direttivo Nazionale</a></li>
                     </ul>
                 </li>
 
