@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container-fluid" style="max-width: 1440px;">
 
-        <a class="navbar-brand m-0" href="#">
+        <a class="navbar-brand m-0" href="<?php echo BASE_URL ?>public/index.php">
             <img src="<?php echo BASE_URL; ?>/public/assets/img/logo-white.webp" alt="Logo" width="80" class="d-inline-block align-text-top">
         </a>
 

@@ -337,19 +337,11 @@
 
 /* Contact section */
 .contact {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    min-height: auto;
-    max-height: auto;
+    width: 100%;
     border-top: 1px solid #d2d2d2;
     border-bottom: 1px solid #d2d2d2;
     background: linear-gradient(to bottom, #ffffff, #f9f9f9);
-    padding: 40px 10px;
-    box-sizing: border-box;
+    padding: 40px 20px;
 }
 
 .contact__container {
@@ -1697,7 +1689,7 @@
 
     .contact {
         height: auto;
-        padding: 60px 0;
+        padding: 60px 60px;
         margin-top: 0;
     }
 
