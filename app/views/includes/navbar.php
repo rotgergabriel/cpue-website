@@ -32,7 +32,12 @@
                         Congregazioni
                     </a>
                     <ul class="dropdown-menu shadow">
-                        <li><a class="dropdown-item" href="#">Opere in Proiezione</a></li>
+
+                        <li>
+                            <a class="dropdown-item" href="<?= BASE_URL ?>public/proiezione.php">
+                                Opere in Proiezione
+                            </a>
+                        </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>

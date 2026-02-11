@@ -335,9 +335,7 @@
     transform: translateY(-2px);
 }
 
-
 /* Contact section */
-
 .contact {
     width: 100vw;
     position: relative;
@@ -543,7 +541,6 @@
     flex-direction: column;
 }
 
-
 .cult-locations__header {
     display: flex;
     flex-direction: column-reverse;
@@ -589,7 +586,6 @@
     margin-bottom: 0;
     font-size: clamp(18px, 4vw, 30px);
 }
-
 
 .cult-locations__subtitle--gray {
     color: #727272;
@@ -761,7 +757,6 @@
 }
 
 /* Footer section */
-
 .footer {
     background-color: #ededed;
     padding: 40px 20px 0 20px;
@@ -1006,6 +1001,402 @@
     border-radius: 50px;
 }
 
+/* Projection-hero section */
+.projection-hero {
+    width: 100%;
+    min-height: 92vh;
+    background: radial-gradient(circle at center, #09a0ec 0%, #0d219c 100%);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 140px;
+    margin-top: 0;
+}
+
+.projection-hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.projection-hero__title--light {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 250;
+    line-height: 1.1;
+    margin: 0;
+    margin-top: 120px;
+    font-size: 35px;
+}
+
+.projection-hero__title--bold {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 750;
+    line-height: 1.1;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.projection-hero__quote {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 250;
+    font-style: italic;
+    line-height: 1.3;
+    max-width: 1200x;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.projection-hero__verse {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    transform: translateY(-20px);
+    font-size: 18px;
+}
+
+.projection-hero__button {
+    width: 280px;
+    height: 72px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 30px 0px 30px 30px;
+    color: #ffffff;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.projection-hero__button:hover {
+    background-color: #ffffff;
+    color: #0d219c;
+    border-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.italy-overview {
+    scroll-margin-top: 120px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.italy-overview__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.italy-overview__text-col {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.italy-overview__title {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #1d2548;
+    text-align: left !important;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.italy-overview__description {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    font-weight: 250;
+    color: #1d2548;
+    text-align: left !important;
+    line-height: 1.5;
+    margin-bottom: -15px;
+}
+
+.italy-overview__img-col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+}
+
+.italy-overview__map {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    display: block;
+    object-fit: contain;
+    margin-bottom: -30px;
+}
+
+.projection-details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.projection-details__container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 0px;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.projection-details__text {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px !important;
+    font-weight: 250;
+    color: #1d2548;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Contribution section */
+.contribution-header__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contribution-header__one,
+.contribution-header__two {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #000000;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.contribution-header__one span {
+    font-weight: 250;
+}
+
+.contribution-header__two span {
+    color: #0d219c;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contribution-header__main {
+    display: block;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #000000;
+    margin-top: 10px;
+    line-height: 1.2;
+    font-size: 25px;
+}
+
+.contribution-header__main span:first-child {
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.contribution-header__main span:last-child {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.contribution-cards {
+    width: 100%;
+    padding: 60px 0;
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 100%);
+}
+
+.contribution-cards__container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.contribution-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    min-height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    border-radius: 30px 30px 0px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -60px;
+}
+
+.contribution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
+}
+
+.contribution-card__icon {
+    margin-top: 50px;
+    width: 60px;
+    height: auto;
+    display: block;
+}
+
+.contribution-card__title {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    margin: 20px 0 15px 0;
+    line-height: 1.2;
+}
+
+.contribution-card__text {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: #000000;
+    line-height: 1.4;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    margin: 0;
+}
+
+/* Missionary section */
+.missionary {
+    width: 100%;
+    background: linear-gradient(to right, #f4f4fe 0%, #f3f5f7 100%);
+    position: relative;
+    padding: 40px 0;
+    box-sizing: border-box;
+    overflow: visible;
+    margin-top: -60px;
+}
+
+.missionary__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.missionary__image-col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 1;
+    margin-bottom: 20px;
+}
+
+.missionary__img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 260px;
+    object-fit: contain;
+}
+
+.missionary__text-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    order: 2;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.missionary__greeting {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    color: #000000;
+    margin: 0;
+    margin-top: 30px;
+    line-height: 1;
+}
+
+.missionary__name {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    font-weight: 450;
+    color: #000000;
+    margin: 0;
+    margin-top: 25px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.missionary__role {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #969799;
+    margin: 0;
+    margin-top: 3px;
+    line-height: 1.2;
+}
+
+.missionary__description {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    font-weight: 250;
+    color: #000000;
+    margin: 0;
+    margin-top: 14px;
+    line-height: 1.5;
+}
+
+.missionary__highlight {
+    font-weight: 550;
+}
+
 /* RESPONSIVE DESIGN (Media Queries) */
 
 /* Tablet (769px +) */
@@ -1030,7 +1421,6 @@
         margin-top: 80px;
     }
 
-    /* Info Card & Maps */
     .info-card {
         width: 80%;
     }
@@ -1078,8 +1468,6 @@
         box-sizing: border-box;
     }
 
-
-    /* Footer reset for tablet/desktop */
     .footer__container {
         flex-direction: row;
         justify-content: space-between;
@@ -1130,6 +1518,101 @@
     .about-feature__media {
         flex: 1;
     }
+
+    .projection-hero {
+        min-height: 92vh;
+    }
+
+    .projection-hero__title--light {
+        font-size: 48px;
+    }
+
+    .projection-hero__title--bold {
+        font-size: 48px;
+    }
+
+    .projection-hero__quote {
+        font-size: 24px;
+    }
+
+    .projection-hero__verse {
+        font-size: 22px;
+    }
+}
+
+.italy-overview {
+    margin-top: 50px;
+    padding: 0 40px;
+}
+
+.italy-overview__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.italy-overview__text-col {
+    width: 100%;
+    max-width: 100%;
+}
+
+.italy-overview__img-col {
+    width: 100%;
+    justify-content: center;
+}
+
+.projection-details {
+    padding: 60px 0;
+}
+
+.projection-details__container {
+    padding-left: 150px;
+    padding-right: 150px;
+    box-sizing: border-box;
+}
+
+.projection-details__text {
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+.contribution-header__one,
+.contribution-header__two {
+    font-size: 22px;
+}
+
+.contribution-header__main {
+    font-size: 45px;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.missionary {
+    padding: 60px 0;
+}
+
+.missionary__img {
+    max-height: 400px;
+}
+
+.missionary__greeting {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.missionary__name {
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.missionary__role {
+    font-size: 18px;
+}
+
+.missionary__description {
+    font-size: 18px;
+    margin-top: 20px;
+    max-width: 80%;
 }
 
 /* Desktop (1024px +) */
@@ -1321,4 +1804,172 @@
     .about-feature__text--alt {
         font-size: 25px;
     }
+
+    .projection-hero {
+        min-height: 80vh;
+        margin-top: 100px;
+        padding-top: 60px;
+    }
+
+    .projection-hero__title--light {
+        font-size: 60px;
+    }
+
+    .projection-hero__title--bold {
+        font-size: 60px;
+    }
+
+    .projection-hero__quote {
+        font-size: 30px;
+    }
+
+    .projection-hero__verse {
+        font-size: 30px;
+    }
+
+
+    .italy-overview {
+        padding: 60px 40px;
+    }
+
+    .italy-overview__container {
+        flex-direction: row;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .italy-overview__text-col {
+        text-align: left;
+        max-width: 400px;
+    }
+
+    .italy-overview__img-col {
+        flex-grow: 0;
+        width: auto;
+        height: auto;
+        max-width: 900px;
+        justify-content: flex-start;
+    }
+
+    .italy-overview__title {
+        font-size: 45px;
+    }
+
+    .italy-overview__description {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .projection-details {
+        margin-top: -40px;
+    }
+
+    .projection-details__text {
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 30px !important;
+    }
+
+    .contribution-header__one,
+    .contribution-header__two {
+        font-size: 22px;
+    }
+
+    .contribution-header__main {
+        font-size: 45px;
+    }
+
+    .contribution-cards {
+        padding: 60px 0;
+    }
+
+    .contribution-cards__container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .contribution-card {
+        width: 380px;
+        height: auto;
+        max-width: none;
+    }
+
+    .contribution-card__icon {
+        width: 100px;
+        margin-top: 50px;
+    }
+
+    .contribution-card__title {
+        font-size: 40px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .missionary {
+        height: 530px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 0px;
+    }
+
+    .missionary__container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100%;
+        gap: 60px;
+        position: relative;
+    }
+
+    .missionary__image-col {
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .missionary__img {
+        max-height: 560px;
+        width: auto;
+    }
+
+    .missionary__text-col {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0;
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
+
+    .missionary__greeting {
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
+    .missionary__name {
+        font-size: 45px;
+        margin-top: 35px;
+    }
+
+    .missionary__role {
+        font-size: 22px;
+        margin-top: 3px;
+    }
+
+    .missionary__description {
+        font-size: 20px;
+        margin-top: 25px;
+    }
 }
+
+/* ultima riga */

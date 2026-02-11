@@ -78,6 +78,7 @@
         <ul class="footer__list">
           <li class="footer__item"><a href="<?= BASE_URL ?>index.php" class="footer__link">Home Page</a></li>
           <li class="footer__item"><a href="<?= BASE_URL ?>index.php" class="footer__link">Le nostre Chiese</a></li>
+          <li class="footer__item"><a href="<?= BASE_URL ?>index.php" class="footer__link">Opere in Proiezione</a></li>
           <li class="footer__item"><a href="<?= BASE_URL ?>index.php" class="footer__link">Comitati</a></li>
           <li class="footer__item"><a href="<?= BASE_URL ?>index.php" class="footer__link">Eventi e News</a></li>
           <li class="footer__item"><a href="<?= BASE_URL ?>index.php" class="footer__link">Storia CPUE</a></li>
@@ -92,9 +93,10 @@
 
 <section class="footer__bottom">
   <div class="footer__legal-links">
-    <a href="<?= BASE_URL ?>index.php" class="footer__link">Privacy</a>
+    <a href="<?= BASE_URL ?>public/privacy.php" class="footer__link">Privacy</a>
     <span>&</span>
-    <a href="<?= BASE_URL ?>index.php" class="footer__link">Cookies</a>
+    <a href="<?= BASE_URL ?>public/cookies.php" class="footer__link">Cookies
+    </a>
   </div>
   <p class="footer__bottom-text">© 2024 Associazione Chiesa Pentecostale Unita in Europa. Tutti i diritti riservati.</p>
   <p class="footer__credits">
