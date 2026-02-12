@@ -1,3 +1,5 @@
+# --- REGOLE ARGENTINE (Testo e Codice) ---
+
 # Forzar que los archivos de texto siempre usen LF (estándar de Git/Linux/Mac)
 * text=auto eol=lf
 
@@ -6,3 +8,20 @@
 *.html text eol=lf
 *.css text eol=lf
 *.js text eol=lf
+
+# --- SUGERIMENTO DA AGGIUNGERE PER L'ARGENTINO (TESTO e Codice) ---
+*.json text eol=lf
+*.md text eol=lf
+
+# --- REGOLE COLOMBIANE (Immagini e Binari) ---
+# Forza Git a trattare le immagini come file binari (NON toccarli mai)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Tratta gli SVG come testo (va bene per Git) ma forza il fine riga corretto
+*.svg text eol=lf
