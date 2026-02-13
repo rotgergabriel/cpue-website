@@ -717,6 +717,10 @@
     flex-direction: column;
 }
 
+.location-card__text-group a {
+    text-decoration: none;
+}
+
 .location-card__city {
     margin: 0;
     font-family: serif;
@@ -750,10 +754,6 @@
 .location-card__phone-icon {
     width: 35px;
     height: 35px;
-}
-
-.find-us .location-card:last-child .location-card__action {
-    display: none;
 }
 
 .find-us .location-card:last-child {

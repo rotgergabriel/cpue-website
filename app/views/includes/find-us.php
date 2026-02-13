@@ -246,13 +246,10 @@
                 </a>
             </div>
             <div class="location-card__text-group">
-                <h3 class="location-card__city">Opere in proiezione</h3>
+                <a href="<?= BASE_URL ?>public/proiezione.php">
+                    <h3 class="location-card__city">Opere in proiezione</h3>
+                </a>
             </div>
-        </div>
-        <div class="location-card__action">
-            <a href="tel:+393208343428" class="location-card__call-button">
-                <img src="<?= BASE_URL ?>public/assets/img/call-icon.svg" alt="Call Phone Icon" class="location-card__phone-icon">
-            </a>
         </div>
     </div>
 </section>
