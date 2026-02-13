@@ -136,7 +136,7 @@ table {
 
 /* 1. Global typography */
 body {
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
