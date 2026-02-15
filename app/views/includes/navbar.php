@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container-fluid" style="max-width: 1440px;">
 
-        <a class="navbar-brand m-0" href="<?php echo BASE_URL ?>public/index.php">
+        <a class="navbar-brand m-0" href="<?php echo BASE_URL ?>">
             <img src="<?php echo BASE_URL; ?>/public/assets/img/logo-white.webp" alt="Logo" width="80" class="d-inline-block align-text-top">
         </a>
 
@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navCPUE">
             <ul class="navbar-nav fw-semibold">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>public/index.php">Home</a>
+                    <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -20,10 +20,10 @@
                         La Chiesa
                     </a>
                     <ul class="dropdown-menu shadow">
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL ?>public/about.php#chi-siamo">Chi siamo</a></li>
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL ?>public/about.php#missione">Missione</a></li>
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>public/about.php#visione">Visione</a></li>
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>public/about.php#consiglio-direttivo">Consiglio Direttivo Nazionale</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL ?>about#chi-siamo">Chi siamo</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL ?>about#missione">Missione</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>about#visione">Visione</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>about#consiglio-direttivo">Consiglio Direttivo Nazionale</a></li>
                     </ul>
                 </li>
 
@@ -34,25 +34,25 @@
                     <ul class="dropdown-menu shadow">
 
                         <li>
-                            <a class="dropdown-item" href="<?= BASE_URL ?>public/proiezione.php">
+                            <a class="dropdown-item" href="<?= BASE_URL ?>proiezione">
                                 Opere in Proiezione
                             </a>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Val Rendena</a></li>
-                        <li><a class="dropdown-item" href="#">Trento</a></li>
-                        <li><a class="dropdown-item" href="#">Milano</a></li>
-                        <li><a class="dropdown-item" href="#">Torino</a></li>
-                        <li><a class="dropdown-item" href="#">Pordenone</a></li>
-                        <li><a class="dropdown-item" href="#">Reggio Emilia</a></li>
-                        <li><a class="dropdown-item" href="#">Firenze</a></li>
-                        <li><a class="dropdown-item" href="#">Pedaso</a></li>
-                        <li><a class="dropdown-item" href="#">Roma</a></li>
-                        <li><a class="dropdown-item" href="#">Ostia</a></li>
-                        <li><a class="dropdown-item" href="#">Catania</a></li>
-                        <li><a class="dropdown-item" href="#">Palermo</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/val-rendena">Val Rendena</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/trento">Trento</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/milano">Milano</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/torino">Torino</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/perdenone">Pordenone</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/reggio-emilia">Reggio Emilia</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/firenze">Firenze</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/pedaso">Pedaso</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/roma">Roma</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/ostia">Ostia</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/catania">Catania</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/palermo">Palermo</a></li>
                     </ul>
                 </li>
             </ul>

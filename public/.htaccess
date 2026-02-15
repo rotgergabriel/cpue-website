@@ -23,6 +23,11 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
+# 3.1. Regola per le città
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^city/([^/]+)$ city.php?name=$1 [L,QSA]
+
 # 4. Sicurezza: Evita che si vedano le cartelle se manca l'index
 Options -Indexes
 

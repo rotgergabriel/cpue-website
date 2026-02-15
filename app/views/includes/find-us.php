@@ -246,7 +246,7 @@
                 </a>
             </div>
             <div class="location-card__text-group">
-                <a href="<?= BASE_URL ?>public/proiezione.php">
+                <a href="<?= BASE_URL ?>proiezione">
                     <h3 class="location-card__city">Opere in proiezione</h3>
                 </a>
             </div>
