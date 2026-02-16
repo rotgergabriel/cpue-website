@@ -3,9 +3,10 @@ require_once '../app/config/config.php';
 
 $title = "Chi siamo - Chiesa Pentecostale Unita in Europa";
 $meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
-$chi_siamo_title = "Chi Siamo?";
 $boardModifier = "board--about";
 $boardId = "consiglio-direttivo";
+$heroModifier = "hero--about";
+$heroTitle = "Chi Siamo?";
 ?>
 <!DOCTYPE html>
 <html lang="it">
@@ -21,7 +22,7 @@ $boardId = "consiglio-direttivo";
         <!-- Navbar section end -->
 
         <!-- Hero section start -->
-        <?php include ROOT_PATH . 'app/views/includes/hero-about.php'; ?>
+        <?php include ROOT_PATH . 'app/views/includes/hero.php'; ?>
         <!-- Hero section end -->
     </header>
 

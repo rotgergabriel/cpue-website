@@ -4,7 +4,6 @@ require_once '../app/config/config.php';
 $title = "Privacy Policy - Chiesa Pentecostale Unita in Europa";
 $meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
 $heroModifier = "hero--privacy";
-$heroImage = "privacy-hero-img.png";
 $heroTitle = "Privacy Policy";
 ?>
 <!DOCTYPE html>
@@ -369,6 +368,71 @@ $heroTitle = "Privacy Policy";
                         <p>I Cookie sono Strumenti di Tracciamento che consistono in piccole porzioni di dati conservate all’interno del browser dell’Utente.</p>
                         <h3 class="h5 text-secondary ps-4 mb-4">Strumento di Tracciamento</h3>
                         <p>Per Strumento di Tracciamento s’intende qualsiasi tecnologia – es. Cookie, identificativi univoci, web beacons, script integrati, e-tag e fingerprinting – che consenta di tracciare gli Utenti, per esempio raccogliendo o salvando informazioni sul dispositivo dell’Utente.</p>
+                    </section>
+
+                    <hr class="my-5">
+
+                    <section id="cookies" class="pb-5">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-primary text-white rounded-3 p-2 me-3">
+                                <i class="bi bi-cookie fs-4"></i>
+                            </div>
+                            <h2 class="h3 mb-0">Cookie Policy</h2>
+                        </div>
+
+                        <div class="alert bg-white border shadow-sm rounded-4 p-4">
+                            <p class="text-secondary">
+                                In conformità con la normativa vigente, la <strong>Chiesa Pentecostale Unita in Europa</strong> fornisce le seguenti informazioni relative ai cookie utilizzati su questo sito web <strong>www.cpue.it</strong>.
+                            </p>
+
+                            <h3 class="h6 fw-bold mt-4">1. Cosa sono i cookie?</h3>
+                            <p class="small text-muted">
+                                I cookie sono file di testo di piccole dimensioni che i siti visitati dall'utente inviano al suo terminale, dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla successiva visita del medesimo utente.
+                            </p>
+
+                            <h3 class="h6 fw-bold mt-4">2. Tipologie di cookie utilizzati</h3>
+                            <p class="small text-muted">
+                                Questo sito utilizza esclusivamente le seguenti categorie di cookie:
+                            </p>
+
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item bg-transparent px-0 py-2">
+                                    <div class="fw-bold small text-dark">Cookie Tecnici (Necessari)</div>
+                                    <div class="small text-muted">Essenziali per la navigazione e per l'utilizzo di alcune funzioni (es. sicurezza del modulo di contatto). Poiché sono necessari, non richiedono il preventivo consenso dell'utente.</div>
+                                </li>
+                                <li class="list-group-item bg-transparent px-0 py-2">
+                                    <div class="fw-bold small text-dark">Cookie di Statistica (Google Analytics con IP Anonimizzato)</div>
+                                    <div class="small text-muted">Utilizziamo Google Analytics per capire come i visitatori interagiscono con il sito. Abbiamo configurato il servizio in modo da <strong>anonimizzare il tuo indirizzo IP</strong>, il che significa che i dati raccolti non sono riconducibili alla tua identità personale.</div>
+                                </li>
+                            </ul>
+
+                            <h3 class="h6 fw-bold mt-4">3. Cookie di terze parti</h3>
+                            <p class="small text-muted">
+                                Durante la navigazione, potrebbero essere attivati servizi di terze parti (come mappe di Google Maps o video di YouTube se integrati). Questi soggetti hanno proprie informative sulla privacy e cookie policy indipendenti da noi.
+                            </p>
+
+                            <h3 class="h6 fw-bold mt-4">4. Come gestire i cookie nel browser</h3>
+                            <p class="small text-muted">
+                                L'utente può gestire le preferenze relative ai cookie direttamente all'interno del proprio browser ed impedire – ad esempio – che terze parti possano installarne. Di seguito i link ai principali browser:
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-2">
+                                <span class="badge bg-light text-dark border fw-normal">Google Chrome</span>
+                                <span class="badge bg-light text-dark border fw-normal">Mozilla Firefox</span>
+                                <span class="badge bg-light text-dark border fw-normal">Safari</span>
+                                <span class="badge bg-light text-dark border fw-normal">Microsoft Edge</span>
+                            </div>
+                            <p class="small text-muted italic">
+                                <em>Nota: la disabilitazione dei cookie tecnici potrebbe compromettere alcune funzionalità del sito.</em>
+                            </p>
+
+                            <div class="mt-4 pt-3 border-top">
+                                <p class="small mb-0 text-secondary">
+                                    <i class="bi bi-info-circle me-1"></i>
+                                    Per ulteriori informazioni sul trattamento dei dati, consulta la nostra
+                                    <a href="#top" class="text-primary text-decoration-none fw-bold">Privacy Policy</a> completa in questa stessa pagina.
+                                </p>
+                            </div>
+                        </div>
                     </section>
 
                 </div>
