@@ -43,7 +43,7 @@
                         </li>
                         <li><a class="dropdown-item" href="#">Val Rendena</a></li>
                         <li><a class="dropdown-item" href="#">Trento</a></li>
-                        <li><a class="dropdown-item" href="#">Milano</a></li>
+                        <li><a class="dropdown-item" href="<?= BASE_URL ?>public/milano.php">Milano</a></li>
                         <li><a class="dropdown-item" href="#">Torino</a></li>
                         <li><a class="dropdown-item" href="#">Pordenone</a></li>
                         <li><a class="dropdown-item" href="#">Reggio Emilia</a></li>

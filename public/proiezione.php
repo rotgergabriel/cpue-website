@@ -10,7 +10,7 @@ $meta_description = "Visione e missione delle opere in proiezione della Chiesa P
 
 <head>
     <?php include ROOT_PATH . 'app/views/includes/head.php'; ?>
-    </head>
+</head>
 
 <body>
     <header>
@@ -175,7 +175,7 @@ $meta_description = "Visione e missione delle opere in proiezione della Chiesa P
                         <img src="<?= BASE_URL ?>/public/assets/img/virgolette.svg" alt="Virgolette" class="leader-quote__icon">
                     </div>
 
-                    <img src="<?= BASE_URL ?>/public/assets/img/leader.webp" alt="Jhon Pedrozo" class="leader-quote__image">
+                    <img src="<?= BASE_URL ?>/public/assets/img/milan-leader.webp" alt="Jhon Pedrozo" class="leader-quote__image">
 
                     <div class="leader-quote__text-content">
                         <p class="leader-quote__text">
