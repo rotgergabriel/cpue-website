@@ -11,7 +11,7 @@
     </h3>
     <div class="footer__accordion-content">
       <div class="footer__info-group">
-        <p class="footer__item"><strong>Chiesa Pentecostale Unita in Europa</strong></p>
+        <p class="footer__item">Chiesa Pentecostale Unita in Europa</p>
         <p class="footer__item">
           <a href="https://maps.google.com/?q=INDIRIZZO+DELLA+SEDE" target="_blank" rel="noopener noreferrer" class="footer__link" title="Visualizza la Sede Legale su Google Maps">
             Via delle Camelie, 19, 20095 Cusano Milano MI
