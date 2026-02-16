@@ -12,6 +12,6 @@
                 (Matteo 16:18)
             </p>
         </div>
-        <a href="<?php echo BASE_URL ?>public/about.php#chi-siamo" class="info-card__button">Continua a Leggere</a>
+        <a href="<?php echo BASE_URL ?>about#chi-siamo" class="info-card__button">Continua a Leggere</a>
     </div>
 </section>
