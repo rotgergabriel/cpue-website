@@ -41,18 +41,14 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/val-rendena">Val Rendena</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/trento">Trento</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/milano">Milano</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/torino">Torino</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/perdenone">Pordenone</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/reggio-emilia">Reggio Emilia</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/firenze">Firenze</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/pedaso">Pedaso</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/roma">Roma</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/ostia">Ostia</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/catania">Catania</a></li>
-                        <li><a class="dropdown-item" href="<?= BASE_URL ?>city/palermo">Palermo</a></li>
+                        <?php
+                        foreach ($cities as $id => $navCity) { ?>
+                            <li>
+                                <a class="dropdown-item" href="<?= BASE_URL ?>city/<?= $id ?>">
+                                    <?= $navCity['hero']['title'] ?>
+                                </a>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </li>
             </ul>

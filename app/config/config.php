@@ -23,3 +23,11 @@ define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', 'root'); // Recuerda que en XAMPP Windows suele ser '' (vacío)
 define('DB_NAME', 'cpue_db');
+
+// Incluimos el modelo para tener acceso a $cities
+
+// Definimos la ruta absoluta
+define('MODELS_PATH', __DIR__ . '/../models/');
+
+// Cambiamos require_once por require para asegurar que devuelva el array
+$cities = require MODELS_PATH . 'city_models.php';

@@ -1824,9 +1824,7 @@ html {
 
 .milano__banner {
     width: 100%;
-    max-width: 1440px;
     height: 310px;
-    background-image: url('../assets/img/milan.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1840,7 +1838,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 230px;
+    min-width: 230px;
     height: 80px;
     background-color: rgba(0, 15, 145, 0.7);
     border: none;
@@ -1848,6 +1846,7 @@ html {
     text-decoration: none;
     transition: transform 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
+    padding: 10px;
 }
 
 .milano__button:hover,
@@ -1955,7 +1954,6 @@ html {
 
 .milano__quote-container {
     width: 100%;
-    max-width: 1440px;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
