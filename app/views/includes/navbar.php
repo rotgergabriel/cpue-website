@@ -42,13 +42,15 @@
                             <hr class="dropdown-divider">
                         </li>
                         <?php
-                        foreach ($cities as $id => $navCity) { ?>
-                            <li>
-                                <a class="dropdown-item" href="<?= BASE_URL ?>city/<?= $id ?>">
-                                    <?= $navCity['hero']['title'] ?>
-                                </a>
-                            </li>
-                        <?php } ?>
+                        foreach ($cities as $id => $navCity) {
+                            if (!empty($navCity['hero']['title'])) { ?>
+                                <li>
+                                    <a class="dropdown-item" href="<?= BASE_URL ?>city/<?= $id ?>">
+                                        <?= $navCity['hero']['title'] ?>
+                                    </a>
+                                </li>
+                        <?php }
+                        } ?>
                     </ul>
                 </li>
             </ul>
