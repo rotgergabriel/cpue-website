@@ -2076,6 +2076,47 @@ html {
     gap: 10px;
 }
 
+.milano__message {
+    padding: 40px 15px;
+}
+
+.milano__message-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.milano__message-title {
+    font-size: 2rem;
+    color: #0000AA;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.milano__message-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info_block .milano__message-container {
+    text-align: center;
+    margin-left: 0;
+}
+
+.info_block .milano__message-title {
+    text-align: center;
+    margin-left: 0;
+}
+
+.info_block .milano__message-text {
+    text-align: left;
+}
+
 /* Immagine */
 .milano__pastor-img-box {
     width: 100%;
@@ -2310,10 +2351,10 @@ html {
     }
 
     .footer__item {
-    margin-top: 15px;
-    line-height: 1.5;
-    font-size: 0.85rem;
-    text-align: center;
+        margin-top: 15px;
+        line-height: 1.5;
+        font-size: 0.85rem;
+        text-align: center;
     }
 
     .footer__section--social,
@@ -2791,12 +2832,12 @@ html {
     }
 
     .footer__title {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
     }
 
     .footer__item {
-    font-size: 0.95rem;
+        font-size: 0.95rem;
     }
 
     .about-feature__title {

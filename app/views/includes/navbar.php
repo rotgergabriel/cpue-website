@@ -45,8 +45,8 @@
                         foreach ($cities as $id => $navCity) {
                             if (!empty($navCity['hero']['title'])) { ?>
                                 <li>
-                                    <a class="dropdown-item" href="<?= BASE_URL ?>city/<?= $id ?>">
-                                        <?= $navCity['hero']['title'] ?>
+                                    <a class="dropdown-item" href="<?= BASE_URL ?>city/<?php echo $id ?>">
+                                        <?php echo $navCity['hero']['title'] ?>
                                     </a>
                                 </li>
                         <?php }

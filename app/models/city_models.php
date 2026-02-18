@@ -4,7 +4,7 @@ $cities = [
     'val-rendena' => [
         'hero' => [
             'title' => 'Val Rendena',
-            'image' => 'val-rendena-hero.jpg'
+            'image' => 'val-rendena-hero.png'
         ],
 
         'social_media' => [
@@ -17,15 +17,15 @@ $cities = [
 
         'info_box' => [
             [
-                'label'   => 'Luogo di predicazione',
+                'label'   => 'Luogo di predicazione:',
                 'content' => ''
             ],
             [
-                'label'   => 'Servizio di culto',
+                'label'   => 'Servizio di culto:',
                 'content' => 'Presenziale (Sabato e Domenica)'
             ],
             [
-                'label'   => 'Pastore',
+                'label'   => 'Pastore:',
                 'content' => 'Viucci Brosolo'
             ]
         ],
@@ -36,8 +36,10 @@ $cities = [
 
         'support_section' => [
             'title'    => 'Non sei solo!',
-            'subtitle' => 'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
-            'content'  => 'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            'content' => [
+                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
+                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            ]
         ],
 
         'city_description' => [
@@ -46,13 +48,13 @@ $cities = [
                 'La popolazione del territorio amministrativo di «Val Rendena» è composta dall’insieme degli abitanti dei comuni della valle, tra cui Pinzolo, Porte di Rendena e altri, per un totale di decine di migliaia di abitanti. La popolazione totale della Comunità delle Giudicarie, di cui la Val Rendena fa parte, era di 36.814 abitanti nel dicembre 2021.',
                 'La Val Rendena è una valle del Trentino-Alto Adige, in provincia di Trento, racchiusa fra l’Adamello a ovest e il Gruppo del Brenta a est. Inizia a sud poco prima dell’abitato di Verdesina, e conclude poi al passo Campo Carlo Magno. La val Rendena è percorsa dal fiume Sarca ed è situata nel cuore del parco naturale Adamello Brenta.'
             ],
-            'map_image' => 'val-rendena-map.webp'
+            'map_image' => 'val-rendena-map.png'
         ]
     ],
     'trento' => [
         'hero' => [
             'title' => 'Trento',
-            'image' => 'Trento-hero.jpg'
+            'image' => 'trento-hero.png'
         ],
 
         'social_media' => [
@@ -65,15 +67,15 @@ $cities = [
 
         'info_box' => [
             [
-                'label'   => 'Luogo di predicazione',
+                'label'   => 'Luogo di predicazione:',
                 'content' => 'Via'
             ],
             [
-                'label'   => 'Servizio di culto',
+                'label'   => 'Servizio di culto:',
                 'content' => 'Presenziale (Domenica ore 10:30)'
             ],
             [
-                'label'   => 'Pastore',
+                'label'   => 'Pastore:',
                 'content' => 'Robin Rodriguez'
             ]
         ],
@@ -84,8 +86,10 @@ $cities = [
 
         'support_section' => [
             'title'    => 'Non sei solo!',
-            'subtitle' => 'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
-            'content'  => 'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            'content' => [
+                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
+                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            ]
         ],
 
         'city_description' => [
@@ -94,7 +98,7 @@ $cities = [
                 'È un comune italiano di 119 122 abitanti, capoluogo della provincia autonoma di Trento e della regione Trentino-Alto Adige.',
                 'Trento presenta estreme diversità territoriali e di popolazione. La popolazione comunale non è concentrata solo in città, ma anche in numerosi centri sparsi o sobborghi, piuttosto diversi l’uno dall’altro e che conservano ancora una propria identità sia urbana, sia paesana, rurale o montana. La città antica conta 80 000 abitanti (ottobre 2004). L’agglomerato urbano con i comuni limitrofi arriva a 150 000 abitanti. Tra i sobborghi, quello più popoloso è Gardolo (a nord della città, 12 449 abitanti la circoscrizione).'
             ],
-            'map_image' => 'trento-map.webp'
+            'map_image' => 'trento-map.png'
         ],
     ],
     'milano' => [
@@ -113,15 +117,15 @@ $cities = [
 
         'info_box' => [
             [
-                'label'   => 'Luogo di predicazione',
+                'label'   => 'Luogo di predicazione:',
                 'content' => 'Via delle Camelie, 19, 20095 Cusano Milanino MI'
             ],
             [
-                'label'   => 'Servizio di culto',
+                'label'   => 'Servizio di culto:',
                 'content' => 'Presenziale (Domenica 10:30 Devozionale 11:00 Scuola Domenicale)'
             ],
             [
-                'label'   => 'Pastore',
+                'label'   => 'Pastore:',
                 'content' => 'Jair Pedrozo Rinaldy'
             ]
         ],
@@ -158,9 +162,9 @@ $cities = [
         ],
 
         'board' => [
-            'pastor_name'    => 'Jair Pedrozo',
+            'pastor_name'    => 'Jair Pedrozo Rinaldy',
             'pastor_role'    => 'Pastore',
-            'pastor_image'   => 'milan-family.webp',
+            'pastor_image'   => 'jair-pedrozo.png',
             'phone'          => '+39 349 463 7023',
             'welcome_text'   => [
                 'Se stai cercando un posto dove sentirti al sicuro e in armonia, la nostra congregazione CPUE Milano è la chiesa che predica la parola di Dio per portare un messaggio di salvezza a tutte le persone, e dove la Sua presenza si fa sentire.',
@@ -181,6 +185,385 @@ $cities = [
             'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
             'google_maps'  => 'https://maps.app.goo.gl/'
         ],
+    ],
+    'torino' => [
+        'hero' => [
+            'title' => 'Torino',
+            'image' => 'torino-hero.png'
+        ],
+
+        'social_media' => [
+            'facebook' => '...!',
+            'instagram' => '...!',
+            'whatsapp' => '...!',
+            'phone' => '...!',
+            'maps' => '...!'
+        ],
+
+        'info_box' => [
+            [
+                'label'   => 'Luogo di predicazione:',
+                'content' => 'Vía Monfalcone 124 Torino'
+            ],
+            [
+                'label'   => 'Servizio di culto:',
+                'content' => 'Presenziale (Venerdì e Domenica)'
+            ],
+            [
+                'label'   => 'Pastore:',
+                'content' => 'Leonardo Vielma'
+            ]
+        ],
+
+        'welcome_quote' => [
+            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+        ],
+
+        'support_section' => [
+            'title'    => 'Non sei solo!',
+            'content' => [
+                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
+                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            ]
+        ],
+
+        'city_description' => [
+            'title'   => 'Torino',
+            'content' => [
+                'È un comune italiano di 857.917 abitanti, capoluogo della regione Piemonte e dell’omonima città metropolitana. Fu la prima capitale d’Italia all’unificazione nel 1.861',
+                'Torino è il quarto comune italiano per popolazione (dopo Roma, Milano e Napoli) e il terzo complesso economico-produttivo del Paese (insieme a Milano e Genova componeva il triangolo industriale, centro dell’industrializzazione su larga scala dell’economia italiana alla fine del XIX secolo, e durante gli anni del boom economico) e costituisce uno dei maggiori poli universitari, artistici, turistici, scientifici, gastronomici e culturali d’Italia.'
+            ],
+            'map_image' => 'torino-map.png'
+        ],
+
+        'location' => [
+            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
+            'google_maps'  => 'https://maps.app.goo.gl/'
+        ],
+    ],
+    'pordenone' => [
+        'hero' => [
+            'title' => 'Pordenone',
+            'image' => 'pordenone-hero.png'
+        ],
+
+        'social_media' => [
+            'facebook' => '...!',
+            'instagram' => '...!',
+            'whatsapp' => '...!',
+            'phone' => '...!',
+            'maps' => '...!'
+        ],
+
+        'info_box' => [
+            [
+                'label'   => 'Luogo di predicazione:',
+                'content' => 'Viale delle Grazie, 9, 33170 Pordenone PN'
+            ],
+            [
+                'label'   => 'Servizio di culto:',
+                'content' => 'Presenziale (Giovedì ore 18:00 - Sabato ore 19:00 - Domenica ore 10:00)'
+            ],
+            [
+                'label'   => 'Pastore:',
+                'content' => 'Victor Bustamante'
+            ]
+        ],
+
+        'services' => [
+            'service_title' => 'Servizi',
+            'service_subtitle' => 'I servizi di culto a Pordenone si svolgono giovedì, sabato e domenica. Durante la settimana si fanno visite e culti virtuali.',
+            'list' => [
+                [
+                    'title'       => 'Pordenone',
+                    'description' => 'Siamo attivi ogni giovedì, sabato e domenica. Inoltre, durante la settimana, restiamo in contatto attraverso visite e incontri virtuali.'
+                ],
+                [
+                    'title'       => 'Conegliano',
+                    'description' => 'Il martedì ci riuniamo per il devozionale familiare, mentre la domenica, a cadenza quindicinale, teniamo la nostra Scuola Domenicale.'
+                ],
+                [
+                    'title'       => 'Treviso',
+                    'description' => 'Ci incontriamo il venerdì con frequenza quindicinale. Inoltre, ogni due domeniche, ti invitiamo a partecipare alla nostra Scuola Domenicale.'
+                ]
+            ]
+        ],
+
+        'board' => [
+            'pastor_name'    => 'Victor Bustamante',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'vicor-bustamante.png',
+            'phone'          => '388 894 6569',
+            'welcome_text'   => [
+                'La chiesa di Pordenone è presente nel FVG dal 2006. Da allora si può vedere una crescita numerica, spirituale e la presenza di Dio si muove in modo speciale',
+                'Questa chiesa è una chiesa madre, cioè una chiesa che nutre anche altri luoghi geografici, come Conegliano, Trieste e Treviso.'
+            ]
+        ],
+
+        'city_description' => [
+            'title'   => 'Pordenone',
+            'content' => [
+                'È un comune italiano di 52 571 abitanti del Friuli-Venezia Giulia.',
+                'Nella Città di Pordenone è presente anche il dialetto pordenonese, un dialetto veneto coloniale.'
+            ],
+            'map_image' => 'pordenone-map.png'
+        ],
+
+        'location' => [
+            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
+            'google_maps'  => 'https://maps.app.goo.gl/'
+        ],
+    ],
+    'reggio-emilia' => [
+        'hero' => [
+            'title' => 'Reggio Emilia',
+            'image' => 'reggio-emilia-hero.png'
+        ],
+
+        'social_media' => [
+            'facebook' => '...!',
+            'instagram' => '...!',
+            'whatsapp' => '...!',
+            'phone' => '...!',
+            'maps' => '...!'
+        ],
+
+        'info_box' => [
+            [
+                'label'   => 'Luogo di predicazione:',
+                'content' => 'Via Errico Petrella, 2 Reggio Emilia'
+            ],
+            [
+                'label'   => 'Servizio di culto:',
+                'content' => 'Tutte le Domeniche ore 17:00'
+            ],
+            [
+                'label'   => 'Pastore:',
+                'content' => 'Hikler Garcia Lopez'
+            ]
+        ],
+
+        'welcome_quote' => [
+            'text'   => 'Realizziamo i nostri culti tutte le domeniche ore 17:00, svolgiamo lezioni di educazione Cristiana 1 volta alla settimana, Realizziamo soprattutto attività di sostegno spirituale per le donne, uomini, bambini e famiglie, affinché tutti possiamo fortificarci nel signore è raggiungere la vita eterna. Senza dimenticare momenti di condivisione e svago nell’amore del signore.'
+        ],
+
+        'board' => [
+            'pastor_name'    => 'Hikler Garcia Lopez',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'hikler-garcia-lopez.png',
+            'phone'          => '3883426513',
+            'welcome_text'   => [
+                'Per la grazia e misericordia del signore Gesù lavoro in questa città come pastore insieme alla mia famiglia, dall’anno 2021. Desiderosi di crescere spirituale e numericamente, e raggiungere più persone possibili con questo glorioso messaggio d’amore e salvezza.',
+                '«Noi però non siamo di quelli che indietreggiano a loro perdizione, bensì uomini di fede per la salvezza della nostra anima» (Ebrei 10: 39).'
+            ]
+        ],
+
+        'city_description' => [
+            'title'   => 'Reggio Emilia',
+            'content' => [
+                'Ufficialmente Reggio nell’Emilia, è un comune italiano di 171 876 abitanti, provincia in Emilia Romagna.',
+                'Reggio, assieme alle vicine Parma e Modena, è il luogo d’origine del Parmigiano Reggiano. La città è inoltre divenuta nota per aver sviluppato il metodo di insegnamento pedagogico chiamato Reggio Emilia Approach ed è il centro di un importante distretto di meccatronica. È tra le città decorate al valor militare per la guerra di Liberazione, insignita della medaglia d’oro al valor militare il 1º aprile 1950, per i sacrifici delle sue popolazioni e per la sua attività nella lotta partigiana durante la seconda guerra mondiale.'
+            ],
+            'map_image' => 'reggio-emilia-map.png'
+        ],
+
+        'location' => [
+            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
+            'google_maps'  => 'https://maps.app.goo.gl/'
+        ],
+
+        'info_block' => [
+            'title'   => 'Rassegna storica',
+            'content' => [
+                'La Chiesa pentecostale unità in Europa a Reggio Emilia ha i suoi inizi nell’anno 2009 con riunioni famigliari ed evangelizzazione domiciliare, grazie a questi incontri e riunioni, nell’anno 2010 viene ufficialmente insediata la famiglia pastorale Calderón. E si da iniziò a un lavoro continuo di predicazione di questo glorioso vangelo dando i suoi primi frutti nel 2011 con 2 battesimi nel nome del nostro signore Gesù Cristo.',
+                'Nel 2012 viene trasferita la famiglia Calderón e da lì abbiamo avuto il passo di diversi pastori:',
+                '2012 -2013 pastore William Cazaran',
+                '2013- 2017 pastore Manuel López',
+                '2017-2019 pastore Robin Rodríguez',
+                '2019-2021 missionario Jair Pedrozo',
+                'Nel 2021 è stata insediata la famiglia Garcia Caicedo la quale attualmente lavora per l\' opera del signore in questa città . Durante tutti questi anni ognuno di loro ha contribuito alla crescita dell \'opera del Signore attraverso il loro lavoro incessante, insegnamento, esempio e preghiera per questa città.',
+                'Nel trascorso del tempo e per diversi motivi la chiesa h affrontato momenti di gioia comunione, crescita e anche momenti di difficoltà e instabilità in diversi aspetti umani, ma il signore ci è sempre stato vicino in ogni momento ricordandoci sempre che egli è buono; e la sua bontà dura in eterno, e la sua fedeltà per ogni generazione. Perciò oggi possiamo dire che fin qui il signore ci ha aiutato, ci ha sostenuto e continuerà a sostenere la sua opera in questa città fino al suo ritorno.',
+                'Noi però non siamo di quelli che indietreggiano a loro perdizione, bensì uomini di fede per la salvezza della nostra anima. Ebrei 10:39'
+            ]
+        ],
+    ],
+    'firenze' => [
+        'hero' => [
+            'title' => 'Firenze',
+            'image' => 'firenze-hero.png'
+        ],
+
+        'social_media' => [
+            'facebook' => '...!',
+            'instagram' => '...!',
+            'whatsapp' => '...!',
+            'phone' => '...!',
+            'maps' => '...!'
+        ],
+
+        'info_box' => [
+            [
+                'label'   => 'Luogo di predicazione:',
+                'content' => 'Via Carlo del Greco, 13, 50141 Firenze FI'
+            ],
+            [
+                'label'   => 'Servizio di culto:',
+                'content' => 'Presenziale (Domeniche 11:00 - mercoledì 20:00)'
+            ],
+            [
+                'label'   => 'Pastore:',
+                'content' => 'Santiago Giraldo'
+            ]
+        ],
+
+        'welcome_quote' => [
+            'text'   => 'Abbiamo ogni domenica e mercoledì un tempo per meditare e riflettere sulla parola di Dio ● Ogni settimana ci sono studi biblici per chi è appassionato della bibbia ● Siamo lieti di dirti che i momenti d’integrazione sono indimenticabili ● l’amore e l’unità che c’è saranno una grande opportunità per poter aprire il tuo cuore a Dio. ● Facciamo visite infrasettimanali per tutti coloro che aprono le porte del loro cuore e della loro casa.'
+        ],
+
+        'board' => [
+            'pastor_name'    => 'Santiago Girando',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'santiago-girando.png',
+            'phone'          => '3382298345',
+            'welcome_text'   => [
+                'Ciao, questa è la congregazione di Firenze. Siamo molto contenti di sapere che ci leggi; devi sapere che noi siamo una grande famiglia e questa famiglia ha le braccia aperte per tutti quelli che ne vogliono far parte.',
+                'Perciò accoglietevi gli uni gli altri, come anche Cristo ha accolto voi, per la gloria di Dio. Romani 15:7 (Nuova Riveduta)'
+            ]
+        ],
+
+        'city_description' => [
+            'title'   => 'Firenze',
+            'content' => [
+                'È un comune italiano di 362 760 abitanti, capoluogo dell’omonima città metropolitana e della regione Toscana.',
+                'Nel Medioevo è stata un importantissimo centro artistico, culturale, commerciale, politico, economico e finanziario; nell’età moderna ha ricoperto il ruolo di capitale del Granducato di Toscana dal 1569 al 1859 che, col governo delle famiglie dei Medici e dei Lorena, divenne uno degli stati più ricchi e moderni d’Italia. Le varie vicissitudini politiche, la potenza finanziaria e mercantile e le influenze in ogni campo della cultura hanno fatto della città un crocevia fondamentale della storia italiana ed europea.'
+            ],
+            'map_image' => 'firenze-map.png'
+        ],
+
+        'location' => [
+            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
+            'google_maps'  => 'https://maps.app.goo.gl/'
+        ],
+
+        'info_block' => [
+            'title'   => 'Rassegna storica',
+            'content' => [
+                'Alla fine dell’anno 2009 è stato posizionato il fratello Leonardo Gañan come pastore nella città di Firenze iniziando così un percorso per la chiesa in questa città che al giorno d’oggi compie come opera 14 anni. Quattro anni dopo, nel 2014, è stato nominato e insediato il pastore Victor Bustamante il quale ha continuato a lavorare nell’opera del signore, seminando la parola di Dio per i seguenti quattro anni. Il Pastore Victor è stato trasferito in un’altra città lasciando la chiesa a Firenze a carico del fratello Leonardo Gañan per un periodo di un anno durante l’attesa di un nuovo pastore. Nel 2019 è stato nominato e insediato il pastore Juan Diego Correa che ha lavorato ed amministrato la congregazione a Firenze. Infine, nel 2024, è stato insediato il pastore Santiago Giraldo insieme a sua moglie Eliana Marcela Duque e attualmente amministra la congregazione nella città metropolitana in questione.'
+            ]
+        ],
+    ],
+    'pedaso' => [
+        'hero' => [
+            'title' => 'Pedaso',
+            'image' => 'pedaso-hero.png'
+        ],
+
+        'social_media' => [
+            'facebook' => '...!',
+            'instagram' => '...!',
+            'whatsapp' => '...!',
+            'phone' => '...!',
+            'maps' => '...!'
+        ],
+
+        'info_box' => [
+            [
+                'label'   => 'Luogo di predicazione:',
+                'content' => 'Via Gravina 75, Tremestieri Etneo'
+            ],
+            [
+                'label'   => 'Servizio di culto:',
+                'content' => 'Presenziale e online'
+            ],
+            [
+                'label'   => 'Pastore:',
+                'content' => 'Jair Pedrozo Rinaldy'
+            ]
+        ],
+
+        'welcome_quote' => [
+            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+        ],
+
+        'support_section' => [
+            'title'    => 'Non sei solo!',
+            'content' => [
+                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
+                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            ]
+        ],
+
+        'city_description' => [
+            'title'   => 'Pedaso',
+            'content' => [
+                'È un comune italiano di 2.847 abitanti della provincia di Fermo nelle Marche.',
+                'Pedaso è situata sulla costa adriatica, alla foce del fiume Aso ed ha un territorio prevalentemente collinare',
+                'La storia di Pedaso inizia con i Greci (i Pelasgi), poi i Piceni e i Romani, come testimoniano alcuni ritrovamenti archeologici intorno alla foce e ai lati del fiume Aso, dei ruderi romani nella vicina Villa montana e reperti archeologici che ancora si recuperano dal mare, testimoniano le civiltà che qui si sono avvicendate.',
+                'Tra le attività economiche più tradizionali, diffuse e attive vi sono quelle artigianali, come l’arte del merletto rinomata in tutta Italia.'
+            ],
+            'map_image' => 'pedaso-map.png'
+        ],
+
+        'location' => [
+            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
+            'google_maps'  => 'https://maps.app.goo.gl/'
+        ],
+
+    ],
+    'roma' => [
+        'hero' => [
+            'title' => 'Roma',
+            'image' => 'roma-hero.png'
+        ],
+
+        'social_media' => [
+            'facebook' => '...!',
+            'instagram' => '...!',
+            'whatsapp' => '...!',
+            'phone' => '...!',
+            'maps' => '...!'
+        ],
+
+        'info_box' => [
+            [
+                'label'   => 'Luogo di predicazione:',
+                'content' => 'Via Nomentana, 859, 00137 Roma RM'
+            ],
+            [
+                'label'   => 'Servizio di culto:',
+                'content' => 'Presenziale (Domenica ore 11:00)'
+            ],
+            [
+                'label'   => 'Pastore:',
+                'content' => 'Manuel Lopez'
+            ]
+        ],
+
+        'welcome_quote' => [
+            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+        ],
+
+        'support_section' => [
+            'title'    => 'Non sei solo!',
+            'content' => [
+                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
+                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            ]
+        ],
+
+        'city_description' => [
+            'title'   => 'Roma',
+            'content' => [
+                'È un comune italiano di 2.746.609 abitanti, capoluogo dell’omonima città metropolitana e della regione Lazio, nonché capitale della Repubblica Italiana. Il comune di Roma, denominato Roma Capitale, è dotato di un ordinamento amministrativo speciale e disciplinato dalla legge dello Stato.',
+                'È il comune più popoloso d’Italia e il terzo dell’Unione europea dopo Berlino e Madrid, mentre con una superficie di 1287,36 km², è il comune più esteso dell’Unione europea e il quinto del continente europeo, preceduto da Istanbul, Mosca, Londra e San Pietroburgo. È inoltre il comune europeo con la maggiore superficie di aree verdi.'
+            ],
+            'map_image' => 'roma-map.png'
+        ],
+
+        'location' => [
+            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
+            'google_maps'  => 'https://maps.app.goo.gl/'
+        ],
 
         'pastor_family' => [
             'title'       => 'Il pastore e la sua famiglia',
@@ -188,60 +571,182 @@ $cities = [
             'description' => 'Il pastore Jair Pedrozo insieme alla sua famiglia, servendo con amore nella città di Milano.'
         ]
     ],
-    'torino' => [
-        'hero' => [
-            'title' => 'Torino',
-            'image' => 'torino.webp'
-        ],
-    ],
-    'pordenone' => [
-        'hero' => [
-            'title' => 'Pordenone',
-            'image' => 'pordenone.webp'
-        ],
-    ],
-    'reggio-emilia' => [
-        'hero' => [
-            'title' => 'Reggio Emilia',
-            'image' => 'reggio-emilia.webp'
-        ],
-    ],
-    'firenze' => [
-        'hero' => [
-            'title' => 'Firenze',
-            'image' => 'firenze.webp'
-        ],
-    ],
-    'pedaso' => [
-        'hero' => [
-            'title' => 'Pedaso',
-            'image' => 'pedaso.webp'
-        ],
-    ],
-    'roma' => [
-        'hero' => [
-            'title' => 'Roma',
-            'image' => 'roma.webp'
-        ],
-    ],
     'ostia' => [
         'hero' => [
             'title' => 'Ostia',
-            'image' => 'ostia.webp'
+            'image' => 'ostia-hero.png'
         ],
+
+        'social_media' => [
+            'facebook' => '...!',
+            'instagram' => '...!',
+            'whatsapp' => '...!',
+            'phone' => '...!',
+            'maps' => '...!'
+        ],
+
+        'info_box' => [
+            [
+                'label'   => 'Luogo di predicazione:',
+                'content' => 'Sede in fase di definizione. Contattaci per info.'
+            ],
+            [
+                'label'   => 'Servizio di culto:',
+                'content' => 'Presenziale (Domenica ore 10:30)'
+            ],
+            [
+                'label'   => 'Pastore:',
+                'content' => 'Omar Correa'
+            ]
+        ],
+
+        'welcome_quote' => [
+            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+        ],
+
+        'support_section' => [
+            'title'    => 'Non sei solo!',
+            'content' => [
+                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
+                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            ]
+        ],
+
+        'city_description' => [
+            'title'   => 'Ostia',
+            'content' => [
+                'È una frazione di Roma, suddivisa in Lido di Ostia Ponente (Q. XXXIII), Lido di Ostia Levante (Q. XXXIV) e Lido di Castel Fusano (Q. XXXV), e rientra nel territorio del Municipio Roma X.',
+                'Si affaccia sul mar Tirreno nei pressi della foce del fiume Tevere, che ne delimita i confini con il comune di Fiumicino. Gran parte della zona fu edificata a partire dai primi anni del XX secolo, al termine della bonifica dell’area portata avanti dopo l’annessione di Roma al Regno d’Italia.'
+            ],
+            'map_image' => 'ostia-map.png'
+        ],
+
+        'location' => [
+            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
+            'google_maps'  => 'https://maps.app.goo.gl/'
+        ],
+
     ],
     'catania' => [
         'hero' => [
             'title' => 'Catania',
-            'image' => 'catania.webp'
+            'image' => 'catania-hero.png'
+        ],
+
+        'social_media' => [
+            'facebook' => '...!',
+            'instagram' => '...!',
+            'whatsapp' => '...!',
+            'phone' => '...!',
+            'maps' => '...!'
+        ],
+
+        'info_box' => [
+            [
+                'label'   => 'Luogo di predicazione:',
+                'content' => 'Via Gravina 75, Tremestieri Etneo'
+            ],
+            [
+                'label'   => 'Servizio di culto:',
+                'content' => 'Presenziale (Venerdì ore 19:00 - Domenica ore 18:00)'
+            ],
+            [
+                'label'   => 'Pastore:',
+                'content' => 'Nuccio Arcidiacono'
+            ]
+        ],
+
+        'welcome_quote' => [
+            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+        ],
+
+        'support_section' => [
+            'title'    => 'Non sei solo!',
+            'content' => [
+                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
+                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            ]
+        ],
+
+        'city_description' => [
+            'title'   => 'Catania',
+            'content' => [
+                'È un comune italiano di 297.173 abitanti, capoluogo dell’omonima città metropolitana in Sicilia; la «città etnea» è inoltre il decimo comune italiano per popolazione, nonché primo fra i non capoluoghi di regione.',
+                'È il centro dell’area metropolitana più densamente popolata della Sicilia, e di una più ampia conurbazione nota come Sistema lineare della Sicilia Orientale.',
+                'Fondata nel 729 a.C. dai greci calcidesi della vicina Naxos, la città vanta una storia millenaria i cui resti ne arricchiscono il patrimonio artistico, architettonico e culturale.'
+            ],
+            'map_image' => 'catania-map.png'
+        ],
+
+        'location' => [
+            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
+            'google_maps'  => 'https://maps.app.goo.gl/'
         ],
     ],
     'palermo' => [
         'hero' => [
             'title' => 'Palermo',
-            'image' => 'palermo.webp'
+            'image' => 'palermo-hero.png'
         ],
-    ],
+
+        'social_media' => [
+            'facebook' => '...!',
+            'instagram' => '...!',
+            'whatsapp' => '...!',
+            'phone' => '...!',
+            'maps' => '...!'
+        ],
+
+        'info_box' => [
+            [
+                'label'   => 'Luogo di predicazione:',
+                'content' => 'Via Marabitti 16d (PA)'
+            ],
+            [
+                'label'   => 'Servizio di culto:',
+                'content' => 'Presenziale (Jueves 18:00 / Sábado 18:30 / Domingo 11:30 )'
+            ],
+            [
+                'label'   => 'Pastore:',
+                'content' => 'Andres Zúñiga'
+            ]
+        ],
+
+        'welcome_quote' => [
+            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+        ],
+
+        'support_section' => [
+            'title'    => 'Non sei solo!',
+            'content' => [
+                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
+                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            ]
+        ],
+
+        'city_description' => [
+            'title'   => 'Palermo',
+            'content' => [
+                'È un comune italiano di 624.974 abitanti, quinto in Italia per popolazione, capoluogo della Regione Siciliana e dell’omonima città metropolitana.',
+                'La città, che si estende sulla Conca d’oro ai piedi del Monte Pellegrino, è circondata da sud-est a nord-ovest dall’anfiteatro naturale dei monti di Palermo e si affaccia sul suo omonimo golfo nel Mar Tirreno.',
+                'Il sito è abitato sin dalla preistoria, ma la vera e propria fondazione della città è attribuita ai fenici tra il VII e il VI secolo a.C.. La sua storia e il succedersi di numerosi popoli e civiltà hanno conferito alla città un imponente patrimonio artistico ed architettonico. Con Enrico VI e Federico II fu capitale del Sacro Romano Impero, che rappresentò uno dei periodi di massimo splendore per la città.'
+            ],
+            'map_image' => 'palermo-map.png'
+        ],
+
+        'location' => [
+            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
+            'google_maps'  => 'https://maps.app.goo.gl/'
+        ],
+        'info_block' => [
+            'title'   => 'Rassegna storica',
+            'content' => [
+                'La Chiesa pentecostale unita in Europa a Palermo ha i suoi inizi nell’anno 2017 con riunioni famigliari ed evangelizzazione domiciliare. Grazie a questi incontri e riunioni, nell’anno 2018 viene ufficialmente insediata la famiglia pastorale Bustamante Villaquiran, che diede inizio a un lavoro continuo di predicazione di questo glorioso vangelo, dando i suoi primi frutti con 7 battesimi nel 2018 nel nome del nostro Signore Gesù Cristo.',
+                'Nel luglio del 2019, la famiglia Bustamante viene trasferita. Dalla Spagna, viene insediata la famiglia Vielma Colmenares per predicare e continuare con il lavoro finora svolto dal pastore Victor e la sua famiglia.',
+                'Il 2 agosto 2025, è stata insediata la nuova famiglia pastorale Zúñiga Sánchez, che continua a guidare la comunità con fede e dedizione.'
+            ]
+        ],
+    ]
 ];
 
 return $cities;

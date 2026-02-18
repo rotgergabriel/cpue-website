@@ -1,10 +1,6 @@
 <?php
 require_once '../app/config/config.php';
 
-if (!isset($cities) || !is_array($cities)) {
-    $cities = require '../app/models/city_models.php';
-}
-
 $cityId = $_GET['id'] ?? '';
 
 if (isset($cities[$cityId])) {
@@ -85,6 +81,21 @@ $meta_description = "Sede di " . $city['hero']['title'];
                     </div>
                 <?php } ?>
 
+                <?php if (isset($city['support_section'])) { ?>
+                    <section class="milano__message">
+                        <div class="milano__message-container">
+                            <h2 class="milano__message-title"><?php echo $city['support_section']['title'] ?></h2>
+                            <div class="milano__message-content">
+                                <?php foreach ($city['support_section']['content'] as $support_message) { ?>
+                                    <p class="milano__message-text">
+                                        <?php echo $support_message ?>
+                                    </p>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </section>
+                <?php } ?>
+
                 <?php if (!empty($city['services']['list'])) { ?>
                     <div class="milano__services">
                         <div class="milano__services-header">
@@ -149,6 +160,21 @@ $meta_description = "Sede di " . $city['hero']['title'];
                             </div>
                         </div>
                     </div>
+                <?php } ?>
+
+                <?php if (isset($city['info_block'])) { ?>
+                    <section class="milano__message info_block">
+                        <div class="milano__message-container">
+                            <h2 class="milano__message-title"><?php echo $city['info_block']['title'] ?></h2>
+                            <div class="milano__message-content">
+                                <?php foreach ($city['info_block']['content'] as $support_message) { ?>
+                                    <p class="milano__message-text">
+                                        <?php echo $support_message ?>
+                                    </p>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </section>
                 <?php } ?>
 
             </section>
