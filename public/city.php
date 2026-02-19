@@ -59,7 +59,7 @@ $meta_description = "Sede di " . $city['hero']['title'];
                     </div>
                 <?php } ?>
 
-                <?php if (!empty($city['info_box']) && is_array($city['info_box'])) { ?>
+                <?php if (!empty($city['info_box'])) { ?>
                     <div class="milano__info">
                         <?php foreach ($city['info_box'] as $info) { ?>
                             <p class="milano__info-row">
@@ -81,7 +81,7 @@ $meta_description = "Sede di " . $city['hero']['title'];
                     </div>
                 <?php } ?>
 
-                <?php if (isset($city['support_section'])) { ?>
+                <?php if (!empty($city['support_section'])) { ?>
                     <section class="milano__message">
                         <div class="milano__message-container">
                             <h2 class="milano__message-title"><?php echo $city['support_section']['title'] ?></h2>
@@ -162,7 +162,7 @@ $meta_description = "Sede di " . $city['hero']['title'];
                     </div>
                 <?php } ?>
 
-                <?php if (isset($city['info_block'])) { ?>
+                <?php if (!empty($city['info_block'])) { ?>
                     <section class="milano__message info_block">
                         <div class="milano__message-container">
                             <h2 class="milano__message-title"><?php echo $city['info_block']['title'] ?></h2>

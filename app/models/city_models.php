@@ -7,6 +7,12 @@ $cities = [
             'image' => 'val-rendena-hero.png'
         ],
 
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Viucci Brosolo',
+            'phone'   => '+39 3407100713'
+        ],
+
         'social_media' => [
             'facebook' => '...!',
             'instagram' => '...!',
@@ -57,6 +63,12 @@ $cities = [
             'image' => 'trento-hero.png'
         ],
 
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Robin Rodriguez',
+            'phone'   => '+39 3881721404'
+        ],
+
         'social_media' => [
             'facebook' => '...!',
             'instagram' => '...!',
@@ -68,7 +80,7 @@ $cities = [
         'info_box' => [
             [
                 'label'   => 'Luogo di predicazione:',
-                'content' => 'Via'
+                'content' => 'Sede in fase di definizione. Contattaci per info.'
             ],
             [
                 'label'   => 'Servizio di culto:',
@@ -105,6 +117,12 @@ $cities = [
         'hero' => [
             'title' => 'Milano',
             'image' => 'milan.webp'
+        ],
+
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Jair Pedrozo Rinaldy',
+            'phone'   => '+39 3494637023'
         ],
 
         'social_media' => [
@@ -165,7 +183,7 @@ $cities = [
             'pastor_name'    => 'Jair Pedrozo Rinaldy',
             'pastor_role'    => 'Pastore',
             'pastor_image'   => 'jair-pedrozo.png',
-            'phone'          => '+39 349 463 7023',
+            'phone'          => '+39  349 463 7023',
             'welcome_text'   => [
                 'Se stai cercando un posto dove sentirti al sicuro e in armonia, la nostra congregazione CPUE Milano è la chiesa che predica la parola di Dio per portare un messaggio di salvezza a tutte le persone, e dove la Sua presenza si fa sentire.',
                 'Qua si sente pace, amore e unità. Siamo una famiglia in Cristo con un desiderio di servire e che Milano conosca l’amore e la pace che solo Dio può dare.'
@@ -190,6 +208,12 @@ $cities = [
         'hero' => [
             'title' => 'Torino',
             'image' => 'torino-hero.png'
+        ],
+
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Leonardo Vielma',
+            'phone'   => '+39 3519115064'
         ],
 
         'social_media' => [
@@ -245,6 +269,12 @@ $cities = [
         'hero' => [
             'title' => 'Pordenone',
             'image' => 'pordenone-hero.png'
+        ],
+
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Victor Bustamante',
+            'phone'   => '+39 3888946569'
         ],
 
         'social_media' => [
@@ -320,6 +350,12 @@ $cities = [
             'image' => 'reggio-emilia-hero.png'
         ],
 
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Hikler Garcia Lopez',
+            'phone'   => '+39 3883426513'
+        ],
+
         'social_media' => [
             'facebook' => '...!',
             'instagram' => '...!',
@@ -393,6 +429,12 @@ $cities = [
             'image' => 'firenze-hero.png'
         ],
 
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Santiago Giraldo',
+            'phone'   => '+39 3382298345'
+        ],
+
         'social_media' => [
             'facebook' => '...!',
             'instagram' => '...!',
@@ -452,10 +494,16 @@ $cities = [
             ]
         ],
     ],
-    'pedaso' => [
+    'porto-sant-elpidio' => [
         'hero' => [
-            'title' => 'Pedaso',
+            'title' => 'Porto Sant’Elpidio',
             'image' => 'pedaso-hero.png'
+        ],
+
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Wilfredo Daza',
+            'phone'   => '+39 3517352681'
         ],
 
         'social_media' => [
@@ -494,7 +542,7 @@ $cities = [
         ],
 
         'city_description' => [
-            'title'   => 'Pedaso',
+            'title'   => 'Porto Sant’Elpidio',
             'content' => [
                 'È un comune italiano di 2.847 abitanti della provincia di Fermo nelle Marche.',
                 'Pedaso è situata sulla costa adriatica, alla foce del fiume Aso ed ha un territorio prevalentemente collinare',
@@ -514,6 +562,12 @@ $cities = [
         'hero' => [
             'title' => 'Roma',
             'image' => 'roma-hero.png'
+        ],
+
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Manuel Lopez',
+            'phone'   => '+39 3932724244'
         ],
 
         'social_media' => [
@@ -577,6 +631,12 @@ $cities = [
             'image' => 'ostia-hero.png'
         ],
 
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Omar Correa',
+            'phone'   => '+39 3345850369'
+        ],
+
         'social_media' => [
             'facebook' => '...!',
             'instagram' => '...!',
@@ -633,6 +693,12 @@ $cities = [
             'image' => 'catania-hero.png'
         ],
 
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Nuccio Arcidiacono',
+            'phone'   => '+39 3407284369'
+        ],
+
         'social_media' => [
             'facebook' => '...!',
             'instagram' => '...!',
@@ -687,6 +753,12 @@ $cities = [
         'hero' => [
             'title' => 'Palermo',
             'image' => 'palermo-hero.png'
+        ],
+
+        'card_info' => [
+            'role'    => 'Pastore',
+            'name'    => 'Andres Zúñiga',
+            'phone'   => '+39 3208343428'
         ],
 
         'social_media' => [
