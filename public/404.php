@@ -16,6 +16,10 @@ $meta_description = $site_config['head']['404']['meta-description'];
 
 <body>
 
+    <header>
+        <?php include ROOT_PATH . 'app/views/includes/navbar.php'; ?>
+    </header>
+
     <main class="not-found">
 
         <div class="not-found__container">
@@ -27,30 +31,12 @@ $meta_description = $site_config['head']['404']['meta-description'];
                 <span class="contact__button-text">TORNIAMO ALLA HOME</span>
             </a>
         </div>
-
     </main>
 
-    <footer class="footer footer-404">
-
-
-        <div class="footer__bottom">
-
-            <div class="footer__section footer__accordion-item footer__section--social">
-
-                <div class="footer__desktop-logo">
-                    <a href="<?= BASE_URL ?>" title="Torna alla Home">
-                        <img src="<?= BASE_URL ?>public/assets/img/logo-main.webp" class="footer__img" alt="Logo CPUE">
-                    </a>
-                </div>
-            </div>
-
-            <p class="footer__bottom-text">© 2024 Associazione Chiesa Pentecostale Unita in Europa. Tutti i diritti riservati.</p>
-            <p class="footer__credits">
-                Sviluppato da: <strong><a href="https://github.com/rotgergabriel/cpue-website" target="_blank" rel="noopener noreferrer">Gabriel Augusto Rotger</a></strong> & <strong><a href="https://github.com/jonhtorresgarcia/cpue-website" target="_blank" rel="noopener noreferrer">Jonh Torres Garcia</a></strong><br>
-                Basato sul design originale di: <strong>Andrea Perez Sanchez</strong> (Graphic Designer)
-            </p>
-        </div>
+    <footer class="footer">
+        <?php include ROOT_PATH . 'app/views/includes/footer.php'; ?>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?= BASE_URL ?>public/js/script.js"></script>
 </body>
