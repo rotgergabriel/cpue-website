@@ -2,8 +2,8 @@
 
 require_once '../app/config/config.php';
 
-$title = "Opere in Proiezione - CPUE";
-$meta_description = "Visione e missione delle opere in proiezione della Chiesa Pentecostale Unita in Europa.";
+$head_title = $site_config['head']['proiezione']['title'];
+$meta_description = $site_config['head']['proiezione']['meta-description'];
 ?>
 <!DOCTYPE html>
 <html lang="it">
@@ -215,7 +215,7 @@ $meta_description = "Visione e missione delle opere in proiezione della Chiesa P
             <section class="city-work">
                 <div class="city-work__container">
                     
-                     <h3 class="city-work__title">Alessandria</h3>
+                    <h3 class="city-work__title">Alessandria</h3>
 
                     <div class="city-work__social-list">
                         <a href="https://www.facebook.com/cpueitalia" target="_blank" class="city-work__social-item" title="Contattaci su Facebook">

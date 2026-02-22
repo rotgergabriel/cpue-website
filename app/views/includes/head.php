@@ -3,8 +3,8 @@
 <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style.css">
 <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/reset.css">
 <link rel="icon" href="<?= BASE_URL ?>public/assets/icons/favicon.png" type="image/png">
-<meta name="description" content="<?php echo isset($meta_description) ? $meta_description : 'Descripción general de mi sitio web'; ?>">
-<title><?php echo $title ?></title>
+<meta name="description" content="<?php echo $meta_description ?>">
+<title><?php echo $head_title ?></title>
 <!-- Google fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

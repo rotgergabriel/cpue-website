@@ -4,8 +4,8 @@ header('Retry-After: 3600');
 
 require_once '../app/config/config.php';
 
-$title = "Sito in Manutenzione - CPUE";
-$meta_description = "Il sito della Chiesa Pentecostale Unita in Europa è momentaneamente in manutenzione. Torneremo presto online.";
+$head_title = $site_config['head']['503']['title'];
+$meta_description = $site_config['head']['503']['meta-description'];
 ?>
 <!DOCTYPE html>
 <html lang="it">

@@ -1,10 +1,10 @@
 <?php
 require_once '../app/config/config.php';
 
-$title = "Privacy Policy - Chiesa Pentecostale Unita in Europa";
-$meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
+$head_title = $site_config['head']['privacy-policy']['title'];
+$meta_description = $site_config['head']['privacy-policy']['meta-description'];
+$heroTitle = $site_config['hero']['privacy-policy']['title'];
 $heroModifier = "hero--privacy";
-$heroTitle = "Privacy Policy";
 ?>
 <!DOCTYPE html>
 <html lang="it">

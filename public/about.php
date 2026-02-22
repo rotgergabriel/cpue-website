@@ -1,12 +1,12 @@
 <?php
 require_once '../app/config/config.php';
 
-$title = "Chi siamo - Chiesa Pentecostale Unita in Europa";
-$meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
+$head_title = $site_config['head']['la-chiesa']['title'];
+$meta_description = $site_config['head']['la-chiesa']['meta-description'];
+$heroTitle = $site_config['hero']['la-chiesa']['title'];
+$heroModifier = "hero--about";
 $boardModifier = "board--about";
 $boardId = "consiglio-direttivo";
-$heroModifier = "hero--about";
-$heroTitle = "Chi Siamo?";
 ?>
 <!DOCTYPE html>
 <html lang="it">

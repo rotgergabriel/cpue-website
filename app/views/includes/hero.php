@@ -1,6 +1,6 @@
 <?php
-$imageName = isset($heroImage) ? $heroImage : 'hero-img.png';
-$titleName = isset($heroTitle) ? $heroTitle : 'Chiesa Pentecostale Unita in Europa';
+$imageName = !empty($heroImage) ? $heroImage : 'hero-img.png';
+$titleName = !empty($heroTitle) ? $heroTitle : 'Chiesa Pentecostale Unita in Europa';
 ?>
 <section class="hero <?php echo $heroModifier ?>">
     <div class="hero__container">

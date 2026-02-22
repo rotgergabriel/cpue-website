@@ -1,8 +1,8 @@
 <?php
 require_once '../app/config/config.php';
 
-$title = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo.";
-$meta_description = "Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5";
+$head_title = $site_config['head']['home']['title'];
+$meta_description = $site_config['head']['home']['meta-description'];
 ?>
 <!DOCTYPE html>
 <html lang="it">

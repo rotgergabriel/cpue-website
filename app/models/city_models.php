@@ -24,7 +24,7 @@ $cities = [
         'info_box' => [
             [
                 'label'   => 'Luogo di predicazione:',
-                'content' => ''
+                'content' => 'Sede in fase di definizione. Contattaci per info.'
             ],
             [
                 'label'   => 'Servizio di culto:',
@@ -422,6 +422,8 @@ $cities = [
                 'Noi però non siamo di quelli che indietreggiano a loro perdizione, bensì uomini di fede per la salvezza della nostra anima. Ebrei 10:39'
             ]
         ],
+
+        'gallery' => []
     ],
     'firenze' => [
         'hero' => [
@@ -493,6 +495,8 @@ $cities = [
                 'Alla fine dell’anno 2009 è stato posizionato il fratello Leonardo Gañan come pastore nella città di Firenze iniziando così un percorso per la chiesa in questa città che al giorno d’oggi compie come opera 14 anni. Quattro anni dopo, nel 2014, è stato nominato e insediato il pastore Victor Bustamante il quale ha continuato a lavorare nell’opera del signore, seminando la parola di Dio per i seguenti quattro anni. Il Pastore Victor è stato trasferito in un’altra città lasciando la chiesa a Firenze a carico del fratello Leonardo Gañan per un periodo di un anno durante l’attesa di un nuovo pastore. Nel 2019 è stato nominato e insediato il pastore Juan Diego Correa che ha lavorato ed amministrato la congregazione a Firenze. Infine, nel 2024, è stato insediato il pastore Santiago Giraldo insieme a sua moglie Eliana Marcela Duque e attualmente amministra la congregazione nella città metropolitana in questione.'
             ]
         ],
+
+        'gallery' => []
     ],
     'porto-sant-elpidio' => [
         'hero' => [
@@ -556,6 +560,8 @@ $cities = [
             'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
             'google_maps'  => 'https://maps.app.goo.gl/'
         ],
+
+        'gallery' => []
 
     ],
     'roma' => [

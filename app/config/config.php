@@ -12,22 +12,21 @@ if ($domain !== 'localhost' && $domain !== '127.0.0.1') {
     $project_folder = '/';
 }
 
-// 3. Definición de constantes globales
+// Definición de constantes globales
 define('BASE_URL', $protocol . $domain . $project_folder);
 
-// CORRECCIÓN AQUÍ: Subimos dos niveles (/../../) para salir de app/config/ y llegar a la raíz
+// Subimos dos niveles (/../../) para salir de app/config/ y llegar a la raíz
 define('ROOT_PATH', realpath(dirname(__FILE__) . '/../../') . DIRECTORY_SEPARATOR);
 
-// 4. Configuración de Base de Datos
+// Configuración de Base de Datos
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', 'root'); // Recuerda que en XAMPP Windows suele ser '' (vacío)
+define('DB_PASS', 'root');
 define('DB_NAME', 'cpue_db');
-
-// Incluimos el modelo para tener acceso a $cities
 
 // Definimos la ruta absoluta
 define('MODELS_PATH', __DIR__ . '/../models/');
 
 // Cambiamos require_once por require para asegurar que devuelva el array
 $cities = require MODELS_PATH . 'city_models.php';
+$site_data = require MODELS_PATH . 'site_settings.php';
