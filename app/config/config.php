@@ -29,4 +29,5 @@ define('MODELS_PATH', __DIR__ . '/../models/');
 
 // Cambiamos require_once por require para asegurar que devuelva el array
 $cities = require MODELS_PATH . 'city_models.php';
+$comitati = require MODELS_PATH . 'comitati_models.php';
 $site_data = require MODELS_PATH . 'site_settings.php';

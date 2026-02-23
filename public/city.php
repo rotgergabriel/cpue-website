@@ -178,34 +178,49 @@ $meta_description = "Sede di " . $city['hero']['title'];
                 <?php } ?>
 
                 <?php if (!empty($city['gallery'])) { ?>
-                    <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <?php $gallery = $city['gallery'];
+                    $total   = count($gallery); ?>
+                    <section class="gallery-container">
+                        <div id="cityCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                            <div class="carousel-indicators">
+                                <?php foreach ($gallery as $i => $img) { ?>
+                                    <button type="button" data-bs-target="#cityCarousel" data-bs-slide-to="<?= $i ?>"
+                                        class="<?= $i === 0 ? 'active' : '' ?>" aria-current="<?= $i === 0 ? 'true' : 'false' ?>"
+                                        aria-label="Slide <?= $i + 1 ?>"></button>
+                                <?php } ?>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <?php foreach ($gallery as $index => $name) { ?>
+                                    <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+                                        <div class="row g-2">
+                                            <?php for ($step = 0; $step < 3; $step++) {
+                                                $current_img = $gallery[($index + $step) % $total];
+                                            ?>
+                                                <div class="col-4">
+                                                    <img src="<?= BASE_URL ?>assets/img/<?= $current_img ?>"
+                                                        class="d-block w-100 gallery-img" alt="Galería">
+                                                </div>
+                                            <?php } ?>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cityCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cityCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="<?php echo BASE_URL . 'assets/img/' ?>" class="d-block w-100" alt="<?php echo BASE_URL . 'assets/img/' ?>">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo BASE_URL . 'assets/img/' ?>" class="d-block w-100" alt="<?php echo BASE_URL . 'assets/img/' ?>">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo BASE_URL . 'assets/img/' ?>" class="d-block w-100" alt="<?php echo BASE_URL . 'assets/img/' ?>">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </section>
                 <?php } ?>
-
+                
             </section>
         </main>
     </div>

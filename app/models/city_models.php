@@ -423,7 +423,12 @@ $cities = [
             ]
         ],
 
-        'gallery' => []
+        'gallery' => [
+            'example-img.jpg',
+            'example-img.jpg',
+            'example-img.jpg',
+            'example-img.jpg',
+        ]
     ],
     'firenze' => [
         'hero' => [
@@ -496,7 +501,12 @@ $cities = [
             ]
         ],
 
-        'gallery' => []
+        'gallery' => [
+            'example-img.jpg',
+            'example-img.jpg',
+            'example-img.jpg',
+            'example-img.jpg',
+        ]
     ],
     'porto-sant-elpidio' => [
         'hero' => [
@@ -561,7 +571,12 @@ $cities = [
             'google_maps'  => 'https://maps.app.goo.gl/'
         ],
 
-        'gallery' => []
+        'gallery' => [
+            'example-img.jpg',
+            'example-img.jpg',
+            'example-img.jpg',
+            'example-img.jpg',
+        ]
 
     ],
     'roma' => [
