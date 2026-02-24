@@ -14,11 +14,11 @@ $cities = [
         ],
 
         'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+            'facebook' => 'https://www.facebook.com/share/1GVaM9Bznn/',
+            'instagram' => 'https://www.instagram.com/cpue_valrendena/',
+            'whatsapp' => 'https://wa.me/393407100713?text=Ciao!%20Mi%20chiamo...%20Ti%20andrebbe%20di%20fare%20una%20chiacchierata%20su%20WhatsApp?%20Sono%20interessato/a%20a%20sapere%20di%20più%20su…',
+            'phone' => '+393407100713',
+            'maps' => ''
         ],
 
         'info_box' => [
@@ -68,13 +68,14 @@ $cities = [
             'name'    => 'Robin Rodriguez',
             'phone'   => '+39 3881721404'
         ],
-
+    
         'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+            'youtube' => 'https://www.youtube.com/@CpueItalia',
+            'facebook' => 'https://www.facebook.com/share/1DAsnvJ8yF/',
+            'instagram' => 'https://www.instagram.com/cpue.trento?igsh=MTU4M2lqOG15cmx6NA==',
+            'whatsapp' => 'https://wa.me/3881721404',
+            'phone' => '+393881721404',
+            'maps' => ''
         ],
 
         'info_box' => [
@@ -125,12 +126,12 @@ $cities = [
             'phone'   => '+39 3494637023'
         ],
 
-        'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+       'social_media' => [
+            'facebook' => 'https://www.facebook.com/cpueitalia',
+            'instagram' => 'https://www.instagram.com/cpue_italia',
+            'whatsapp' => 'https://wa.me/393494637023',
+            'phone' => '+393494637023',
+            'maps' => 'https://maps.google.com/?cid=7403801825769057566&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl'
         ],
 
         'info_box' => [
@@ -201,7 +202,7 @@ $cities = [
 
         'location' => [
             'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
-            'google_maps'  => 'https://maps.app.goo.gl/'
+            'google_maps'  => 'https://maps.google.com/?cid=7403801825769057566&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl'
         ],
     ],
     'torino' => [
@@ -217,11 +218,12 @@ $cities = [
         ],
 
         'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+            'youtube' => 'https://www.youtube.com/@CpueItalia',
+            'facebook' => 'https://www.facebook.com/share/1DeyFTNqHH/',
+            'instagram' => 'https://www.instagram.com/cpue.torino?igsh=ZWtiMTk0NGxtNHQ2',
+            'whatsapp' => 'https://wa.me/393519115064',
+            'phone' => '+393519115064',
+            'maps' => 'https://maps.app.goo.gl/RJ5AubMBdDzAdQXx9'
         ],
 
         'info_box' => [
@@ -278,11 +280,12 @@ $cities = [
         ],
 
         'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+            'youtube' => 'http://www.youtube.com/@chiesapordenone8917',
+            'facebook' => '',
+            'instagram' => 'https://www.instagram.com/cpue_pordenone/',
+            'whatsapp' => 'https://wa.me/3888946569?text=Ciao!%20Mi%20chiamo...%20Ti%20andrebbe%20di%20fare%20una%20chiacchierata%20su%20WhatsApp?%20Sono%20interessato/a%20a%20sapere%20di%20più%20su…',
+            'phone' => '+393888946569',
+            'maps' => 'https://www.google.com/maps/place/CPUE+Pordenone/@45.9499392,12.6587838,17z/data=!3m1!4b1!4m6!3m5!1s0x477965b61a8c3b23:0xb1f92bf570f23a5f!8m2!3d45.9499392!4d12.6613587!16s%2Fg%2F11h80vc9cj?authuser=0&entry=ttu&g_ep=EgoyMDI1MDgxOC4wIKXMDSoASAFQAw%3D%3D'
         ],
 
         'info_box' => [
@@ -357,11 +360,11 @@ $cities = [
         ],
 
         'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+            'facebook' => 'https://www.facebook.com/profile.php?id= 61573693204710',
+            'instagram' => 'https://www.instagram.com/cpuereggioemilia/',
+            'whatsapp' => 'https://wa.me/393883426513?text=Ciao!%20Mi%20chiamo...%20Ti%20andrebbe%20di%20fare%20una%20chiacchierata%20su%20WhatsApp?%20Sono%20interessato/a%20a%20sapere%20di%20più%20su…',
+            'phone' => '+393883426513',
+            'maps' => 'https://maps.app.goo.gl/hTYXNNbgYz9EU12j6'
         ],
 
         'info_box' => [
@@ -443,11 +446,10 @@ $cities = [
         ],
 
         'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+            'instagram' => 'https://www.instagram.com/cpue_firenze?igsh=d2VhY3E3aGxjYTJo',
+            'whatsapp' => 'https://wa.me/393382298345?text=Ciao!%20Mi%20chiamo...%20Ti%20andrebbe%20di%20fare%20una%20chiacchierata%20su%20WhatsApp?%20Sono%20interessato/a%20a%20sapere%20di%20più%20su…',
+            'phone' => '+393382298345',
+            'maps' => 'https://www.google.com/maps/place/Via+Carlo+del+Greco,+13,+50141+Firenze+FI/@43.8077088,11.2330339,17z/data=!3m1!4b1!4m6!3m5!1s0x132a566203da74d7:0xcfc10d5b232061fe!8m2!3d43.8077088!4d11.2356088!16s%2Fg%2F11rw_v3qt9?authuser=0&entry=ttu&g_ep=EgoyMDI1MDgxOC4wIKXMDSoASAFQAw%3D%3D'
         ],
 
         'info_box' => [
@@ -521,11 +523,11 @@ $cities = [
         ],
 
         'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+            'facebook' => 'https://www.facebook.com/CpueItalia',
+            'instagram' => 'https://www.instagram.com/cpue.portosantelpidio?igsh=MWxnNG91a2YxNGlsMg==',
+            'whatsapp' => 'https://wa.me//%E2%80%AA3517352681%E2%80%AC?text=Ciao!%20Mi%20chiamo...%20Ti%20andrebbe%20di%20fare%20una%20chiacchierata%20su%20WhatsApp?%20Sono%20interessato/a%20a%20sapere%20di%20più%20su…',
+            'phone' => '+393517352681',
+            'maps' => 'https://maps.app.goo.gl/qjV9PbByxRJhC9ZP8?g_st=aw'
         ],
 
         'info_box' => [
@@ -592,11 +594,11 @@ $cities = [
         ],
 
         'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+            'facebook' => '',
+            'instagram' => 'https://www.instagram.com/cpue.roma?igsh=MXVkd3NlM2Nxd2E3OA==',
+            'whatsapp' => 'https://wa.me//393932724244?text=Ciao!%20Mi%20chiamo...%20Ti%20andrebbe%20di%20fare%20una%20chiacchierata%20su%20WhatsApp?%20Sono%20interessato/a%20a%20sapere%20di%20più%20su…',
+            'phone' => '+393932724244',
+            'maps' => 'https://www.google.com/maps/place/CPUE+ROMA/@41.9405064,12.548122,17z/data=!3m1!4b1!4m6!3m5!1s0x132f652399fdc691:0x7adfa1596ee9800f!8m2!3d41.9405064!4d12.5506969!16s%2Fg%2F11s2nzw6_2?authuser=0&entry=ttu&g_ep=EgoyMDI1MDgxOC4wIKXMDSoASAFQAw%3D%3D'
         ],
 
         'info_box' => [
@@ -659,11 +661,11 @@ $cities = [
         ],
 
         'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+            'facebook' => 'https://www.facebook.com/share/1GSf4zmi66/',
+            'instagram' => 'https://www.instagram.com/cpue_ostia/',
+            'whatsapp' => 'https://wa.me//393345850369?text=Ciao!%20Mi%20chiamo...%20Ti%20andrebbe%20di%20fare%20una%20chiacchierata%20su%20WhatsApp?%20Sono%20interessato/a%20a%20sapere%20di%20più%20su…',
+            'phone' => '+393345850369',
+            'maps' => 'https://maps.app.goo.gl/Fozuq1vtVL7HVsVU9?g_st=aw'
         ],
 
         'info_box' => [
@@ -720,12 +722,13 @@ $cities = [
             'phone'   => '+39 3407284369'
         ],
 
+
         'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+            'facebook' => 'https://www.facebook.com/chiesapentecostaleunitaineuropa',
+            'instagram' => 'https://www.instagram.com/cpue.catania/',
+            'whatsapp' => 'https://wa.me//393407284369?text=Ciao!%20Mi%20chiamo...%20Ti%20andrebbe%20di%20fare%20una%20chiacchierata%20su%20WhatsApp?%20Sono%20interessato/a%20a%20sapere%20di%20più%20su…',
+            'phone' => '+393407284369',
+            'maps' => 'https://www.google.com/maps/place/Via+Gravina,+75,+95030+Tremestieri+Etneo+CT/@37.5630519,15.0682709,16z/data=!3m1!4b1!4m6!3m5!1s0x1313fdae37aadb9b:0x3aca6bcb50947307!8m2!3d37.5630519!4d15.0708458!16s%2Fg%2F11q2nm9hf9?authuser=0&entry=ttu&g_ep=EgoyMDI1MDgxOC4wIKXMDSoASAFQAw%3D%3D'
         ],
 
         'info_box' => [
@@ -783,11 +786,11 @@ $cities = [
         ],
 
         'social_media' => [
-            'facebook' => '...!',
-            'instagram' => '...!',
-            'whatsapp' => '...!',
-            'phone' => '...!',
-            'maps' => '...!'
+            'facebook' => 'https://www.facebook.com/people/Cpue-Palermo/100083100230519/',
+            'instagram' => 'https://www.instagram.com/cpue_palermo/',
+            'whatsapp' => 'https://wa.me//393208343428?text=Ciao!%20Mi%20chiamo...%20Ti%20andrebbe%20di%20fare%20una%20chiacchierata%20su%20WhatsApp?%20Sono%20interessato/a%20a%20sapere%20di%20più%20su…',
+            'phone' => '+393208343428',
+            'maps' => 'https://www.google.com/maps/place/Via+Marabitti,+16d,+90142+Palermo+PA/@38.1381658,13.358365,17z/data=!3m1!4b1!4m6!3m5!1s0x1319e60078100001:0x642c6423033cf43e!8m2!3d38.1381658!4d13.3609399!16s%2Fg%2F11w3mys_c2?authuser=0&entry=ttu&g_ep=EgoyMDI1MDgxOC4wIKXMDSoASAFQAw%3D%3D'
         ],
 
         'info_box' => [

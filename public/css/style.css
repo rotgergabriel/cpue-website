@@ -2140,8 +2140,8 @@ html {
 .milano__pastor-img {
     display: block;
     width: auto;
-    max-width: 100%;
-    max-height: 270px;
+    max-width: 70%;
+    max-height: 200px;
     object-fit: contain;
     border-radius: 20px;
 }
@@ -3555,10 +3555,13 @@ html {
     }
 
     .milano__pastor {
+        width: 100%;
         margin-top: 50px;
         padding-left: 150px;
         padding-right: 150px;
         box-sizing: border-box;
+        display: flex;
+        justify-content: center;
     }
 
     .milano__pastor-container {
@@ -3576,7 +3579,7 @@ html {
     .milano__pastor-img {
         max-height: 570px;
         width: 100%;
-        max-width: 500px;
+        max-width: 300px;
         object-fit: cover;
     }
 
