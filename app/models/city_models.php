@@ -68,7 +68,7 @@ $cities = [
             'name'    => 'Robin Rodriguez',
             'phone'   => '+39 3881721404'
         ],
-    
+
         'social_media' => [
             'youtube' => 'https://www.youtube.com/@CpueItalia',
             'facebook' => 'https://www.facebook.com/share/1DAsnvJ8yF/',
@@ -126,7 +126,7 @@ $cities = [
             'phone'   => '+39 3494637023'
         ],
 
-       'social_media' => [
+        'social_media' => [
             'facebook' => 'https://www.facebook.com/cpueitalia',
             'instagram' => 'https://www.instagram.com/cpue_italia',
             'whatsapp' => 'https://wa.me/393494637023',

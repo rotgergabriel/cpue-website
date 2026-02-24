@@ -40,12 +40,12 @@ $meta_description = "Sede di " . $city['hero']['title'];
                 <?php if (!empty($city['social_media'])) { ?>
                     <div class="milano__social-bar">
 
-                    
+
                         <?php if (!empty($city['social_media']['youtube'])) { ?>
                             <a href="<?= $city['social_media']['youtube'] ?>" target="_blank" class="milano__social-link" title="YouTube">
                                 <img src="<?= BASE_URL ?>public/assets/icons/youtube.svg" alt="YouTube" class="milano__social-icon">
                             </a>
-                        <?php } ?>                            
+                        <?php } ?>
 
                         <?php if (!empty($city['social_media']['facebook'])) { ?>
                             <a href="<?= $city['social_media']['facebook'] ?>" target="_blank" class="milano__social-link" title="Facebook">
@@ -68,7 +68,7 @@ $meta_description = "Sede di " . $city['hero']['title'];
                         <?php } ?>
 
                         <?php if (!empty($city['social_media']['phone'])) { ?>
-                            <a href="tel:<?= $city['phone_number'] ?>" class="milano__social-link" title="Chiamaci">
+                            <a href="tel:<?= $city['social_media']['phone'] ?>" class="milano__social-link" title="Chiamaci">
                                 <img src="<?= BASE_URL ?>public/assets/icons/phone.svg" alt="Telefono" class="milano__social-icon">
                             </a>
                         <?php } ?>
@@ -78,7 +78,6 @@ $meta_description = "Sede di " . $city['hero']['title'];
                                 <img src="<?= BASE_URL ?>public/assets/icons/map-icon.svg" alt="Mappa" class="milano__social-icon">
                             </a>
                         <?php } ?>
-                       
                     </div>
                 <?php } ?>
 
@@ -243,7 +242,7 @@ $meta_description = "Sede di " . $city['hero']['title'];
                         </div>
                     </section>
                 <?php } ?>
-                
+
             </section>
         </main>
     </div>
