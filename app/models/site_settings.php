@@ -36,10 +36,12 @@ $site_config = [
             'image' => ''
         ],
         'proiezione' => [
-            'title' => 'Vedendo le folle, ne ebbe compassione',
-            'subtitle' => '"Pregate dunque il padrone della messe che mandi operai nella sua messe!"',
-            'paragraph' => 'Matteo 9:38',
-            'image' => ''
+            'title' => 'VEDENDO LE FOLLE, NE EBBE',
+            'subtitle' => 'COMPASSIONE',
+            'quote' => '"Pregate dunque il padrone della messe che mandi operai nella sua messe!"',
+            'verse' => 'Matteo 9:38',
+            'paragraph' => 'SCOPRI LE OPERE',
+            'link' => '#scopri-di-piu',
         ],
         'privacy-policy' => [
             'title' => 'Privacy Policy',

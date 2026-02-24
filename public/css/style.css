@@ -181,6 +181,7 @@
     display: none;
 }
 
+/* About section */
 .hero--about::after {
     background-image: url("../assets/img/wave-about.svg");
 }
@@ -196,6 +197,35 @@
 }
 
 .hero--about .hero__img {
+    display: none;
+}
+
+/* Proiezione section */
+.hero--proiezione {
+    background: radial-gradient(circle at center, #09a0ec 0%, #0d219c 100%);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.hero--proiezione::after {
+    display: none;
+}
+
+.hero--proiezione .hero__title h1 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 250;
+    line-height: 1.1;
+    margin: 0;
+    margin-top: 120px;
+    font-size: 30px;
+}
+
+.hero--proiezione {
+    min-height: 300px;
+    height: 90vh;
+}
+
+.hero--proiezione .hero__img {
     display: none;
 }
 
@@ -2611,6 +2641,10 @@ html {
         flex: 1;
     }
 
+    .hero--proiezione .hero__title h1 {
+        font-size: 48px;
+    }
+
     .projection-hero {
         min-height: 92vh;
     }
@@ -2706,7 +2740,6 @@ html {
         max-width: 80%;
     }
 
-
     .comments-header__main,
     .works-header__main {
         flex-direction: row !important;
@@ -2726,7 +2759,6 @@ html {
         font-size: 30px;
         margin-top: 0px;
     }
-
 
     .city-work__title {
         display: block;
@@ -3138,7 +3170,6 @@ html {
     .projection-hero__verse {
         font-size: 30px;
     }
-
 
     .italy-overview {
         padding: 60px 40px;
@@ -3697,7 +3728,6 @@ html {
         margin: 0;
         padding: 0;
         line-height: 1;
-
     }
 
     .maintenance {

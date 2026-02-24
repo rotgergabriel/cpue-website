@@ -40,7 +40,6 @@ $meta_description = "Sede di " . $city['hero']['title'];
                 <?php if (!empty($city['social_media'])) { ?>
                     <div class="milano__social-bar">
 
-
                         <?php if (!empty($city['social_media']['youtube'])) { ?>
                             <a href="<?= $city['social_media']['youtube'] ?>" target="_blank" class="milano__social-link" title="YouTube">
                                 <img src="<?= BASE_URL ?>public/assets/icons/youtube.svg" alt="YouTube" class="milano__social-icon">
