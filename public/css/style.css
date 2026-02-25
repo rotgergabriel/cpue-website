@@ -2502,6 +2502,182 @@ html {
     width: 100%;
 }
 
+.comitato-page {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #f8f6fd;
+    min-height: 100vh;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comitato__title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0B0E92;
+    text-align: center;
+    margin-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.comitato__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.comitato__intro-img {
+    width: calc(100% - 30px);
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.comitato__desc {
+    font-size: 18px;
+    font-weight: 200;
+    color: #000000;
+    text-align: center;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.6;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.comitato__director-box {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comitato__greeting {
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.comitato__director-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.comitato__director-a {
+    font-size: 16px;
+    font-weight: 200;
+    color: #000000;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.comitato__events {
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.comitato__events-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #0B0E92;
+    margin-bottom: 20px;
+}
+
+.comitato__events-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comitato__event-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.comitato__event-card h4 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #0B0E92;
+    margin-bottom: 10px;
+}
+
+.comitato__event-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comitato__event-card li {
+    font-weight: 200;
+    color: #546373;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.comitato__contact {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.comitato__contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.comitato__contact-btn:hover {
+    transform: translateY(-3px);
+    color: #ffffff;
+}
+
+.comitato__wa-icon {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    margin-right: 10px;
+}
+
+
 /* RESPONSIVE DESIGN (Media Queries) */
 
 /* Tablet (769px +) */
@@ -2951,6 +3127,33 @@ html {
 
     .maintenance__social-link {
         flex: 0 0 auto;
+    }
+
+    .comitato-page {
+        margin-top: 100px;
+    }
+
+    .comitato__intro {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        max-width: 1100px;
+        margin: 30px auto 0 auto;
+        margin-right: 100px;
+    }
+
+    .comitato__intro-img {
+        width: 240px;
+        height: 180px;
+        margin: 0;
+        flex-shrink: 0;
+        gap: 50px;
+        margin-left: 50px;
+    }
+
+    .comitato__title {
+    font-size: 35px;
     }
 }
 
@@ -3761,6 +3964,72 @@ html {
         height: 50px;
     }
 
+    .comitato-page {
+        margin-top: 100px;
+    }
+
+    .comitato__intro {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        max-width: 1100px;
+        margin: 30px auto 0 auto;
+    }
+
+    .comitato__intro-img {
+        width: 240px;
+        height: 180px;
+        margin: 0;
+        flex-shrink: 0;
+        gap: 50px;
+    }
+
+    .comitato__desc {
+        font-size: 20px;
+        margin-top: 0;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    .comitato__title {
+        font-size: 40px;
+        margin-top: 70px;
+        padding: 0;
+    }
+
+    .comitato__events-title{
+        font-size: 32px;
+    }
+
+    .comitato__greeting {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .comitato__events-grid {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .comitato__event-card {
+        flex: 1;
+    }
+
+    .comitato__director-box {
+        max-width: calc(100% - 300px);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .comitato__director-a {
+        font-size: 14px;    
+    }
 }
 
-/*end*/
+/*the end*/

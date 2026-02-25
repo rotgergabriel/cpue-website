@@ -4,7 +4,7 @@ $cities = [
     'val-rendena' => [
         'hero' => [
             'title' => 'Val Rendena',
-            'image' => 'val-rendena-hero.png'
+            'image' => 'val-rendena-hero.webp'
         ],
 
         'card_info' => [
@@ -37,7 +37,17 @@ $cities = [
         ],
 
         'welcome_quote' => [
-            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+            'text'   => 'La Chiesa è al servizio di chiunque senta il bisogno di un confronto, di un momento di riflessione o di una presenza amica. Perché camminare insieme rende la strada meno faticosa. Vieni a trovarci.'
+        ],
+
+        'board' => [
+            'pastor_name'    => 'Viucci Brosolo',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'val-rendena-famiglia.webp',
+            'phone'          => '3382298345',
+            'welcome_text'   => [
+            'L’idea: Dio non si limita a "aggiustare" ciò che si è rotto per riportarlo allo stato originale. Egli usa i frammenti della nostra vita (fallimenti, lutti, delusioni) per edificare una persona nuova, dotata di una sensibilità e una forza che prima non possedeva.'
+            ]
         ],
 
         'support_section' => [
@@ -54,13 +64,13 @@ $cities = [
                 'La popolazione del territorio amministrativo di «Val Rendena» è composta dall’insieme degli abitanti dei comuni della valle, tra cui Pinzolo, Porte di Rendena e altri, per un totale di decine di migliaia di abitanti. La popolazione totale della Comunità delle Giudicarie, di cui la Val Rendena fa parte, era di 36.814 abitanti nel dicembre 2021.',
                 'La Val Rendena è una valle del Trentino-Alto Adige, in provincia di Trento, racchiusa fra l’Adamello a ovest e il Gruppo del Brenta a est. Inizia a sud poco prima dell’abitato di Verdesina, e conclude poi al passo Campo Carlo Magno. La val Rendena è percorsa dal fiume Sarca ed è situata nel cuore del parco naturale Adamello Brenta.'
             ],
-            'map_image' => 'val-rendena-map.png'
+            'map_image' => 'val-rendena-map.webp'
         ]
     ],
     'trento' => [
         'hero' => [
             'title' => 'Trento',
-            'image' => 'trento-hero.png'
+            'image' => 'trento-hero.webp'
         ],
 
         'card_info' => [
@@ -97,6 +107,16 @@ $cities = [
             'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
         ],
 
+        'board' => [
+            'pastor_name'    => 'Robin Rodriguez',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'trento-famiglia.webp',
+            'phone'          => '3382298345',
+            'welcome_text'   => [
+            'L’idea: Dio non si limita a "aggiustare" ciò che si è rotto per riportarlo allo stato originale. Egli usa i frammenti della nostra vita (fallimenti, lutti, delusioni) per edificare una persona nuova, dotata di una sensibilità e una forza che prima non possedeva.'
+            ]
+        ],        
+
         'support_section' => [
             'title'    => 'Non sei solo!',
             'content' => [
@@ -111,13 +131,13 @@ $cities = [
                 'È un comune italiano di 119 122 abitanti, capoluogo della provincia autonoma di Trento e della regione Trentino-Alto Adige.',
                 'Trento presenta estreme diversità territoriali e di popolazione. La popolazione comunale non è concentrata solo in città, ma anche in numerosi centri sparsi o sobborghi, piuttosto diversi l’uno dall’altro e che conservano ancora una propria identità sia urbana, sia paesana, rurale o montana. La città antica conta 80 000 abitanti (ottobre 2004). L’agglomerato urbano con i comuni limitrofi arriva a 150 000 abitanti. Tra i sobborghi, quello più popoloso è Gardolo (a nord della città, 12 449 abitanti la circoscrizione).'
             ],
-            'map_image' => 'trento-map.png'
+            'map_image' => 'trento-map.webp'
         ],
     ],
     'milano' => [
         'hero' => [
             'title' => 'Milano',
-            'image' => 'milan.webp'
+            'image' => 'milan-hero.webp'
         ],
 
         'card_info' => [
@@ -183,7 +203,7 @@ $cities = [
         'board' => [
             'pastor_name'    => 'Jair Pedrozo Rinaldy',
             'pastor_role'    => 'Pastore',
-            'pastor_image'   => 'jair-pedrozo.png',
+            'pastor_image'   => 'milan-family.webp',
             'phone'          => '+39  349 463 7023',
             'welcome_text'   => [
                 'Se stai cercando un posto dove sentirti al sicuro e in armonia, la nostra congregazione CPUE Milano è la chiesa che predica la parola di Dio per portare un messaggio di salvezza a tutte le persone, e dove la Sua presenza si fa sentire.',
@@ -208,7 +228,7 @@ $cities = [
     'torino' => [
         'hero' => [
             'title' => 'Torino',
-            'image' => 'torino-hero.png'
+            'image' => 'torino-hero.webp'
         ],
 
         'card_info' => [
@@ -270,7 +290,7 @@ $cities = [
     'pordenone' => [
         'hero' => [
             'title' => 'Pordenone',
-            'image' => 'pordenone-hero.png'
+            'image' => 'pordenone-hero.webp'
         ],
 
         'card_info' => [
@@ -350,7 +370,7 @@ $cities = [
     'reggio-emilia' => [
         'hero' => [
             'title' => 'Reggio Emilia',
-            'image' => 'reggio-emilia-hero.png'
+            'image' => 'reggio-emilia-hero.webp'
         ],
 
         'card_info' => [
@@ -389,7 +409,7 @@ $cities = [
         'board' => [
             'pastor_name'    => 'Hikler Garcia Lopez',
             'pastor_role'    => 'Pastore',
-            'pastor_image'   => 'hikler-garcia-lopez.png',
+            'pastor_image'   => 'reggio-emilia-famiglia.webp',
             'phone'          => '3883426513',
             'welcome_text'   => [
                 'Per la grazia e misericordia del signore Gesù lavoro in questa città come pastore insieme alla mia famiglia, dall’anno 2021. Desiderosi di crescere spirituale e numericamente, e raggiungere più persone possibili con questo glorioso messaggio d’amore e salvezza.',
@@ -436,7 +456,7 @@ $cities = [
     'firenze' => [
         'hero' => [
             'title' => 'Firenze',
-            'image' => 'firenze-hero.png'
+            'image' => 'firenze-hero.webp'
         ],
 
         'card_info' => [
@@ -474,7 +494,7 @@ $cities = [
         'board' => [
             'pastor_name'    => 'Santiago Girando',
             'pastor_role'    => 'Pastore',
-            'pastor_image'   => 'santiago-girando.png',
+            'pastor_image'   => 'firenze-famiglia.webp',
             'phone'          => '3382298345',
             'welcome_text'   => [
                 'Ciao, questa è la congregazione di Firenze. Siamo molto contenti di sapere che ci leggi; devi sapere che noi siamo una grande famiglia e questa famiglia ha le braccia aperte per tutti quelli che ne vogliono far parte.',
@@ -488,7 +508,7 @@ $cities = [
                 'È un comune italiano di 362 760 abitanti, capoluogo dell’omonima città metropolitana e della regione Toscana.',
                 'Nel Medioevo è stata un importantissimo centro artistico, culturale, commerciale, politico, economico e finanziario; nell’età moderna ha ricoperto il ruolo di capitale del Granducato di Toscana dal 1569 al 1859 che, col governo delle famiglie dei Medici e dei Lorena, divenne uno degli stati più ricchi e moderni d’Italia. Le varie vicissitudini politiche, la potenza finanziaria e mercantile e le influenze in ogni campo della cultura hanno fatto della città un crocevia fondamentale della storia italiana ed europea.'
             ],
-            'map_image' => 'firenze-map.png'
+            'map_image' => 'firenze-map.webp'
         ],
 
         'location' => [
@@ -513,7 +533,7 @@ $cities = [
     'porto-sant-elpidio' => [
         'hero' => [
             'title' => 'Porto Sant’Elpidio',
-            'image' => 'pedaso-hero.png'
+            'image' => 'porto-sant-elpidio-hero.webp'
         ],
 
         'card_info' => [
@@ -584,7 +604,7 @@ $cities = [
     'roma' => [
         'hero' => [
             'title' => 'Roma',
-            'image' => 'roma-hero.png'
+            'image' => 'roma-hero.webp'
         ],
 
         'card_info' => [
@@ -620,6 +640,17 @@ $cities = [
             'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
         ],
 
+            'board' => [
+            'pastor_name'    => 'Manuel Lopez',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'roma-famiglia.webp',
+            'phone'          => '3932724244',
+            'welcome_text'   => [
+                'Ciao, questa è la congregazione di Firenze. Siamo molto contenti di sapere che ci leggi; devi sapere che noi siamo una grande famiglia e questa famiglia ha le braccia aperte per tutti quelli che ne vogliono far parte.',
+                'Perciò accoglietevi gli uni gli altri, come anche Cristo ha accolto voi, per la gloria di Dio. Romani 15:7 (Nuova Riveduta)'
+            ]
+        ],
+
         'support_section' => [
             'title'    => 'Non sei solo!',
             'content' => [
@@ -634,7 +665,7 @@ $cities = [
                 'È un comune italiano di 2.746.609 abitanti, capoluogo dell’omonima città metropolitana e della regione Lazio, nonché capitale della Repubblica Italiana. Il comune di Roma, denominato Roma Capitale, è dotato di un ordinamento amministrativo speciale e disciplinato dalla legge dello Stato.',
                 'È il comune più popoloso d’Italia e il terzo dell’Unione europea dopo Berlino e Madrid, mentre con una superficie di 1287,36 km², è il comune più esteso dell’Unione europea e il quinto del continente europeo, preceduto da Istanbul, Mosca, Londra e San Pietroburgo. È inoltre il comune europeo con la maggiore superficie di aree verdi.'
             ],
-            'map_image' => 'roma-map.png'
+            'map_image' => 'roma-map.webp'
         ],
 
         'location' => [
@@ -651,7 +682,7 @@ $cities = [
     'ostia' => [
         'hero' => [
             'title' => 'Ostia',
-            'image' => 'ostia-hero.png'
+            'image' => 'ostia-hero.webp'
         ],
 
         'card_info' => [
@@ -713,7 +744,7 @@ $cities = [
     'catania' => [
         'hero' => [
             'title' => 'Catania',
-            'image' => 'catania-hero.png'
+            'image' => 'catania-hero.webp'
         ],
 
         'card_info' => [
@@ -776,7 +807,7 @@ $cities = [
     'palermo' => [
         'hero' => [
             'title' => 'Palermo',
-            'image' => 'palermo-hero.png'
+            'image' => 'palermo-hero.webp'
         ],
 
         'card_info' => [
