@@ -60,10 +60,10 @@
                     <ul class="dropdown-menu shadow">
                         <?php
                         foreach ($comitati as $id => $navComitati) {
-                            if (!empty($navComitati['title'])) { ?>
+                            if (!empty($navComitati['info']['title'])) { ?>
                                 <li>
-                                    <a class="dropdown-item" href="<?= BASE_URL ?>comitati/<?php echo $id ?>">
-                                        <?php echo $navComitati['title'] ?>
+                                    <a class="dropdown-item" href="<?= BASE_URL ?>comitato/<?php echo $id ?>">
+                                        <?php echo $navComitati['info']['title'] ?>
                                     </a>
                                 </li>
                         <?php }

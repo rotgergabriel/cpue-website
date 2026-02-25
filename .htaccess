@@ -1,17 +1,14 @@
-# ----------------------------------------------------------------------
-# .htaccess della ROOT (Corregido)
-# ----------------------------------------------------------------------
 RewriteEngine On
 RewriteBase /cpue-website/
 
-# REGLA MAESTRA PARA CIUDADES: 
-# Si la URL empieza con city/, mandarlo directo al controlador en public
+# REGLA MAESTRA PARA CIUDADES Y COMITATOS
 RewriteRule ^city/([^/]+)$ public/city.php?id=$1 [L,QSA]
+RewriteRule ^comitato/([^/]+)$ public/comitato.php?id=$1 [L,QSA]
 
 # Si es la raíz vacía, ir a public
 RewriteRule ^$ public/ [L]
 
-# El resto de archivos (css, js, imagenes, u otras páginas) van a public
+# El resto de archivos van a public
 RewriteCond %{REQUEST_URI} !^/cpue-website/public/
 RewriteRule ^(.*)$ public/$1 [L]
 

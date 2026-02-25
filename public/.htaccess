@@ -17,19 +17,21 @@ RewriteBase /cpue-website/public/
 # RewriteBase /
 # -------------------------------------------------------------
 
-# 3. Rimuovere l'estensione .php dalla URL
-# Esempio: trasforma 'sito.it/contatti' in 'contatti.php'
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
-
-# 3.1. Regola per le città
+# 3. Reglas específicas primero (Evitan que el .php genérico se active)
+# -------------------------------------------------------------
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^city/([^/]+)$ city.php?id=$1 [L,QSA]
 
-# 4. Sicurezza: Evita che si vedano le cartelle se manca l'index
-Options -Indexes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^comitato/([^/]+)$ comitato.php?id=$1 [L,QSA]
+
+# 4. Rimuovere l'estensione .php dalla URL (Regla genérica)
+# -------------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 # 5. Protezione file sensibili
 # Blocca l'accesso diretto ai file di log, configurazione o markdown
