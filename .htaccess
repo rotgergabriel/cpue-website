@@ -1,4 +1,5 @@
 RewriteEngine On
+ErrorDocument 404 /cpue-website/public/404.php
 RewriteBase /cpue-website/
 
 # REGLA MAESTRA PARA CIUDADES Y COMITATOS

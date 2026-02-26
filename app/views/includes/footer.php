@@ -76,14 +76,13 @@
     <div class="footer__accordion-content">
       <nav class="footer__info-group" aria-label="Menu Footer">
         <ul class="footer__list">
-          <li class="footer__item"><a href="<?= BASE_URL ?>index.php" class="footer__link">Home Page</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>public/404.php" class="footer__link">Le nostre Chiese</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>public/404.php" class="footer__link">Opere in Proiezione</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>public/comitato.php" class="footer__link">Comitati</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>public/404.php" class="footer__link">Eventi e News</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>public/404.php" class="footer__link">Risorse Gratuite</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>public/404.php" class="footer__link">Galleria Fotografica</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>public/503.php" class="footer__link">Servizio Manutenzione</a></li>
+          <li class="footer__item"><a href="<?= BASE_URL ?>" class="footer__link">Home Page</a></li>
+          <li class="footer__item"><a href="<?= BASE_URL ?>about" class="footer__link">Le nostre Chiese</a></li>
+          <li class="footer__item"><a href="<?= BASE_URL ?>proiezione" class="footer__link">Opere in Proiezione</a></li>
+          <li class="footer__item"><a href="<?= BASE_URL ?>" class="footer__link">Eventi e News</a></li>
+          <li class="footer__item"><a href="<?= BASE_URL ?>" class="footer__link">Risorse Gratuite</a></li>
+          <li class="footer__item"><a href="<?= BASE_URL ?>" class="footer__link">Galleria Fotografica</a></li>
+          <li class="footer__item"><a href="<?= BASE_URL ?>503.php" class="footer__link">Servizio Manutenzione</a></li>
         </ul>
       </nav>
     </div>
