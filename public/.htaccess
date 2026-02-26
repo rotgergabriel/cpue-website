@@ -1,45 +1,13 @@
-# ----------------------------------------------------------------------
-# .htaccess cartella PUBLIC
-# ----------------------------------------------------------------------
-
-# 1. Attivare il motore di riscrittura
 RewriteEngine On
-
-# 2. DEFINIZIONE DEL PERCORSO BASE (RewriteBase)
-# -------------------------------------------------------------
-# CASO A: Sviluppo Locale (XAMPP)
-# Se il sito è in http://localhost/cpue-website/public/
 RewriteBase /cpue-website/public/
 
-# CASO B: Sito Online (cpue.it)
-# Quando caricherai il sito online, metti un # davanti alla riga sopra
-# e togli il # dalla riga qui sotto:
-# RewriteBase /
-# -------------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-# 3. Reglas específicas primero (Evitan que el .php genérico se active)
-# -------------------------------------------------------------
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^city/([^/]+)$ city.php?id=$1 [L,QSA]
+RewriteRule ^index\.php$ - [L]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^comitato/([^/]+)$ comitato.php?id=$1 [L,QSA]
-
-# 4. Rimuovere l'estensione .php dalla URL (Regla genérica)
-# -------------------------------------------------------------
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
-
-# 5. Protezione file sensibili
-# Blocca l'accesso diretto ai file di log, configurazione o markdown
+Options -Indexes
 <FilesMatch "\.(json|log|ini|md|gitkeep)$">
     Require all denied
 </FilesMatch>
-
-# 6. Protezione del file .htaccess stesso
-<Files .htaccess>
-    Require all denied
-</Files>

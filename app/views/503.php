@@ -20,11 +20,11 @@ $meta_description = $site_config['head']['503']['meta-description'];
     <main class="maintenance">
 
         <div class="maintenance__container">            
-            <img src="<?= BASE_URL ?>public/assets/img/503.svg" class="maintenance__img" alt="Servizio Manutenzione">
+            <img src="<?php echo BASE_URL ?>public/assets/img/503.svg" class="maintenance__img" alt="Servizio Manutenzione">
 
             <h1 class="maintenance__title">Stiamo aggiornando la nostra casa</h1>
             
-            <img src="<?= BASE_URL ?>public/assets/img/logo-main.webp" class="maintenance__logo" alt="Logo CPUE">
+            <img src="<?php echo BASE_URL ?>public/assets/img/logo-main.webp" class="maintenance__logo" alt="Logo CPUE">
 
             <p class="maintenance__text">
                 Il sito è momentaneamente offline per una manutenzione programmata. 
@@ -37,13 +37,13 @@ $meta_description = $site_config['head']['503']['meta-description'];
 
             <div class="maintenance__social-bar">
                 <a href="https://www.youtube.com/@CpueItalia" target="_blank" class="maintenance__social-link" title="YouTube">
-                    <img src="<?= BASE_URL ?>public/assets/icons/youtube.svg" alt="YouTube" class="maintenance__social-icon">
+                    <img src="<?php echo BASE_URL ?>public/assets/icons/youtube.svg" alt="YouTube" class="maintenance__social-icon">
                 </a>
                 <a href="https://www.facebook.com/cpueitalia" target="_blank" class="maintenance__social-link" title="Facebook">
-                    <img src="<?= BASE_URL ?>public/assets/icons/facebook.svg" alt="Facebook" class="maintenance__social-icon">
+                    <img src="<?php echo BASE_URL ?>public/assets/icons/facebook.svg" alt="Facebook" class="maintenance__social-icon">
                 </a>
                 <a href="https://www.instagram.com/cpue_italia" target="_blank" class="maintenance__social-link" title="Instagram">
-                    <img src="<?= BASE_URL ?>public/assets/icons/instagram.svg" alt="Instagram" class="maintenance__social-icon">
+                    <img src="<?php echo BASE_URL ?>public/assets/icons/instagram.svg" alt="Instagram" class="maintenance__social-icon">
                 </a>
                 <a href="https://wa.me/393494637023" target="_blank" class="maintenance__social-link" title="WhatsApp">
                     <svg viewBox="0 0 448 512" class="maintenance__social-icon maintenance__social-icon--wa">
@@ -51,7 +51,7 @@ $meta_description = $site_config['head']['503']['meta-description'];
                     </svg>
                 </a>
                 <a href="https://maps.google.com/?cid=7403801825769057566&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl" target="_blank" class="maintenance__social-link" title="Visualizza la Sede Legale su Google Maps">
-                    <img src="<?= BASE_URL ?>public/assets/icons/map-icon.svg" alt="Mappa" class="maintenance__social-icon">
+                    <img src="<?php echo BASE_URL ?>public/assets/icons/map-icon.svg" alt="Mappa" class="maintenance__social-icon">
                 </a>
             </div>
         </div>
@@ -62,7 +62,7 @@ $meta_description = $site_config['head']['503']['meta-description'];
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?= BASE_URL ?>public/js/script.js"></script>
+    <script src="<?php echo BASE_URL ?>public/js/script.js"></script>
 </body>
 
 </html>

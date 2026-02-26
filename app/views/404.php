@@ -23,11 +23,11 @@ $meta_description = $site_config['head']['404']['meta-description'];
     <main class="not-found">
 
         <div class="not-found__container">
-            <img src="<?= BASE_URL ?>public/assets/img/404.svg" class="not-found__img" alt="Errore 404">
+            <img src="<?php echo BASE_URL ?>public/assets/img/404.svg" class="not-found__img" alt="Errore 404">
 
             <h1 class="not-found__title">Non siamo nel luogo che aspettavamo...</h1>
 
-            <a href="<?= BASE_URL ?>" class="contact__button not-found__button">
+            <a href="<?php echo BASE_URL ?>" class="contact__button not-found__button">
                 <span class="contact__button-text">TORNIAMO ALLA HOME</span>
             </a>
         </div>
@@ -38,7 +38,7 @@ $meta_description = $site_config['head']['404']['meta-description'];
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?= BASE_URL ?>public/js/script.js"></script>
+    <script src="<?php echo BASE_URL ?>public/js/script.js"></script>
 </body>
 
 </html>

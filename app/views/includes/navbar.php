@@ -34,7 +34,7 @@
                     <ul class="dropdown-menu shadow">
 
                         <li>
-                            <a class="dropdown-item" href="<?= BASE_URL ?>proiezione">
+                            <a class="dropdown-item" href="<?php echo BASE_URL ?>proiezione">
                                 Opere in Proiezione
                             </a>
                         </li>

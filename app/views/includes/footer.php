@@ -42,13 +42,13 @@
     <div class="footer__accordion-content">
       <div class="footer__social-icons">
         <a href="https://www.youtube.com/@CpueItalia" target="_blank" class="footer__social-link" title="Contattaci su YouTube">
-          <img src="<?= BASE_URL ?>public/assets/icons/youtube.svg" alt="YouTube" class="footer__icon">
+          <img src="<?php echo BASE_URL ?>public/assets/icons/youtube.svg" alt="YouTube" class="footer__icon">
         </a>
         <a href="https://www.facebook.com/cpueitalia" target="_blank" class="footer__social-link" title="Contattaci su Facebook">
-          <img src="<?= BASE_URL ?>public/assets/icons/facebook.svg" alt="Facebook" class="footer__icon">
+          <img src="<?php echo BASE_URL ?>public/assets/icons/facebook.svg" alt="Facebook" class="footer__icon">
         </a>
         <a href="https://www.instagram.com/cpue_italia" target="_blank" class="footer__social-link" title="Contattaci su Instagram">
-          <img src="<?= BASE_URL ?>public/assets/icons/instagram.svg" alt="Instagram" class="footer__icon">
+          <img src="<?php echo BASE_URL ?>public/assets/icons/instagram.svg" alt="Instagram" class="footer__icon">
         </a>
         <a href="https://wa.me/393494637023" target="_blank" class="footer__social-link" title="Contattaci su WhatsApp">
           <svg viewBox="0 0 448 512" class="footer__icon footer__icon--wa">
@@ -57,8 +57,8 @@
         </a>
       </div>
       <div class="footer__desktop-logo">
-        <a href="<?= BASE_URL ?>" title="Torna alla Home">
-          <img src="<?= BASE_URL ?>public/assets/img/logo-main.webp" class="footer__img" alt="Logo CPUE">
+        <a href="<?php echo BASE_URL ?>" title="Torna alla Home">
+          <img src="<?php echo BASE_URL ?>public/assets/img/logo-main.webp" class="footer__img" alt="Logo CPUE">
         </a>
       </div>
     </div>
@@ -76,13 +76,13 @@
     <div class="footer__accordion-content">
       <nav class="footer__info-group" aria-label="Menu Footer">
         <ul class="footer__list">
-          <li class="footer__item"><a href="<?= BASE_URL ?>" class="footer__link">Home Page</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>about" class="footer__link">Le nostre Chiese</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>proiezione" class="footer__link">Opere in Proiezione</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>" class="footer__link">Eventi e News</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>" class="footer__link">Risorse Gratuite</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>" class="footer__link">Galleria Fotografica</a></li>
-          <li class="footer__item"><a href="<?= BASE_URL ?>503.php" class="footer__link">Servizio Manutenzione</a></li>
+          <li class="footer__item"><a href="<?php echo BASE_URL ?>" class="footer__link">Home Page</a></li>
+          <li class="footer__item"><a href="<?php echo BASE_URL ?>about" class="footer__link">Le nostre Chiese</a></li>
+          <li class="footer__item"><a href="<?php echo BASE_URL ?>proiezione" class="footer__link">Opere in Proiezione</a></li>
+          <li class="footer__item"><a href="<?php echo BASE_URL ?>" class="footer__link">Eventi e News</a></li>
+          <li class="footer__item"><a href="<?php echo BASE_URL ?>" class="footer__link">Risorse Gratuite</a></li>
+          <li class="footer__item"><a href="<?php echo BASE_URL ?>" class="footer__link">Galleria Fotografica</a></li>
+          <li class="footer__item"><a href="<?php echo BASE_URL ?>503" class="footer__link">Servizio Manutenzione</a></li>
         </ul>
       </nav>
     </div>
@@ -92,9 +92,9 @@
 
 <section class="footer__bottom">
   <div class="footer__legal-links">
-    <a href="<?= BASE_URL ?>privacy" class="footer__link">Privacy</a>
+    <a href="<?php echo BASE_URL ?>privacy" class="footer__link">Privacy</a>
     <span>&</span>
-    <a href="<?= BASE_URL ?>privacy#cookies" class="footer__link">Cookies
+    <a href="<?php echo BASE_URL ?>privacy#cookies" class="footer__link">Cookies
     </a>
   </div>
   <p class="footer__bottom-text">© 2024 Associazione Chiesa Pentecostale Unita in Europa. Tutti i diritti riservati.</p>

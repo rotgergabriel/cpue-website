@@ -44,7 +44,7 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                     </div>
 
                     <div class="italy-overview__img-col">
-                        <img src="<?= BASE_URL ?>/public/assets/img/mappa-proiezione.webp" alt="Mappa Proiezione Italia" class="italy-overview__map">
+                        <img src="<?php echo BASE_URL ?>/public/assets/img/mappa-proiezione.webp" alt="Mappa Proiezione Italia" class="italy-overview__map">
                     </div>
                 </div>
             </section>
@@ -88,7 +88,7 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                 <div class="contribution-cards__container">
 
                     <div class="contribution-card">
-                        <img src="<?= BASE_URL ?>/public/assets/img/prega.svg" alt="Prega" class="contribution-card__icon">
+                        <img src="<?php echo BASE_URL ?>/public/assets/img/prega.svg" alt="Prega" class="contribution-card__icon">
                         <h3 class="contribution-card__title">PREGA</h3>
                         <p class="contribution-card__text">
                             La preghiera è fondamentale per sostenere il lavoro dei missionari e aprire i cuori al messaggio del Vangelo. Dedica del tempo ogni giorno a pregare per la Chiesa e per le regioni ancora prive di un pastore.
@@ -96,7 +96,7 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                     </div>
 
                     <div class="contribution-card">
-                        <img src="<?= BASE_URL ?>/public/assets/img/evangelizzare.svg" alt="Evangelizzare" class="contribution-card__icon">
+                        <img src="<?php echo BASE_URL ?>/public/assets/img/evangelizzare.svg" alt="Evangelizzare" class="contribution-card__icon">
                         <h3 class="contribution-card__title">EVANGELIZZA</h3>
                         <p class="contribution-card__text">
                             Invitare i fratelli e le sorelle a partecipare attivamente all'opera di evangelizzazione. Ognuno di noi ha il dono e la responsabilità di condividere la propria fede con gli altri, testimoniando l'amore e la grazia di Dio.
@@ -104,7 +104,7 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                     </div>
 
                     <div class="contribution-card">
-                        <img src="<?= BASE_URL ?>/public/assets/img/dona.svg" alt="Dona" class="contribution-card__icon">
+                        <img src="<?php echo BASE_URL ?>/public/assets/img/dona.svg" alt="Dona" class="contribution-card__icon">
                         <h3 class="contribution-card__title">DONA</h3>
                         <p class="contribution-card__text">
                             Le donazioni finanziarie sono essenziali per sostenere il lavoro missionario della Chiesa. Ogni contributo, grande o piccolo, può fare la differenza nel portare il messaggio del Vangelo a più persone.
@@ -118,7 +118,7 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                 <div class="missionary__container">
 
                     <div class="missionary__image-col">
-                        <img src="<?= BASE_URL ?>/public/assets/img/misionario.webp" alt="Missionario Jair Pedrozo" class="missionary__img">
+                        <img src="<?php echo BASE_URL ?>/public/assets/img/misionario.webp" alt="Missionario Jair Pedrozo" class="missionary__img">
                     </div>
 
                     <div class="missionary__text-col">
@@ -159,10 +159,10 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                 <div class="leader-quote__container">
 
                     <div class="leader-quote__icon-wrapper">
-                        <img src="<?= BASE_URL ?>/public/assets/img/virgolette.svg" alt="Virgolette" class="leader-quote__icon">
+                        <img src="<?php echo BASE_URL ?>/public/assets/img/virgolette.svg" alt="Virgolette" class="leader-quote__icon">
                     </div>
 
-                    <img src="<?= BASE_URL ?>/public/assets/img/milan-leader.webp" alt="Jhon Pedrozo" class="leader-quote__image">
+                    <img src="<?php echo BASE_URL ?>/public/assets/img/milan-leader.webp" alt="Jhon Pedrozo" class="leader-quote__image">
 
                     <div class="leader-quote__text-content">
                         <p class="leader-quote__text">
@@ -206,11 +206,11 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
 
                     <div class="city-work__social-list">
                         <a href="https://www.facebook.com/cpueitalia" target="_blank" class="city-work__social-item" title="Contattaci su Facebook">
-                            <img src="<?= BASE_URL ?>public/assets/icons/facebook.svg" alt="Facebook" class="city-work__social-icon">
+                            <img src="<?php echo BASE_URL ?>public/assets/icons/facebook.svg" alt="Facebook" class="city-work__social-icon">
                         </a>
 
                         <a href="https://www.instagram.com/cpue_italia" target="_blank" class="city-work__social-item" title="Contattaci su Instagram">
-                            <img src="<?= BASE_URL ?>public/assets/icons/instagram.svg" alt="Instagram" class="city-work__social-icon">
+                            <img src="<?php echo BASE_URL ?>public/assets/icons/instagram.svg" alt="Instagram" class="city-work__social-icon">
                         </a>
 
                         <a href="https://wa.me/393494637023" target="_blank" class="city-work__social-item" title="Contattaci su WhatsApp">
@@ -220,12 +220,12 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                         </a>
 
                         <a href="tel:+393494637023" class="city-work__social-item" title="Chiama ora">
-                            <img src="<?= BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
+                            <img src="<?php echo BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
                         </a>
                     </div>
 
                     <div class="city-work__image-wrapper">
-                        <img src="<?= BASE_URL ?>/public/assets/img/alessandria.webp" alt="Alessandria" class="city-work__main-image">
+                        <img src="<?php echo BASE_URL ?>/public/assets/img/alessandria.webp" alt="Alessandria" class="city-work__main-image">
                         <span class="city-work__image-text">Alessandria</span>
                     </div>
 
@@ -243,10 +243,10 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
 
                         <div class="city-work__social-list">
                             <a href="https://www.facebook.com/cpueitalia" target="_blank" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>public/assets/icons/facebook.svg" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>public/assets/icons/facebook.svg" class="city-work__social-icon">
                             </a>
                             <a href="https://www.instagram.com/cpue_italia" target="_blank" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>public/assets/icons/instagram.svg" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>public/assets/icons/instagram.svg" class="city-work__social-icon">
                             </a>
                             <a href="https://wa.me/393494637023" target="_blank" class="city-work__social-item">
                                 <svg viewBox="0 0 448 512" class="city-work__social-icon city-work__svg">
@@ -254,12 +254,12 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                                 </svg>
                             </a>
                             <a href="tel:+393494637023" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
                             </a>
                         </div>
 
                         <div class="city-work__image-wrapper city-work__image-wrapper--card">
-                            <img src="<?= BASE_URL ?>/public/assets/img/napoli.webp" alt="Napoli" class="city-work__main-image city-work__main-image--card">
+                            <img src="<?php echo BASE_URL ?>/public/assets/img/napoli.webp" alt="Napoli" class="city-work__main-image city-work__main-image--card">
                             <span class="city-work__image-text">Napoli</span>
                         </div>
                     </div>
@@ -272,10 +272,10 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
 
                         <div class="city-work__social-list">
                             <a href="https://www.facebook.com/cpueitalia" target="_blank" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>public/assets/icons/facebook.svg" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>public/assets/icons/facebook.svg" class="city-work__social-icon">
                             </a>
                             <a href="https://www.instagram.com/cpue_italia" target="_blank" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>public/assets/icons/instagram.svg" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>public/assets/icons/instagram.svg" class="city-work__social-icon">
                             </a>
                             <a href="https://wa.me/393494637023" target="_blank" class="city-work__social-item">
                                 <svg viewBox="0 0 448 512" class="city-work__social-icon city-work__svg">
@@ -283,12 +283,12 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                                 </svg>
                             </a>
                             <a href="tel:+393494637023" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
                             </a>
                         </div>
 
                         <div class="city-work__image-wrapper city-work__image-wrapper--card">
-                            <img src="<?= BASE_URL ?>/public/assets/img/conegliano.webp" alt="Conegliano" class="city-work__main-image city-work__main-image--card">
+                            <img src="<?php echo BASE_URL ?>/public/assets/img/conegliano.webp" alt="Conegliano" class="city-work__main-image city-work__main-image--card">
                             <span class="city-work__image-text">Conegliano</span>
                         </div>
                     </div>
@@ -303,10 +303,10 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
 
                         <div class="city-work__social-list">
                             <a href="https://www.facebook.com/cpueitalia" target="_blank" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>public/assets/icons/facebook.svg" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>public/assets/icons/facebook.svg" class="city-work__social-icon">
                             </a>
                             <a href="https://www.instagram.com/cpue_italia" target="_blank" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>public/assets/icons/instagram.svg" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>public/assets/icons/instagram.svg" class="city-work__social-icon">
                             </a>
                             <a href="https://wa.me/393494637023" target="_blank" class="city-work__social-item">
                                 <svg viewBox="0 0 448 512" class="city-work__social-icon city-work__svg">
@@ -314,12 +314,12 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                                 </svg>
                             </a>
                             <a href="tel:+393494637023" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
                             </a>
                         </div>
 
                         <div class="city-work__image-wrapper city-work__image-wrapper--card">
-                            <img src="<?= BASE_URL ?>/public/assets/img/roma-est.webp" alt="Roma Est" class="city-work__main-image city-work__main-image--card">
+                            <img src="<?php echo BASE_URL ?>/public/assets/img/roma-est.webp" alt="Roma Est" class="city-work__main-image city-work__main-image--card">
                             <span class="city-work__image-text">Roma Est</span>
                         </div>
                     </div>
@@ -331,10 +331,10 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
 
                         <div class="city-work__social-list">
                             <a href="https://www.facebook.com/cpueitalia" target="_blank" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>public/assets/icons/facebook.svg" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>public/assets/icons/facebook.svg" class="city-work__social-icon">
                             </a>
                             <a href="https://www.instagram.com/cpue_italia" target="_blank" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>public/assets/icons/instagram.svg" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>public/assets/icons/instagram.svg" class="city-work__social-icon">
                             </a>
                             <a href="https://wa.me/393494637023" target="_blank" class="city-work__social-item">
                                 <svg viewBox="0 0 448 512" class="city-work__social-icon city-work__svg">
@@ -342,12 +342,12 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                                 </svg>
                             </a>
                             <a href="tel:+393494637023" class="city-work__social-item">
-                                <img src="<?= BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
+                                <img src="<?php echo BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
                             </a>
                         </div>
 
                         <div class="city-work__image-wrapper city-work__image-wrapper--card">
-                            <img src="<?= BASE_URL ?>/public/assets/img/acquila.webp" alt="L'Aquila" class="city-work__main-image city-work__main-image--card">
+                            <img src="<?php echo BASE_URL ?>/public/assets/img/acquila.webp" alt="L'Aquila" class="city-work__main-image city-work__main-image--card">
                             <span class="city-work__image-text">L'Aquila</span>
                         </div>
                     </div>
@@ -361,11 +361,11 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
 
                     <div class="city-work__social-list">
                         <a href="https://www.facebook.com/cpueitalia" target="_blank" class="city-work__social-item" title="Contattaci su Facebook">
-                            <img src="<?= BASE_URL ?>public/assets/icons/facebook.svg" alt="Facebook" class="city-work__social-icon">
+                            <img src="<?php echo BASE_URL ?>public/assets/icons/facebook.svg" alt="Facebook" class="city-work__social-icon">
                         </a>
 
                         <a href="https://www.instagram.com/cpue_italia" target="_blank" class="city-work__social-item" title="Contattaci su Instagram">
-                            <img src="<?= BASE_URL ?>public/assets/icons/instagram.svg" alt="Instagram" class="city-work__social-icon">
+                            <img src="<?php echo BASE_URL ?>public/assets/icons/instagram.svg" alt="Instagram" class="city-work__social-icon">
                         </a>
 
                         <a href="https://wa.me/393494637023" target="_blank" class="city-work__social-item" title="Contattaci su WhatsApp">
@@ -375,11 +375,11 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                         </a>
 
                         <a href="tel:+393494637023" class="city-work__social-item" title="Chiama ora">
-                            <img src="<?= BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
+                            <img src="<?php echo BASE_URL ?>/public/assets/icons/phone.svg" alt="Telefono" class="city-work__social-icon">
                         </a>
                     </div>
                     <div class="city-work__image-wrapper">
-                        <img src="<?= BASE_URL ?>/public/assets/img/trieste.webp" alt="Trieste" class="city-work__main-image">
+                        <img src="<?php echo BASE_URL ?>/public/assets/img/trieste.webp" alt="Trieste" class="city-work__main-image">
                         <span class="city-work__image-text">Trieste</span>
                     </div>
                 </div>
@@ -440,7 +440,7 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?= BASE_URL ?>public/js/script.js"></script>
+    <script src="<?php echo BASE_URL ?>public/js/script.js"></script>
 </body>
 
 </html>

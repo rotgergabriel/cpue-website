@@ -6,7 +6,7 @@ $titleName = !empty($heroTitle) ? $heroTitle : 'Chiesa Pentecostale Unita in Eur
     <div class="hero__container">
         <div class="hero__spacer"></div>
         <div class="hero__body">
-            <img src="<?= BASE_URL ?>public/assets/img/<?php echo $imageName; ?>"
+            <img src="<?php echo BASE_URL ?>public/assets/img/<?php echo $imageName; ?>"
                 alt="Costruendo sulla roccia"
                 class="hero__img">
         </div>

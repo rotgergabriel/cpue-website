@@ -36,7 +36,7 @@ $meta_description = $comitato_data['info']['meta-description'];
 
                     <div class="comitato__intro">
                         <?php if (!empty($comitato_data['info']['image'])) { ?>
-                            <img src="<?= BASE_URL ?>public/assets/img/<?php echo $comitato_data['info']['image'] ?>"
+                            <img src="<?php echo BASE_URL ?>public/assets/img/<?php echo $comitato_data['info']['image'] ?>"
                                 alt="<?php echo $comitato_data['info']['title'] ?? 'Immagine comitato' ?>"
                                 class="comitato__intro-img">
                         <?php } ?>
@@ -117,6 +117,6 @@ $meta_description = $comitato_data['info']['meta-description'];
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?= BASE_URL ?>public/js/script.js"></script>
+    <script src="<?php echo BASE_URL ?>public/js/script.js"></script>
 </body>
 </html>

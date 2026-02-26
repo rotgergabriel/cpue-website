@@ -1,6 +1,6 @@
 <section class="info-card-section">
     <div class="info-card">
-        <img src="<?= BASE_URL ?>public/assets/img/bibbia.svg"
+        <img src="<?php echo BASE_URL ?>public/assets/img/bibbia.svg"
             alt="Bibbia"
             class="info-card__bg-icon">
         <h2 class="info-card__title">La Chiesa</h2>

@@ -3,7 +3,7 @@
     <div class="board__container">
         <figure class="board__content">
             <div class="board__body">
-                <img src="<?= BASE_URL ?>public/assets/img/board.webp"
+                <img src="<?php echo BASE_URL ?>public/assets/img/board.webp"
                     alt="Miembros del Consiglio Direttivo Nazionale"
                     class="board__img">
             </div>

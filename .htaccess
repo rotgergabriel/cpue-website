@@ -1,16 +1,15 @@
 RewriteEngine On
-ErrorDocument 404 /cpue-website/public/404.php
+
 RewriteBase /cpue-website/
 
-# REGLA MAESTRA PARA CIUDADES Y COMITATOS
-RewriteRule ^city/([^/]+)$ public/city.php?id=$1 [L,QSA]
-RewriteRule ^comitato/([^/]+)$ public/comitato.php?id=$1 [L,QSA]
+RewriteRule ^city/([^/]+)$ public/index.php?view=city&id=$1 [L,QSA]
+RewriteRule ^comitato/([^/]+)$ public/index.php?view=comitato&id=$1 [L,QSA]
 
-# Si es la raíz vacía, ir a public
-RewriteRule ^$ public/ [L]
-
-# El resto de archivos van a public
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !^/cpue-website/public/
-RewriteRule ^(.*)$ public/$1 [L]
+RewriteRule ^([^/]+)$ public/index.php?view=$1 [L,QSA]
 
-Options -Indexes
+RewriteRule ^$ public/index.php?view=index [L,QSA]
+
+Options -Indexes -MultiViews

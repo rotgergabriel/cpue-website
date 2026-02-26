@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style.css">
 <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/reset.css">
-<link rel="icon" href="<?= BASE_URL ?>public/assets/icons/favicon.png" type="image/png">
+<link rel="icon" href="<?php echo BASE_URL ?>public/assets/icons/favicon.png" type="image/png">
 <meta name="description" content="<?php echo $meta_description ?>">
 <title><?php echo $head_title ?></title>
 <!-- Google fonts -->

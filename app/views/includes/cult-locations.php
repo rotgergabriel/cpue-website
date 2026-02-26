@@ -1,7 +1,7 @@
 <section class="cult-locations-section">
     <div class="cult-locations">
         <div class="cult-locations__header">
-            <img src="<?= BASE_URL ?>public/assets/img/mappa-europa.webp" 
+            <img src="<?php echo BASE_URL ?>public/assets/img/mappa-europa.webp" 
                 alt="Mappa Europa" 
                 class="cult-locations__europe-map">
 
@@ -19,7 +19,7 @@
         </p>
 -->
         <div class="cult-locations__italy-wrapper">
-            <img src="<?= BASE_URL ?>public/assets/img/mappa-italia.webp" 
+            <img src="<?php echo BASE_URL ?>public/assets/img/mappa-italia.webp" 
                 alt="Mappa Interattiva Italia" 
                 class="cult-locations__italy-map">
         </div>

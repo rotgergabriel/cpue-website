@@ -48,7 +48,7 @@ $boardId = "consiglio-direttivo";
                         </div>
                     </div>
                     <div class="about-feature__media">
-                        <img class="about-feature__image" src="<?php echo BASE_URL; ?>assets/img/logo-main.webp" alt="Fondamento della chiesa">
+                        <img class="about-feature__image" src="<?php echo BASE_URL; ?>public/assets/img/logo-main.webp" alt="Fondamento della chiesa">
                     </div>
                 </div>
             </section>
@@ -133,7 +133,7 @@ $boardId = "consiglio-direttivo";
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?= BASE_URL ?>public/js/script.js"></script>
+    <script src="<?php echo BASE_URL ?>public/js/script.js"></script>
 </body>
 
 </html>

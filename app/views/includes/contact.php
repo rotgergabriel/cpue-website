@@ -16,7 +16,7 @@
                 <div class="contact__privacy">
                     <input type="checkbox" id="privacy-policy" name="privacy_consent" class="contact__privacy-input" required>
                     <label for="privacy-policy" class="contact__privacy-label">
-                        Ho letto e accetto la <a href="/privacy-policy" target="_blank" class="contact__privacy-link">Privacy Policy</a>
+                        Ho letto e accetto la <a href="<?php echo BASE_URL ?>privacy" target="_blank" class="contact__privacy-link">Privacy Policy</a>
                     </label>
                 </div>
 
@@ -40,12 +40,12 @@
             </a>
 
             <div class="contact__info contact__info--address">
-                <img src="<?= BASE_URL ?>public/assets/img/position.svg" alt="Indirizzo" class="contact__icon">
+                <img src="<?php echo BASE_URL ?>public/assets/img/position.svg" alt="Indirizzo" class="contact__icon">
                 <span class="contact__text">Via delle Camelie, 19, 20095 Cusano Milanino MI</span>
             </div>
 
             <div class="contact__info">
-                <img src="<?= BASE_URL ?>public/assets/img/phone.svg" alt="Telefono" class="contact__icon">
+                <img src="<?php echo BASE_URL ?>public/assets/img/phone.svg" alt="Telefono" class="contact__icon">
                 <span class="contact__text">+39 349 463 7023</span>
             </div>
 
