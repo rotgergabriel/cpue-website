@@ -12,12 +12,14 @@
             Queste sono le nostre <span class="cult-locations__subtitle--grey">congregazioni</span> <br> da nord a sud.
         </h2>
 
+<!--
+        QUESTO TESTO SARÀ ATTIVATO QUANDO LA MAPPA SIA DINAMICA
         <p class="cult-locations__info">
             Interagisci con la mappa per approfondire.
         </p>
-
+-->
         <div class="cult-locations__italy-wrapper">
-            <img src="<?= BASE_URL ?>public/assets/img/mappa-italia.svg" 
+            <img src="<?= BASE_URL ?>public/assets/img/mappa-italia.webp" 
                 alt="Mappa Interattiva Italia" 
                 class="cult-locations__italy-map">
         </div>

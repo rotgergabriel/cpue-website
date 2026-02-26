@@ -24,11 +24,11 @@ $cities = [
         'info_box' => [
             [
                 'label'   => 'Luogo di predicazione:',
-                'content' => 'Sede in fase di definizione. Contattaci per info.'
+                'content' => 'Sede in fase di definizione, contattaci per ricevere informazione.'
             ],
             [
                 'label'   => 'Servizio di culto:',
-                'content' => 'Presenziale (Sabato e Domenica)'
+                'content' => 'Sabato e Domenica'
             ],
             [
                 'label'   => 'Pastore:',
@@ -36,36 +36,51 @@ $cities = [
             ]
         ],
 
-        'welcome_quote' => [
-            'text'   => 'La Chiesa è al servizio di chiunque senta il bisogno di un confronto, di un momento di riflessione o di una presenza amica. Perché camminare insieme rende la strada meno faticosa. Vieni a trovarci.'
-        ],
 
-        'board' => [
-            'pastor_name'    => 'Viucci Brosolo',
-            'pastor_role'    => 'Pastore',
-            'pastor_image'   => 'val-rendena-famiglia.webp',
-            'phone'          => '3382298345',
-            'welcome_text'   => [
-            'L’idea: Dio non si limita a "aggiustare" ciò che si è rotto per riportarlo allo stato originale. Egli usa i frammenti della nostra vita (fallimenti, lutti, delusioni) per edificare una persona nuova, dotata di una sensibilità e una forza che prima non possedeva.'
-            ]
+        'welcome_quote' => [
+            'text'   => 'La Chiesa è al servizio di Gesù il nostro Signore'
         ],
 
         'support_section' => [
             'title'    => 'Non sei solo!',
             'content' => [
-                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
-                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            'La fede in Gesù trasforma l’impossibile in realtà: lo vediamo accadere ogni giorno. Qualunque sia il peso che senti sul cuore, non affrontarlo da solo. Siamo qui per sostenerti nella preghiera e credere insieme a te in un nuovo inizio.'
+            ]
+        ],
+
+        'services' => [
+            'service_title' => 'Servizi',
+            'service_subtitle' => 'Ogni sabato alle 19:00 e ogni domenica alle 10:00',
+            'list' => [
+                [
+                    'title'       => 'Servizio Sabato Sera',
+                    'description' => "Un appuntamento dedicato a lodare il Signore e approfondire la Sua Parola. Un tempo di ristoro dove ogni cuore trova pace, forza e la gioia di camminare insieme nella Sua grazia."
+                ],
+                [
+                    'title'       => 'Servizio Scuola Domenicale',
+                    'description' => 'Un tempo speciale per conoscere Gesù e ascoltare la Sua Parola. Ogni incontro è un’occasione per fare un’esperienza reale con Lui, crescendo insieme come famiglia nella fede e nella verità.'
+                ]                
+            ]
+        ],
+
+       'board' => [
+            'pastor_name'    => 'Viucci Brosolo',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'val-rendena-famiglia.webp',
+            'phone'          => '3407100713',
+            'welcome_text'   => [
+            'La nostra missione è servire il Signore offrendo le nostre vite come pietre vive. Crediamo che ogni cicatrice e ogni frammento della nostra storia, nelle mani di Dio, diventi uno strumento unico per consolare, guidare ed edificare il corpo di Cristo con una forza e una sensibilità rinnovate.'
             ]
         ],
 
         'city_description' => [
             'title'   => 'Val Rendena',
             'content' => [
-                'La popolazione del territorio amministrativo di «Val Rendena» è composta dall’insieme degli abitanti dei comuni della valle, tra cui Pinzolo, Porte di Rendena e altri, per un totale di decine di migliaia di abitanti. La popolazione totale della Comunità delle Giudicarie, di cui la Val Rendena fa parte, era di 36.814 abitanti nel dicembre 2021.',
-                'La Val Rendena è una valle del Trentino-Alto Adige, in provincia di Trento, racchiusa fra l’Adamello a ovest e il Gruppo del Brenta a est. Inizia a sud poco prima dell’abitato di Verdesina, e conclude poi al passo Campo Carlo Magno. La val Rendena è percorsa dal fiume Sarca ed è situata nel cuore del parco naturale Adamello Brenta.'
+                "La Val Rendena, racchiusa tra l'Adamello e le Dolomiti di Brenta, è un gioiello del creato che ospita migliaia di vite tra Pinzolo e Verdesina. Eppure, oltre la maestosità delle vette, batte il cuore di una popolazione che, come ogni uomo, affronta sfide, fragilità e silenzi. La nostra missione in questa valle è testimoniare che Gesù non vuole solo ammirare la bellezza esteriore del Trentino, ma abitare l'interiorità di chi ci vive. Crediamo che Lui possa trasformare ogni frammento di vita quotidiana in una nuova creazione, portando una pace e una forza che solo il Suo amore può donare a ogni famiglia della Rendena."
             ],
             'map_image' => 'val-rendena-map.webp'
         ]
+
     ],
     'trento' => [
         'hero' => [
@@ -76,7 +91,7 @@ $cities = [
         'card_info' => [
             'role'    => 'Pastore',
             'name'    => 'Robin Rodriguez',
-            'phone'   => '+39 3881721404'
+            'phone'   => '+39 3882557743'
         ],
 
         'social_media' => [
@@ -84,14 +99,14 @@ $cities = [
             'facebook' => 'https://www.facebook.com/share/1DAsnvJ8yF/',
             'instagram' => 'https://www.instagram.com/cpue.trento?igsh=MTU4M2lqOG15cmx6NA==',
             'whatsapp' => 'https://wa.me/3881721404',
-            'phone' => '+393881721404',
+            'phone' => '+393882557743',
             'maps' => ''
         ],
 
         'info_box' => [
             [
                 'label'   => 'Luogo di predicazione:',
-                'content' => 'Sede in fase di definizione. Contattaci per info.'
+                'content' => 'Sede in fase di definizione. Contattaci per ricevere informazione'
             ],
             [
                 'label'   => 'Servizio di culto:',
@@ -104,32 +119,41 @@ $cities = [
         ],
 
         'welcome_quote' => [
-            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+            'text'   => 'Vieni a scoprire come la grazia di Dio può dare nuova luce alla tua vita.'
         ],
 
         'board' => [
             'pastor_name'    => 'Robin Rodriguez',
             'pastor_role'    => 'Pastore',
-            'pastor_image'   => 'trento-famiglia.webp',
-            'phone'          => '3382298345',
+            'pastor_image'   => 'trento-pastore.webp',
+            'phone'          => '3882557743',
             'welcome_text'   => [
-            'L’idea: Dio non si limita a "aggiustare" ciò che si è rotto per riportarlo allo stato originale. Egli usa i frammenti della nostra vita (fallimenti, lutti, delusioni) per edificare una persona nuova, dotata di una sensibilità e una forza che prima non possedeva.'
+            'Dio non si limita a riparare i danni del passato: Egli raccoglie i pezzi della nostra storia e ne fa un capolavoro. Trasforma ferite e delusioni in una nuova identità, donandoci la vera pace che non esiste in questo mondo.'
             ]
         ],        
 
         'support_section' => [
-            'title'    => 'Non sei solo!',
+            'title'   => 'Trova pace e speranza',
             'content' => [
-                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
-                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+                'Gesù ti aspetta e noi siamo qui per cercarlo insieme a te. In questa chiesa non troverai solo un tetto, ma una famiglia unita nella fede pronta ad accoglierti e incoraggiarti.'
+            ]
+        ],
+
+        'services' => [
+            'service_title'    => 'Servizi',
+            'service_subtitle' => 'Tutte le domeniche alle 11:00',
+            'list' => [
+                [
+                    'title'       => 'Servizio Scuola Domenicale',
+                    'description' => 'Un cammino di fede per tutta la famiglia in ricerca di Gesù: mentre i piccoli scoprono la Parola in modo semplice, cresciamo tutti uniti nell\'amore e nella conoscenza del Signore.'
+                ]
             ]
         ],
 
         'city_description' => [
             'title'   => 'Trento',
             'content' => [
-                'È un comune italiano di 119 122 abitanti, capoluogo della provincia autonoma di Trento e della regione Trentino-Alto Adige.',
-                'Trento presenta estreme diversità territoriali e di popolazione. La popolazione comunale non è concentrata solo in città, ma anche in numerosi centri sparsi o sobborghi, piuttosto diversi l’uno dall’altro e che conservano ancora una propria identità sia urbana, sia paesana, rurale o montana. La città antica conta 80 000 abitanti (ottobre 2004). L’agglomerato urbano con i comuni limitrofi arriva a 150 000 abitanti. Tra i sobborghi, quello più popoloso è Gardolo (a nord della città, 12 449 abitanti la circoscrizione).'
+                'Trento è un mosaico di identità tra valli e sobborghi, dove la ricerca spirituale incontra la maestosità della creazione. In questa comunità variegata, ogni anima cerca un rifugio di fede. Insieme, come un\'unica famiglia, scopriamo il cammino verso Gesù.'
             ],
             'map_image' => 'trento-map.webp'
         ],
@@ -160,8 +184,8 @@ $cities = [
                 'content' => 'Via delle Camelie, 19, 20095 Cusano Milanino MI'
             ],
             [
-                'label'   => 'Servizio di culto:',
-                'content' => 'Presenziale (Domenica 10:30 Devozionale 11:00 Scuola Domenicale)'
+                'label'   => 'Servizi e Culti:',
+                'content' => 'Consulta il Calendario di Marzo 2026 riportato qui sotto.'            
             ],
             [
                 'label'   => 'Pastore:',
@@ -174,28 +198,30 @@ $cities = [
         ],
 
         'services' => [
-            'service_title' => 'Servizi',
-            'service_subtitle' => 'Tutte le domeniche alle 10: 30 Devozionale, e alle 11:00 Culto Scuola Domenicale.',
+            'service_title' => 'Calendario Marzo 2026',
+            'service_subtitle' => 'Tutte le domeniche alle 11:00 Culto Scuola Domenicale. Ogni mercoledì alle 19:00 servizi virtuali con la chiesa di Catania.',
             'list' => [
                 [
-                    'title'       => '1 Servizio Giovanile',
-                    'description' => 'Il primo fine settimana di ogni mese abbiamo i servizi guidati dal comitato di giovani: sabato alle 18 e domenica alle 10:30 (Devozionale) e alle 11 (Culto di giovani).'
+                    'title'       => '1 Domenica (1 Marzo)',
+                    'description' => 'Inizio del mese con il culto di Scuola Domenicale alle ore 11:00.'
                 ],
                 [
-                    'title'       => '2 Servizio Missionario',
-                    'description' => 'La seconda domenica di ogni mese svolgiamo il culto missionario.'
+                    'title'       => '2 Settimana (6 e 8 Marzo)',
+                    'description' => 'Venerdì 6: Serata di preghiera e studio biblico. Domenica 8: Culto dedicato alle Missioni.'
                 ],
                 [
-                    'title'       => '3 Servizio Donne di Grazie',
-                    'description' => 'La terza domenica del mese il culto è guidato dalle donne.'
+                    'title'       => '3 Settimana (14 e 15 Marzo)',
+                    'description' => 'Sabato 14 e Domenica 15: Culti a carico del comitato Donne di Grazia. Domenica 15 sarà inoltre una giornata di Digiuno.'
                 ],
                 [
-                    'title'       => '4 Domenica',
-                    'description' => 'La quarta domenica di ogni mese il Servizio domenicale è guidato dal comitato locale e si svolge un digiuno locale.'
+                    'title'       => '4 Settimana (20 e 22 Marzo)',
+                    'description' => 'Venerdì 20: Serata di preghiera e studio biblico. Domenica 22: Culto guidato dal Comitato Locale.'
                 ],
                 [
-                    'title'       => '5 Domenica',
-                    'description' => 'Nei casi in cui ci sia una quinta domenica, si svolge un culto speciale guidato dalla lode dove ogni famiglia porta il suo speciale a Dio.'
+                    'title'       => '5 Settimana (28 e 29 Marzo)',
+                    'description' => ['Sabato 28: Culto dei Talenti.', 
+                    'Domenica 29: Servizio speciale dedicato alla Lode.'
+                ]
                 ]
             ]
         ],
@@ -203,20 +229,19 @@ $cities = [
         'board' => [
             'pastor_name'    => 'Jair Pedrozo Rinaldy',
             'pastor_role'    => 'Pastore',
-            'pastor_image'   => 'milan-family.webp',
-            'phone'          => '+39  349 463 7023',
+            'pastor_image'   => 'milano-famiglia.webp',
+            'phone'          => '+39 3494637023',
             'welcome_text'   => [
-                'Se stai cercando un posto dove sentirti al sicuro e in armonia, la nostra congregazione CPUE Milano è la chiesa che predica la parola di Dio per portare un messaggio di salvezza a tutte le persone, e dove la Sua presenza si fa sentire.',
-                'Qua si sente pace, amore e unità. Siamo una famiglia in Cristo con un desiderio di servire e che Milano conosca l’amore e la pace che solo Dio può dare.'
+            'Trova pace e salvezza presso la nostra Chiesa. Siamo una famiglia unita nella Parola, dedicata a servire e far conoscere l’amore di Dio alla nostra città. Qui la Sua presenza trasforma la vita in un cammino di armonia.'
             ]
         ],
 
         'city_description' => [
             'title'   => 'Milano',
-            'content' => [
-                'È un comune italiano di 1.367.788 abitanti, è il capoluogo della regione Lombardia e dell’omonima città metropolitana, centro di una delle più popolose aree metropolitane d’Europa; è inoltre il secondo comune più popoloso d’Italia, dopo Roma.',
-                'Principale centro economico e finanziario della Repubblica Italiana, Milano ne guidò lo sviluppo industriale, costituendo con Torino e Genova il cosiddetto Triangolo industriale, in particolar modo durante gli anni del boom economico, quando la crescita industriale e urbanistica coinvolse anche le città limitrofe, creando la vasta area metropolitana milanese. In ambito culturale, Milano è il principale centro italiano dell’editoria ed è ai vertici del circuito musicale mondiale grazie alla stagione lirica del Teatro alla Scala e alla sua lunga tradizione operistica.'
-            ],
+        'content' => [
+            'Milano è il cuore pulsante dell’economia e della cultura, ma tra le sue strade frenetiche arde un bisogno profondo di vera speranza. In questa grande metropoli, la nostra missione è offrire un rifugio spirituale dove ogni cuore possa incontrare la pace di Dio.',
+            'Oltre il successo e l’industria, costruiamo una chiesa che porti la luce di Gesù nel cuore della Lombardia, convinti che la vera ricchezza di Milano risieda nel risveglio spirituale e nel cammino eterno con il Signore.'
+        ],
             'map_image' => 'milan-map.webp'
         ],
 
@@ -252,8 +277,8 @@ $cities = [
                 'content' => 'Vía Monfalcone 124 Torino'
             ],
             [
-                'label'   => 'Servizio di culto:',
-                'content' => 'Presenziale (Venerdì e Domenica)'
+                'label'   => 'Incontriamoci:',
+                'content' => 'Insieme il Sabato alle 19:00 e la Domenica alle 11:00'
             ],
             [
                 'label'   => 'Pastore:',
@@ -262,24 +287,46 @@ $cities = [
         ],
 
         'welcome_quote' => [
-            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+            'text'   => 'Cercare Lui, trovarsi insieme. NOI CI SIAMO!'
+        ],
+
+            'board' => [
+            'pastor_name'    => 'Leonardo Vielma',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'torino-pastore.webp',
+            'phone'          => '3519115064',
+            'welcome_text'   => [
+            'Dio non si limita a riparare il passato: Egli rigenera. Prende i frammenti della nostra storia — fallimenti e ferite — per edificare una persona nuova, con una sensibilità e una forza che solo la grazia sa costruire.'
+            ]
         ],
 
         'support_section' => [
-            'title'    => 'Non sei solo!',
+            'title'    => 'Uno spazio per l’Incontro',
             'content' => [
-                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
-                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+            'content' => 'Come congregazione, testimoniamo la Grazia che trasforma e rinnova: Gesù ci guida in questo viaggio nella vita del Vangelo, luce viva per il cammino verso l’eternità.'            ]
+        ],
+
+                'services' => [
+            'service_title' => 'Servizi',
+            'service_subtitle' => 'Ogni sabato alle 19:00 e ogni domenica alle 10:00',
+            'list' => [
+                [
+                    'title'       => 'Servizio Sabato Sera',
+                    'description' => "In cammino verso l'Eterno: lodiamo il Signore per ascoltare la Sua voce e lasciarci guidare da Gesù nel cuore della nostra storia. Un tempo prezioso per nutrire lo spirito, con la sua parola."
+                ],
+                [
+                    'title'       => 'Servizio Scuola Domenicale',
+                    'description' => 'Un incontro con Gesù, la Parola fatta carne: lasciamoci rinnovare dalla Sua Grazia, l’unica forza capace di trasformare l’anima e renderla pienamente libera.'
+                ]                
             ]
         ],
 
         'city_description' => [
             'title'   => 'Torino',
             'content' => [
-                'È un comune italiano di 857.917 abitanti, capoluogo della regione Piemonte e dell’omonima città metropolitana. Fu la prima capitale d’Italia all’unificazione nel 1.861',
-                'Torino è il quarto comune italiano per popolazione (dopo Roma, Milano e Napoli) e il terzo complesso economico-produttivo del Paese (insieme a Milano e Genova componeva il triangolo industriale, centro dell’industrializzazione su larga scala dell’economia italiana alla fine del XIX secolo, e durante gli anni del boom economico) e costituisce uno dei maggiori poli universitari, artistici, turistici, scientifici, gastronomici e culturali d’Italia.'
+                'In una metropoli nata per produrre e innovare, riconosciamo che il valore più grande risiede nello spirito. Oltre la dinamicità economica di Torino, cerchiamo il volto di Gesù, la Parola che rigenera ogni ambizione e trasforma la nostra operosità in un atto d’amore. Siamo qui per camminare insieme verso una pienezza che non dipende dai successi, ma dalla presenza viva del Creatore nelle nostre piazze e nelle nostre vite.'
             ],
-            'map_image' => 'torino-map.png'
+            'map_image' => 'torino-map.webp'
         ],
 
         'location' => [
@@ -345,7 +392,7 @@ $cities = [
         'board' => [
             'pastor_name'    => 'Victor Bustamante',
             'pastor_role'    => 'Pastore',
-            'pastor_image'   => 'vicor-bustamante.png',
+            'pastor_image'   => 'pordenone-famiglia.webp',
             'phone'          => '388 894 6569',
             'welcome_text'   => [
                 'La chiesa di Pordenone è presente nel FVG dal 2006. Da allora si può vedere una crescita numerica, spirituale e la presenza di Dio si muove in modo speciale',
@@ -356,10 +403,9 @@ $cities = [
         'city_description' => [
             'title'   => 'Pordenone',
             'content' => [
-                'È un comune italiano di 52 571 abitanti del Friuli-Venezia Giulia.',
-                'Nella Città di Pordenone è presente anche il dialetto pordenonese, un dialetto veneto coloniale.'
+                'Oltre i traguardi e le sfide di ogni giorno, esiste un silenzio che solo la Parola di Dio può abitare. Pordenone non è solo una città di abitanti, ma di anime in cammino. Incontrare Gesù oggi significa dare un nome nuovo alla nostra libertà e scoprire che la bellezza di questa terra risplende di più quando è illuminata dalla Grazia.'
             ],
-            'map_image' => 'pordenone-map.png'
+            'map_image' => 'pordenone-map.webp'
         ],
 
         'location' => [
@@ -403,7 +449,22 @@ $cities = [
         ],
 
         'welcome_quote' => [
-            'text'   => 'Realizziamo i nostri culti tutte le domeniche ore 17:00, svolgiamo lezioni di educazione Cristiana 1 volta alla settimana, Realizziamo soprattutto attività di sostegno spirituale per le donne, uomini, bambini e famiglie, affinché tutti possiamo fortificarci nel signore è raggiungere la vita eterna. Senza dimenticare momenti di condivisione e svago nell’amore del signore.'
+            'text'   => 'Gesù, Luce e Vita'
+        ],
+
+        'services' => [
+            'service_title' => 'Vita e Verità in Cristo',
+            'service_subtitle' => 'Ogni domenica ore 17:00 | Percorsi settimanali',
+            'list' => [
+                [
+                    'title'       => 'Celebrazione della Grazia',
+                    'description' => 'Cercare Gesù, la Parola fatta carne, per lasciarsi trasformare da una Grazia che abita l’anima e la apre al cammino della vera libertà.'
+                ],
+                [
+                    'title'       => 'Percorsi di Sapienza',
+                    'description' => 'Sostegno spirituale e crescita nella fede per ogni cuore e famiglia. Un tempo per fortificarsi nel Signore e condividere la gioia del Vangelo, camminando insieme verso l’Eterno.'
+                ]                
+            ]
         ],
 
         'board' => [
@@ -420,10 +481,9 @@ $cities = [
         'city_description' => [
             'title'   => 'Reggio Emilia',
             'content' => [
-                'Ufficialmente Reggio nell’Emilia, è un comune italiano di 171 876 abitanti, provincia in Emilia Romagna.',
-                'Reggio, assieme alle vicine Parma e Modena, è il luogo d’origine del Parmigiano Reggiano. La città è inoltre divenuta nota per aver sviluppato il metodo di insegnamento pedagogico chiamato Reggio Emilia Approach ed è il centro di un importante distretto di meccatronica. È tra le città decorate al valor militare per la guerra di Liberazione, insignita della medaglia d’oro al valor militare il 1º aprile 1950, per i sacrifici delle sue popolazioni e per la sua attività nella lotta partigiana durante la seconda guerra mondiale.'
+            'description' => "In una Reggio che educa ed innova, cerchiamo il volto di Gesù: il fondamento per ogni spirito libero. Oltre l’eccellenza del fare, la Sua presenza rigenera l’anima, trasformando la nostra forza in una sapiente testimonianza di Grazia verso l’Eterno."
             ],
-            'map_image' => 'reggio-emilia-map.png'
+            'map_image' => 'reggio-emilia-map.webp'
         ],
 
         'location' => [
@@ -447,10 +507,10 @@ $cities = [
         ],
 
         'gallery' => [
-            'example-img.jpg',
-            'example-img.jpg',
-            'example-img.jpg',
-            'example-img.jpg',
+            'example-img1.webp',
+            'example-img2.webp',
+            'example-img3.webp',
+            'example-img4.webp',
         ]
     ],
     'firenze' => [
@@ -492,7 +552,7 @@ $cities = [
         ],
 
         'board' => [
-            'pastor_name'    => 'Santiago Girando',
+            'pastor_name'    => 'Santiago Giraldo',
             'pastor_role'    => 'Pastore',
             'pastor_image'   => 'firenze-famiglia.webp',
             'phone'          => '3382298345',
@@ -568,6 +628,19 @@ $cities = [
         'welcome_quote' => [
             'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
         ],
+
+
+    'board' => [
+            'pastor_name'    => 'Wilfredo Daza',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'porto-sant-elpidio-famiglia.webp',
+            'phone'          => '3517352681',
+            'welcome_text'   => [
+                '',
+                ''
+            ]
+        ],
+
 
         'support_section' => [
             'title'    => 'Non sei solo!',
@@ -702,7 +775,7 @@ $cities = [
         'info_box' => [
             [
                 'label'   => 'Luogo di predicazione:',
-                'content' => 'Sede in fase di definizione. Contattaci per info.'
+                'content' => 'Sede in fase di definizione. Contattaci per ricevere informazione'
             ],
             [
                 'label'   => 'Servizio di culto:',
@@ -716,6 +789,17 @@ $cities = [
 
         'welcome_quote' => [
             'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+        ],
+
+        'board' => [
+                'pastor_name'    => 'Omar Correa',
+                'pastor_role'    => 'Pastore',
+                'pastor_image'   => 'ostia-pastore.webp',
+                'phone'          => '3345850369',
+                'welcome_text'   => [
+                    '',
+                    ''
+                ]
         ],
 
         'support_section' => [
@@ -781,6 +865,17 @@ $cities = [
             'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
         ],
 
+            'board' => [
+            'pastor_name'    => 'Nuccio Arcidiacono',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'catania-pastore.webp',
+            'phone'          => '3407284369',
+            'welcome_text'   => [
+                '',
+                ''
+            ]
+        ],
+
         'support_section' => [
             'title'    => 'Non sei solo!',
             'content' => [
@@ -842,6 +937,17 @@ $cities = [
         'welcome_quote' => [
             'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
         ],
+
+            'board' => [
+            'pastor_name'    => 'Andres Zúñiga',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'palermo-famiglia.webp',
+            'phone'          => '3208343428',
+            'welcome_text'   => [
+                '',
+                ''
+            ]
+        ],        
 
         'support_section' => [
             'title'    => 'Non sei solo!',
