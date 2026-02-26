@@ -36,7 +36,6 @@ $cities = [
             ]
         ],
 
-
         'welcome_quote' => [
             'text'   => 'La Chiesa è al servizio di Gesù il nostro Signore'
         ],
@@ -44,7 +43,7 @@ $cities = [
         'support_section' => [
             'title'    => 'Non sei solo!',
             'content' => [
-            'La fede in Gesù trasforma l’impossibile in realtà: lo vediamo accadere ogni giorno. Qualunque sia il peso che senti sul cuore, non affrontarlo da solo. Siamo qui per sostenerti nella preghiera e credere insieme a te in un nuovo inizio.'
+                'La fede in Gesù trasforma l’impossibile in realtà: lo vediamo accadere ogni giorno. Qualunque sia il peso che senti sul cuore, non affrontarlo da solo. Siamo qui per sostenerti nella preghiera e credere insieme a te in un nuovo inizio.'
             ]
         ],
 
@@ -59,17 +58,17 @@ $cities = [
                 [
                     'title'       => 'Servizio Scuola Domenicale',
                     'description' => 'Un tempo speciale per conoscere Gesù e ascoltare la Sua Parola. Ogni incontro è un’occasione per fare un’esperienza reale con Lui, crescendo insieme come famiglia nella fede e nella verità.'
-                ]                
+                ]
             ]
         ],
 
-       'board' => [
+        'board' => [
             'pastor_name'    => 'Viucci Brosolo',
             'pastor_role'    => 'Pastore',
             'pastor_image'   => 'val-rendena-famiglia.webp',
             'phone'          => '3407100713',
             'welcome_text'   => [
-            'La nostra missione è servire il Signore offrendo le nostre vite come pietre vive. Crediamo che ogni cicatrice e ogni frammento della nostra storia, nelle mani di Dio, diventi uno strumento unico per consolare, guidare ed edificare il corpo di Cristo con una forza e una sensibilità rinnovate.'
+                'La nostra missione è servire il Signore offrendo le nostre vite come pietre vive. Crediamo che ogni cicatrice e ogni frammento della nostra storia, nelle mani di Dio, diventi uno strumento unico per consolare, guidare ed edificare il corpo di Cristo con una forza e una sensibilità rinnovate.'
             ]
         ],
 
@@ -128,9 +127,9 @@ $cities = [
             'pastor_image'   => 'trento-pastore.webp',
             'phone'          => '3882557743',
             'welcome_text'   => [
-            'Dio non si limita a riparare i danni del passato: Egli raccoglie i pezzi della nostra storia e ne fa un capolavoro. Trasforma ferite e delusioni in una nuova identità, donandoci la vera pace che non esiste in questo mondo.'
+                'Dio non si limita a riparare i danni del passato: Egli raccoglie i pezzi della nostra storia e ne fa un capolavoro. Trasforma ferite e delusioni in una nuova identità, donandoci la vera pace che non esiste in questo mondo.'
             ]
-        ],        
+        ],
 
         'support_section' => [
             'title'   => 'Trova pace e speranza',
@@ -185,7 +184,7 @@ $cities = [
             ],
             [
                 'label'   => 'Servizi e Culti:',
-                'content' => 'Consulta il Calendario di Marzo 2026 riportato qui sotto.'            
+                'content' => 'Consulta il Calendario di Marzo 2026 riportato qui sotto.'
             ],
             [
                 'label'   => 'Pastore:',
@@ -219,9 +218,10 @@ $cities = [
                 ],
                 [
                     'title'       => '5 Settimana (28 e 29 Marzo)',
-                    'description' => ['Sabato 28: Culto dei Talenti.', 
-                    'Domenica 29: Servizio speciale dedicato alla Lode.'
-                ]
+                    'description' => [
+                        'Sabato 28: Culto dei Talenti.',
+                        'Domenica 29: Servizio speciale dedicato alla Lode.'
+                    ]
                 ]
             ]
         ],
@@ -232,16 +232,16 @@ $cities = [
             'pastor_image'   => 'milano-famiglia.webp',
             'phone'          => '+39 3494637023',
             'welcome_text'   => [
-            'Trova pace e salvezza presso la nostra Chiesa. Siamo una famiglia unita nella Parola, dedicata a servire e far conoscere l’amore di Dio alla nostra città. Qui la Sua presenza trasforma la vita in un cammino di armonia.'
+                'Trova pace e salvezza presso la nostra Chiesa. Siamo una famiglia unita nella Parola, dedicata a servire e far conoscere l’amore di Dio alla nostra città. Qui la Sua presenza trasforma la vita in un cammino di armonia.'
             ]
         ],
 
         'city_description' => [
             'title'   => 'Milano',
-        'content' => [
-            'Milano è il cuore pulsante dell’economia e della cultura, ma tra le sue strade frenetiche arde un bisogno profondo di vera speranza. In questa grande metropoli, la nostra missione è offrire un rifugio spirituale dove ogni cuore possa incontrare la pace di Dio.',
-            'Oltre il successo e l’industria, costruiamo una chiesa che porti la luce di Gesù nel cuore della Lombardia, convinti che la vera ricchezza di Milano risieda nel risveglio spirituale e nel cammino eterno con il Signore.'
-        ],
+            'content' => [
+                'Milano è il cuore pulsante dell’economia e della cultura, ma tra le sue strade frenetiche arde un bisogno profondo di vera speranza. In questa grande metropoli, la nostra missione è offrire un rifugio spirituale dove ogni cuore possa incontrare la pace di Dio.',
+                'Oltre il successo e l’industria, costruiamo una chiesa che porti la luce di Gesù nel cuore della Lombardia, convinti che la vera ricchezza di Milano risieda nel risveglio spirituale e nel cammino eterno con il Signore.'
+            ],
             'map_image' => 'milan-map.webp'
         ],
 
@@ -290,23 +290,24 @@ $cities = [
             'text'   => 'Cercare Lui, trovarsi insieme. NOI CI SIAMO!'
         ],
 
-            'board' => [
+        'board' => [
             'pastor_name'    => 'Leonardo Vielma',
             'pastor_role'    => 'Pastore',
             'pastor_image'   => 'torino-pastore.webp',
             'phone'          => '3519115064',
             'welcome_text'   => [
-            'Dio non si limita a riparare il passato: Egli rigenera. Prende i frammenti della nostra storia — fallimenti e ferite — per edificare una persona nuova, con una sensibilità e una forza che solo la grazia sa costruire.'
+                'Dio non si limita a riparare il passato: Egli rigenera. Prende i frammenti della nostra storia — fallimenti e ferite — per edificare una persona nuova, con una sensibilità e una forza che solo la grazia sa costruire.'
             ]
         ],
 
         'support_section' => [
             'title'    => 'Uno spazio per l’Incontro',
             'content' => [
-            'content' => 'Come congregazione, testimoniamo la Grazia che trasforma e rinnova: Gesù ci guida in questo viaggio nella vita del Vangelo, luce viva per il cammino verso l’eternità.'            ]
+                'content' => 'Come congregazione, testimoniamo la Grazia che trasforma e rinnova: Gesù ci guida in questo viaggio nella vita del Vangelo, luce viva per il cammino verso l’eternità.'
+            ]
         ],
 
-                'services' => [
+        'services' => [
             'service_title' => 'Servizi',
             'service_subtitle' => 'Ogni sabato alle 19:00 e ogni domenica alle 10:00',
             'list' => [
@@ -317,7 +318,7 @@ $cities = [
                 [
                     'title'       => 'Servizio Scuola Domenicale',
                     'description' => 'Un incontro con Gesù, la Parola fatta carne: lasciamoci rinnovare dalla Sua Grazia, l’unica forza capace di trasformare l’anima e renderla pienamente libera.'
-                ]                
+                ]
             ]
         ],
 
@@ -463,7 +464,7 @@ $cities = [
                 [
                     'title'       => 'Percorsi di Sapienza',
                     'description' => 'Sostegno spirituale e crescita nella fede per ogni cuore e famiglia. Un tempo per fortificarsi nel Signore e condividere la gioia del Vangelo, camminando insieme verso l’Eterno.'
-                ]                
+                ]
             ]
         ],
 
@@ -481,7 +482,7 @@ $cities = [
         'city_description' => [
             'title'   => 'Reggio Emilia',
             'content' => [
-            'description' => "In una Reggio che educa ed innova, cerchiamo il volto di Gesù: il fondamento per ogni spirito libero. Oltre l’eccellenza del fare, la Sua presenza rigenera l’anima, trasformando la nostra forza in una sapiente testimonianza di Grazia verso l’Eterno."
+                'description' => "In una Reggio che educa ed innova, cerchiamo il volto di Gesù: il fondamento per ogni spirito libero. Oltre l’eccellenza del fare, la Sua presenza rigenera l’anima, trasformando la nostra forza in una sapiente testimonianza di Grazia verso l’Eterno."
             ],
             'map_image' => 'reggio-emilia-map.webp'
         ],
@@ -629,8 +630,7 @@ $cities = [
             'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
         ],
 
-
-    'board' => [
+        'board' => [
             'pastor_name'    => 'Wilfredo Daza',
             'pastor_role'    => 'Pastore',
             'pastor_image'   => 'porto-sant-elpidio-famiglia.webp',
@@ -640,7 +640,6 @@ $cities = [
                 ''
             ]
         ],
-
 
         'support_section' => [
             'title'    => 'Non sei solo!',
@@ -713,7 +712,7 @@ $cities = [
             'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
         ],
 
-            'board' => [
+        'board' => [
             'pastor_name'    => 'Manuel Lopez',
             'pastor_role'    => 'Pastore',
             'pastor_image'   => 'roma-famiglia.webp',
@@ -792,14 +791,14 @@ $cities = [
         ],
 
         'board' => [
-                'pastor_name'    => 'Omar Correa',
-                'pastor_role'    => 'Pastore',
-                'pastor_image'   => 'ostia-pastore.webp',
-                'phone'          => '3345850369',
-                'welcome_text'   => [
-                    '',
-                    ''
-                ]
+            'pastor_name'    => 'Omar Correa',
+            'pastor_role'    => 'Pastore',
+            'pastor_image'   => 'ostia-pastore.webp',
+            'phone'          => '3345850369',
+            'welcome_text'   => [
+                '',
+                ''
+            ]
         ],
 
         'support_section' => [
@@ -837,7 +836,6 @@ $cities = [
             'phone'   => '+39 3407284369'
         ],
 
-
         'social_media' => [
             'facebook' => 'https://www.facebook.com/chiesapentecostaleunitaineuropa',
             'instagram' => 'https://www.instagram.com/cpue.catania/',
@@ -865,7 +863,7 @@ $cities = [
             'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
         ],
 
-            'board' => [
+        'board' => [
             'pastor_name'    => 'Nuccio Arcidiacono',
             'pastor_role'    => 'Pastore',
             'pastor_image'   => 'catania-pastore.webp',
@@ -938,7 +936,7 @@ $cities = [
             'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
         ],
 
-            'board' => [
+        'board' => [
             'pastor_name'    => 'Andres Zúñiga',
             'pastor_role'    => 'Pastore',
             'pastor_image'   => 'palermo-famiglia.webp',
@@ -947,7 +945,7 @@ $cities = [
                 '',
                 ''
             ]
-        ],        
+        ],
 
         'support_section' => [
             'title'    => 'Non sei solo!',

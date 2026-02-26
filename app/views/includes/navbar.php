@@ -45,7 +45,7 @@
                         foreach ($cities as $id => $navCity) {
                             if (!empty($navCity['hero']['title'])) { ?>
                                 <li>
-                                    <a class="dropdown-item" href="<?= BASE_URL ?>city/<?php echo $id ?>">
+                                    <a class="dropdown-item" href="<?php echo BASE_URL ?>city/<?php echo $id ?>">
                                         <?php echo $navCity['hero']['title'] ?>
                                     </a>
                                 </li>
@@ -62,7 +62,7 @@
                         foreach ($comitati as $id => $navComitati) {
                             if (!empty($navComitati['info']['title'])) { ?>
                                 <li>
-                                    <a class="dropdown-item" href="<?= BASE_URL ?>comitato/<?php echo $id ?>">
+                                    <a class="dropdown-item" href="<?php echo BASE_URL ?>comitato/<?php echo $id ?>">
                                         <?php echo $navComitati['info']['title'] ?>
                                     </a>
                                 </li>
