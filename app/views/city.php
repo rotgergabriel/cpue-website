@@ -198,9 +198,10 @@ $meta_description = "Sede di " . $city['hero']['title'];
                     </section>
                 <?php } ?>
 
-                <?php if (!empty($city['gallery'])) { ?>
-                    <?php $gallery = $city['gallery'];
-                    $total   = count($gallery); ?>
+                <?php if (!empty($city['gallery'])) { 
+                    $gallery = $city['gallery'];
+                    $total = count($gallery); 
+                ?>
                     <section class="gallery-container">
                         <div id="cityCarousel" class="carousel slide" data-bs-ride="carousel">
 
@@ -213,29 +214,32 @@ $meta_description = "Sede di " . $city['hero']['title'];
                             </div>
 
                             <div class="carousel-inner">
-                                <?php foreach ($gallery as $index => $name) { ?>
+                                <?php foreach ($gallery as $index => $name): ?>
                                     <div class="carousel-item <?php echo $index === 0 ? 'active' : '' ?>">
                                         <div class="row g-2">
-                                            <?php for ($step = 0; $step < 3; $step++) {
-                                                $current_img = $gallery[($index + $step) % $total];
+                                            <?php 
+                                            for ($step = 0; $step < 3; $step++): 
+                                                $img_idx = ($index + $step) % $total;
+                                                $current_img = $gallery[$img_idx];
                                             ?>
                                                 <div class="col-4">
-                                                    <img src="<?php echo BASE_URL ?>assets/img/<?php echo $current_img ?>"
-                                                        class="d-block w-100 gallery-img" alt="Galería">
+                                                    <img src="<?php echo BASE_URL; ?>public/assets/img/<?php echo $current_img; ?>"
+                                                        class="d-block w-100 gallery-img" 
+                                                        alt="Galleria <?php echo $city['hero']['title']; ?>">
                                                 </div>
-                                            <?php } ?>
+                                            <?php endfor; ?>
                                         </div>
                                     </div>
-                                <?php } ?>
+                                <?php endforeach; ?>
                             </div>
-
+                            
                             <button class="carousel-control-prev" type="button" data-bs-target="#cityCarousel" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Anterior</span>
+                                <span class="visually-hidden">Precedente</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#cityCarousel" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Siguiente</span>
+                                <span class="visually-hidden">Successivo</span>
                             </button>
 
                         </div>

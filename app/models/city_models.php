@@ -138,17 +138,6 @@ $cities = [
             ]
         ],
 
-        'services' => [
-            'service_title'    => 'Servizi',
-            'service_subtitle' => 'Tutte le domeniche alle 11:00',
-            'list' => [
-                [
-                    'title'       => 'Servizio Scuola Domenicale',
-                    'description' => 'Un cammino di fede per tutta la famiglia in ricerca di Gesù: mentre i piccoli scoprono la Parola in modo semplice, cresciamo tutti uniti nell\'amore e nella conoscenza del Signore.'
-                ]
-            ]
-        ],
-
         'city_description' => [
             'title'   => 'Trento',
             'content' => [
@@ -359,7 +348,7 @@ $cities = [
         'info_box' => [
             [
                 'label'   => 'Luogo di predicazione:',
-                'content' => 'Viale delle Grazie, 9, 33170 Pordenone PN'
+                'content' => 'Viale delle Grazie, 9, 33170 Pordenone (PN)'
             ],
             [
                 'label'   => 'Servizio di culto:',
@@ -495,15 +484,15 @@ $cities = [
         'info_block' => [
             'title'   => 'Rassegna storica',
             'content' => [
-                'La Chiesa pentecostale unità in Europa a Reggio Emilia ha i suoi inizi nell’anno 2009 con riunioni famigliari ed evangelizzazione domiciliare, grazie a questi incontri e riunioni, nell’anno 2010 viene ufficialmente insediata la famiglia pastorale Calderón. E si da iniziò a un lavoro continuo di predicazione di questo glorioso vangelo dando i suoi primi frutti nel 2011 con 2 battesimi nel nome del nostro signore Gesù Cristo.',
-                'Nel 2012 viene trasferita la famiglia Calderón e da lì abbiamo avuto il passo di diversi pastori:',
-                '2012 -2013 pastore William Cazaran',
-                '2013- 2017 pastore Manuel López',
-                '2017-2019 pastore Robin Rodríguez',
-                '2019-2021 missionario Jair Pedrozo',
-                'Nel 2021 è stata insediata la famiglia Garcia Caicedo la quale attualmente lavora per l\' opera del signore in questa città . Durante tutti questi anni ognuno di loro ha contribuito alla crescita dell \'opera del Signore attraverso il loro lavoro incessante, insegnamento, esempio e preghiera per questa città.',
-                'Nel trascorso del tempo e per diversi motivi la chiesa h affrontato momenti di gioia comunione, crescita e anche momenti di difficoltà e instabilità in diversi aspetti umani, ma il signore ci è sempre stato vicino in ogni momento ricordandoci sempre che egli è buono; e la sua bontà dura in eterno, e la sua fedeltà per ogni generazione. Perciò oggi possiamo dire che fin qui il signore ci ha aiutato, ci ha sostenuto e continuerà a sostenere la sua opera in questa città fino al suo ritorno.',
-                'Noi però non siamo di quelli che indietreggiano a loro perdizione, bensì uomini di fede per la salvezza della nostra anima. Ebrei 10:39'
+                "La Chiesa Pentecostale Unita in Europa a Reggio Emilia ha mosso i suoi primi passi nel 2009 con riunioni familiari ed evangelizzazione domiciliare. Grazie a questi incontri, nel 2010 è stata ufficialmente insediata la famiglia pastorale Calderón, dando inizio a un’opera costante di predicazione del glorioso Vangelo che ha portato i primi frutti nel 2011 con i primi battesimi nel nome del Signore Gesù Cristo.",
+                "Nel 2012, in seguito al trasferimento della famiglia Calderón, la comunità ha visto l'avvicendarsi di diversi servitori di Dio:",
+                "2012-2013: Pastore William Cazaran",
+                "2013-2017: Pastore Manuel López",
+                "2017-2019: Pastore Robin Rodríguez",
+                "2019-2021: Missionario Jair Pedrozo",
+                "Nel 2021 si è insediata la famiglia Garcia Caicedo, che attualmente serve l'opera del Signore in questa città. In tutti questi anni, ognuno di loro ha contribuito alla crescita della comunità attraverso il lavoro incessante, l'insegnamento e la preghiera costante per il territorio.",
+                "Nel corso del tempo, la chiesa ha attraversato momenti di gioia e comunione, ma anche sfide e instabilità. Tuttavia, il Signore ci è sempre stato vicino, ricordandoci che la Sua bontà dura in eterno e la Sua fedeltà si estende per ogni generazione. Oggi possiamo testimoniare con gratitudine che fin qui il Signore ci ha aiutato e continuerà a sostenere la Sua opera fino al Suo ritorno.",
+                "«Noi però non siamo di quelli che indietreggiano a loro perdizione, bensì uomini di fede per la salvezza della nostra anima.» (Ebrei 10:39)"
             ]
         ],
 
@@ -540,7 +529,7 @@ $cities = [
             ],
             [
                 'label'   => 'Servizio di culto:',
-                'content' => 'Presenziale (Domeniche 11:00 - mercoledì 20:00)'
+                'content' => 'Presenziale tutte le Domeniche alle 11:00'
             ],
             [
                 'label'   => 'Pastore:',
@@ -549,7 +538,7 @@ $cities = [
         ],
 
         'welcome_quote' => [
-            'text'   => 'Abbiamo ogni domenica e mercoledì un tempo per meditare e riflettere sulla parola di Dio ● Ogni settimana ci sono studi biblici per chi è appassionato della bibbia ● Siamo lieti di dirti che i momenti d’integrazione sono indimenticabili ● l’amore e l’unità che c’è saranno una grande opportunità per poter aprire il tuo cuore a Dio. ● Facciamo visite infrasettimanali per tutti coloro che aprono le porte del loro cuore e della loro casa.'
+            'text'   => 'Fondati sulla fede in Gesù, cresciamo come famiglia, guardando al futuro con la certezza dell\'eternità che Dio ha per noi.'
         ],
 
         'board' => [
@@ -558,16 +547,13 @@ $cities = [
             'pastor_image'   => 'firenze-famiglia.webp',
             'phone'          => '3382298345',
             'welcome_text'   => [
-                'Ciao, questa è la congregazione di Firenze. Siamo molto contenti di sapere che ci leggi; devi sapere che noi siamo una grande famiglia e questa famiglia ha le braccia aperte per tutti quelli che ne vogliono far parte.',
-                'Perciò accoglietevi gli uni gli altri, come anche Cristo ha accolto voi, per la gloria di Dio. Romani 15:7 (Nuova Riveduta)'
-            ]
+            'text' => "Ecco quant'è buono e quant'è piacevole che i fratelli vivano insieme nell'unità! Salmo 133:1; Siamo una generazione che ama Dio e le persone. Unisciti a noi per lodare ed esaltare il nome di Gesù."]
         ],
 
         'city_description' => [
             'title'   => 'Firenze',
             'content' => [
-                'È un comune italiano di 362 760 abitanti, capoluogo dell’omonima città metropolitana e della regione Toscana.',
-                'Nel Medioevo è stata un importantissimo centro artistico, culturale, commerciale, politico, economico e finanziario; nell’età moderna ha ricoperto il ruolo di capitale del Granducato di Toscana dal 1569 al 1859 che, col governo delle famiglie dei Medici e dei Lorena, divenne uno degli stati più ricchi e moderni d’Italia. Le varie vicissitudini politiche, la potenza finanziaria e mercantile e le influenze in ogni campo della cultura hanno fatto della città un crocevia fondamentale della storia italiana ed europea.'
+            "In questa Firenze ricca di arte, oltre la bellezza monumentale, ogni cittadino ha bisogno di Gesù. Il nostro desiderio è che l'amore di Dio tocchi i cuori, portando una speranza viva, pace vera e la gioia di camminare verso l'eternità.",
             ],
             'map_image' => 'firenze-map.webp'
         ],
@@ -580,16 +566,12 @@ $cities = [
         'info_block' => [
             'title'   => 'Rassegna storica',
             'content' => [
-                'Alla fine dell’anno 2009 è stato posizionato il fratello Leonardo Gañan come pastore nella città di Firenze iniziando così un percorso per la chiesa in questa città che al giorno d’oggi compie come opera 14 anni. Quattro anni dopo, nel 2014, è stato nominato e insediato il pastore Victor Bustamante il quale ha continuato a lavorare nell’opera del signore, seminando la parola di Dio per i seguenti quattro anni. Il Pastore Victor è stato trasferito in un’altra città lasciando la chiesa a Firenze a carico del fratello Leonardo Gañan per un periodo di un anno durante l’attesa di un nuovo pastore. Nel 2019 è stato nominato e insediato il pastore Juan Diego Correa che ha lavorato ed amministrato la congregazione a Firenze. Infine, nel 2024, è stato insediato il pastore Santiago Giraldo insieme a sua moglie Eliana Marcela Duque e attualmente amministra la congregazione nella città metropolitana in questione.'
+                "Alla fine del 2009, il fratello Leonardo Gañan è stato insediato come pastore nella città di Firenze, dando inizio a un cammino che oggi conta 17 anni di missione. Nel 2014, la guida è passata al pastore Victor Bustamante, che per i successivi quattro anni ha servito l’opera del Signore seminando con dedizione la Sua Parola.",
+                "In seguito al trasferimento del pastore Victor, la comunità è stata nuovamente affidata alla cura del fratello Gañan per un anno di transizione, fino all'insediamento, nel 2019, del pastore Juan Diego Correa. Infine, nel 2024, è stato insediato il pastore Santiago Giraldo insieme alla moglie Eliana Marcela Duque, che attualmente guidano con fede la congregazione fiorentina."
             ]
         ],
 
-        'gallery' => [
-            'example-img.jpg',
-            'example-img.jpg',
-            'example-img.jpg',
-            'example-img.jpg',
-        ]
+
     ],
     'porto-sant-elpidio' => [
         'hero' => [
@@ -614,7 +596,7 @@ $cities = [
         'info_box' => [
             [
                 'label'   => 'Luogo di predicazione:',
-                'content' => 'Via Gravina 75, Tremestieri Etneo'
+                'content' => 'Via Gravina 75, Tremestieri Etneo (CT)'
             ],
             [
                 'label'   => 'Servizio di culto:',
@@ -627,7 +609,7 @@ $cities = [
         ],
 
         'welcome_quote' => [
-            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+            'text'   => 'Cerca la Sua presenza, vivi la Sua grazia: rifletti Cristo insieme.'
         ],
 
         'board' => [
@@ -637,40 +619,30 @@ $cities = [
             'phone'          => '3517352681',
             'welcome_text'   => [
                 '',
-                ''
+                'Benvenuti a tutti. Dio non vi chiede di essere perfetti, ma di essere veri. Lasciatevi amare dalla Sua grazia infinita. Insieme scopriremo che seguire Gesù è la Sua luce accenderà la nostra gioia per la vita eterna.'
             ]
         ],
 
         'support_section' => [
-            'title'    => 'Non sei solo!',
+            'title'   => 'Scopri la vera gioia',
             'content' => [
-                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
-                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+                'Siamo la chiesa, una grande famiglia fondata sul vero amore di Gesù. Scopri insieme a noi il potere della Sua grazia che trasforma le vite. Camminiamo sempre uniti nella fede per sperimentare la pace quotidiana e la felicità in eterno.'
             ]
         ],
 
         'city_description' => [
             'title'   => 'Porto Sant’Elpidio',
             'content' => [
-                'È un comune italiano di 2.847 abitanti della provincia di Fermo nelle Marche.',
-                'Pedaso è situata sulla costa adriatica, alla foce del fiume Aso ed ha un territorio prevalentemente collinare',
-                'La storia di Pedaso inizia con i Greci (i Pelasgi), poi i Piceni e i Romani, come testimoniano alcuni ritrovamenti archeologici intorno alla foce e ai lati del fiume Aso, dei ruderi romani nella vicina Villa montana e reperti archeologici che ancora si recuperano dal mare, testimoniano le civiltà che qui si sono avvicendate.',
-                'Tra le attività economiche più tradizionali, diffuse e attive vi sono quelle artigianali, come l’arte del merletto rinomata in tutta Italia.'
+                'È una terra ricca di storia, dalle colline al mare, con una sete profonda di Dio. Come i nostri artigiani intrecciano con cura il merletto, il Signore desidera tessere la Sua grazia in ogni vita, da Pedaso a Porto Sant’Elpidio.',
+                'Oggi i nostri cuori cercano la Sua presenza. Lasciamo che il vero amore di Gesù trasformi la nostra comunità, unendo le nostre vite in una speranza eterna.'
             ],
-            'map_image' => 'pedaso-map.png'
+            'map_image' => 'porto-sant-elpidio-map.webp'
         ],
 
         'location' => [
             'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
             'google_maps'  => 'https://maps.app.goo.gl/'
         ],
-
-        'gallery' => [
-            'example-img.jpg',
-            'example-img.jpg',
-            'example-img.jpg',
-            'example-img.jpg',
-        ]
 
     ],
     'roma' => [
@@ -709,7 +681,7 @@ $cities = [
         ],
 
         'welcome_quote' => [
-            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+            'text'   => 'Viviamo la grazia di Gesù per riflettere insieme la sua luce.'
         ],
 
         'board' => [
@@ -718,16 +690,14 @@ $cities = [
             'pastor_image'   => 'roma-famiglia.webp',
             'phone'          => '3932724244',
             'welcome_text'   => [
-                'Ciao, questa è la congregazione di Firenze. Siamo molto contenti di sapere che ci leggi; devi sapere che noi siamo una grande famiglia e questa famiglia ha le braccia aperte per tutti quelli che ne vogliono far parte.',
-                'Perciò accoglietevi gli uni gli altri, come anche Cristo ha accolto voi, per la gloria di Dio. Romani 15:7 (Nuova Riveduta)'
+                'Ti invitiamo a cercare Gesù insieme a noi qui a Roma. Lui è la luce vera che illumina ogni vita. Apri il tuo cuore alla Sua grazia infinita per scoprire una gioia profonda e vivere la felicità in eterno.'
             ]
         ],
 
         'support_section' => [
-            'title'    => 'Non sei solo!',
+            'title'    => 'Benvenuto a casa!',
             'content' => [
-                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
-                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+                'Siamo la chiesa, una famiglia che celebra la bellezza della grazia. Insieme scopriamo l’amore profondo di Gesù e la gioia di vivere ogni giorno alla Sua presenza, camminando uniti verso una felicità che dura in eterno.'
             ]
         ],
 
@@ -751,6 +721,7 @@ $cities = [
             'description' => 'Il pastore Jair Pedrozo insieme alla sua famiglia, servendo con amore nella città di Milano.'
         ]
     ],
+    
     'ostia' => [
         'hero' => [
             'title' => 'Ostia',
@@ -787,7 +758,7 @@ $cities = [
         ],
 
         'welcome_quote' => [
-            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+            'text'   => 'Condividere la Parola, la grazia del Signore, vivere la eternità con Gesù.'
         ],
 
         'board' => [
@@ -796,26 +767,23 @@ $cities = [
             'pastor_image'   => 'ostia-pastore.webp',
             'phone'          => '3345850369',
             'welcome_text'   => [
-                '',
-                ''
+                'Ho scelto di servire Gesù dedicando la mia vita al suo servizio. Desidero accompagnare chiunque cerchi la presenza del Signore, intercedendo con fede affinché ogni cuore possa scoprire la pace profonda e la benedizione di un cammino vissuto in Cristo.'
             ]
         ],
 
         'support_section' => [
-            'title'    => 'Non sei solo!',
+            'title'   => 'Un Cammino di Benedizione',
             'content' => [
-                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
-                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+                'Ogni cuore cerca una presenza vera che superi la solitudine. Ti invitiamo a scoprire la pace nel volto di Dio e a iniziare un cammino in eterno. Come chiesa cristiana, preghiamo insieme per te, certi che il Signore ascolta chi lo cerca con fede.'
             ]
         ],
 
         'city_description' => [
             'title'   => 'Ostia',
             'content' => [
-                'È una frazione di Roma, suddivisa in Lido di Ostia Ponente (Q. XXXIII), Lido di Ostia Levante (Q. XXXIV) e Lido di Castel Fusano (Q. XXXV), e rientra nel territorio del Municipio Roma X.',
-                'Si affaccia sul mar Tirreno nei pressi della foce del fiume Tevere, che ne delimita i confini con il comune di Fiumicino. Gran parte della zona fu edificata a partire dai primi anni del XX secolo, al termine della bonifica dell’area portata avanti dopo l’annessione di Roma al Regno d’Italia.'
+            'Affacciata sul mare e segnata da una storia profonda, Ostia rappresenta oggi un territorio che cerca una speranza autentica che solo la presenza di Dio può colmare. Tra le strade del Lido e le sponde del Tevere, avvertiamo il bisogno spirituale di una comunità che merita di riscoprire la pace della fede, superando ogni solitudine per abbracciare un cammino di benedizione che trasformi il cuore di questa città.'
             ],
-            'map_image' => 'ostia-map.png'
+            'map_image' => 'ostia-map.webp'
         ],
 
         'location' => [
@@ -847,7 +815,7 @@ $cities = [
         'info_box' => [
             [
                 'label'   => 'Luogo di predicazione:',
-                'content' => 'Via Gravina 75, Tremestieri Etneo'
+                'content' => 'Via Gravina 75, Tremestieri Etneo (CT)'
             ],
             [
                 'label'   => 'Servizio di culto:',
@@ -860,40 +828,36 @@ $cities = [
         ],
 
         'welcome_quote' => [
-            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+            'text'   => 'Tutti abbiamo bisogno della presenza di Dio'
         ],
 
         'board' => [
             'pastor_name'    => 'Nuccio Arcidiacono',
             'pastor_role'    => 'Pastore',
-            'pastor_image'   => 'catania-pastore.webp',
+            'pastor_image'   => 'catania-famiglia.webp',
             'phone'          => '3407284369',
             'welcome_text'   => [
-                '',
-                ''
+            'Cari abitanti di questa splendida terra catanese, in una città così ricca di storia e di volti diversi, Dio continua a compiere meraviglie per l’intera umanità. Desidero testimoniare l’amore e la speranza viva che troviamo in Cristo, invitando ogni persona a cercare la Sua presenza. Insieme possiamo vivere un cammino di benedizione che supera ogni solitudine e rinnova profondamente il cuore di chiunque si affidi a Lui.'            
             ]
         ],
 
         'support_section' => [
-            'title'    => 'Non sei solo!',
+            'title'   => 'Con Lui siamo al porto sicuro',
             'content' => [
-                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
-                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+                'In Cristo troviamo il nostro porto sicuro, una presenza che trasforma la solitudine in speranza. Come chiesa, camminiamo insieme nella fede, intercedendo per te e la tua famiglia, certi che Dio risponde con amore a chiunque cerchi il Suo volto.'
             ]
         ],
 
         'city_description' => [
             'title'   => 'Catania',
             'content' => [
-                'È un comune italiano di 297.173 abitanti, capoluogo dell’omonima città metropolitana in Sicilia; la «città etnea» è inoltre il decimo comune italiano per popolazione, nonché primo fra i non capoluoghi di regione.',
-                'È il centro dell’area metropolitana più densamente popolata della Sicilia, e di una più ampia conurbazione nota come Sistema lineare della Sicilia Orientale.',
-                'Fondata nel 729 a.C. dai greci calcidesi della vicina Naxos, la città vanta una storia millenaria i cui resti ne arricchiscono il patrimonio artistico, architettonico e culturale.'
+            'Catania, città millenaria all\'ombra dell\'Etna, custodisce una storia profonda che sempre ha avuto bisogno della luce di Dio. Come chiesa, portiamo la benedizione di Dio in ogni casa dove si aprono le porte, desiderando condividere un cammino di benedizione che porti speranza vera in ogni cuore.'
             ],
-            'map_image' => 'catania-map.png'
+            'map_image' => 'catania-map.webp'
         ],
 
         'location' => [
-            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
+            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino (MI)',
             'google_maps'  => 'https://maps.app.goo.gl/'
         ],
     ],
@@ -933,7 +897,7 @@ $cities = [
         ],
 
         'welcome_quote' => [
-            'text'   => 'Hai bisogno e vuoi una mano? NOI CI SIAMO!'
+            'text'   => 'Palermo, scopri la pace di Dio, camminiamo insieme a Lui.'
         ],
 
         'board' => [
@@ -942,39 +906,34 @@ $cities = [
             'pastor_image'   => 'palermo-famiglia.webp',
             'phone'          => '3208343428',
             'welcome_text'   => [
-                '',
-                ''
+                'Cari abitanti di Palermo, in questa terra di popoli diversi Dio opera meraviglie.Serviamo Gesù con dedizione, desiderando accompagnarvi alla ricerca della Sua presenza. Camminiamo uniti nella fede per vedere ogni cuore trasformato dalla Sua benedizione.'
             ]
         ],
 
         'support_section' => [
-            'title'    => 'Non sei solo!',
+            'title'   => 'La grazia di Dio proiettata in questa Città',
             'content' => [
-                'Siamo una congregazione cristiana e siamo qui per offrire aiuto spirituale, emotivo e sociale a tutti i nostri vicini che lo desiderano.',
-                'Crediamo in Dio e siamo sicuri che Lui risponde alle nostre preghiere se lo facciamo con fede. Vogliamo pregare per te, per la tua famiglia, per i tuoi bisogni, per questa città e per questa Nazione.'
+                'La presenza di Dio trasforma Palermo. Siamo una chiesa che accoglie ogni persona nel Suo infinito amore. Preghiamo insieme per te, certi che Gesù porti benedizione e speranza vera alla tua vita.'
             ]
         ],
 
         'city_description' => [
             'title'   => 'Palermo',
             'content' => [
-                'È un comune italiano di 624.974 abitanti, quinto in Italia per popolazione, capoluogo della Regione Siciliana e dell’omonima città metropolitana.',
-                'La città, che si estende sulla Conca d’oro ai piedi del Monte Pellegrino, è circondata da sud-est a nord-ovest dall’anfiteatro naturale dei monti di Palermo e si affaccia sul suo omonimo golfo nel Mar Tirreno.',
-                'Il sito è abitato sin dalla preistoria, ma la vera e propria fondazione della città è attribuita ai fenici tra il VII e il VI secolo a.C.. La sua storia e il succedersi di numerosi popoli e civiltà hanno conferito alla città un imponente patrimonio artistico ed architettonico. Con Enrico VI e Federico II fu capitale del Sacro Romano Impero, che rappresentò uno dei periodi di massimo splendore per la città.'
+            'Palermo, antica città bagnata dal mare, custodisce una storia millenaria che oggi grida il bisogno della presenza di Dio. Oltre le bellezze visibili, esiste un vuoto spirituale che solo Cristo può colmare, portando speranza e benedizione in ogni angolo della città.'            
             ],
-            'map_image' => 'palermo-map.png'
+            'map_image' => 'palermo-map.webp'
         ],
 
         'location' => [
-            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino MI',
+            'address'      => 'Via delle Camelie, 19, 20095 Cusano Milanino (MI)',
             'google_maps'  => 'https://maps.app.goo.gl/'
         ],
         'info_block' => [
             'title'   => 'Rassegna storica',
             'content' => [
-                'La Chiesa pentecostale unita in Europa a Palermo ha i suoi inizi nell’anno 2017 con riunioni famigliari ed evangelizzazione domiciliare. Grazie a questi incontri e riunioni, nell’anno 2018 viene ufficialmente insediata la famiglia pastorale Bustamante Villaquiran, che diede inizio a un lavoro continuo di predicazione di questo glorioso vangelo, dando i suoi primi frutti con 7 battesimi nel 2018 nel nome del nostro Signore Gesù Cristo.',
-                'Nel luglio del 2019, la famiglia Bustamante viene trasferita. Dalla Spagna, viene insediata la famiglia Vielma Colmenares per predicare e continuare con il lavoro finora svolto dal pastore Victor e la sua famiglia.',
-                'Il 2 agosto 2025, è stata insediata la nuova famiglia pastorale Zúñiga Sánchez, che continua a guidare la comunità con fede e dedizione.'
+            'La Chiesa Pentecostale Unita in Europa a Palermo ha mosso i suoi primi passi nel 2017, attraverso riunioni familiari ed evangelizzazione domiciliare. Grazie a questi primi incontri, nel 2018 si è ufficialmente insediata la famiglia pastorale Bustamante Villaquirán, che ha dato inizio a un’opera continua di predicazione di questo glorioso Vangelo, vedendo i primi frutti con sette battesimi celebrati nel nome del nostro Signore Gesù Cristo.
+             Nel luglio del 2019, in seguito al trasferimento della famiglia Bustamante, è giunta dalla Spagna la famiglia Vielma Colmenares per proseguire il lavoro iniziato dal pastore Victor. Infine, il 2 agosto 2025, si è insediata la nuova famiglia pastorale Zúñiga Sánchez, che guida oggi la comunità con fede e dedizione.'
             ]
         ],
     ]
