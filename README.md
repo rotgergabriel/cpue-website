@@ -70,6 +70,6 @@ Il progetto separa la logica di business dai file accessibili pubblicamente per 
 ## 🗓️ Roadmap di Stato
 | Fase | Attività Principale | Stato |
 | :--- | :--- | :--- |
-| **MVP** | Struttura funzionale e rotte PHP | 🟡 In pianificazione |
-| **Fase 2** | Connessione DB e contenuti dinamici | ⚪ In sospeso |
-| **Fase 3** | Rifinitura UI e pubblicazione | ⚪ In sospeso |
+| **MVP** | Struttura funzionale e rotte PHP | 🟢 Finalizzato |
+| **Fase 2** | Rifinitura UI e contenuti dinamici | 🟢 Finalizzato |
+| **Fase 3** | Connessione DB e pubblicazione | 🟡 In pianificazione  |
