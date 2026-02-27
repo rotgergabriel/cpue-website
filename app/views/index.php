@@ -32,10 +32,6 @@ $meta_description = $site_config['head']['home']['meta-description'];
             <?php include ROOT_PATH . 'app/views/includes/info-card.php'; ?>
             <!-- Info-card section end -->
 
-            <!-- Contact section start -->
-            <?php include ROOT_PATH . 'app/views/includes/contact.php'; ?>
-            <!-- Contact section end -->
-
             <!-- Cult-locations section start -->
             <?php include ROOT_PATH . 'app/views/includes/cult-locations.php'; ?>
             <!-- Cult-locations section end -->
@@ -43,6 +39,10 @@ $meta_description = $site_config['head']['home']['meta-description'];
             <!-- Find us section start -->
             <?php include ROOT_PATH . 'app/views/includes/find-us.php'; ?>
             <!-- Find us section end -->
+            
+            <!-- Contact section start -->
+            <?php include ROOT_PATH . 'app/views/includes/contact.php'; ?>
+            <!-- Contact section end -->
         </main>
     </div>
 
