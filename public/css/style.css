@@ -250,7 +250,7 @@
 }
 
 .board__img {
-    width: 100%;
+    width: 70%;
     display: block;
     object-fit: cover;
     margin: 0 auto;
@@ -300,18 +300,20 @@
 
 .board--about .board__text--title {
     position: absolute;
+    margin: 0, 15px;
     top: 0;
-    left: 0;
+    left: 0px;
+    right: 0px;
     width: 100%;
     text-align: center;
     color: #FFC400;
-    font-size: 40px;
+    font-size: 28px;
     line-height: 1.1;
     z-index: 10;
 }
 
 .board--about .board__body {
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
 /* Info-card section */
@@ -617,7 +619,7 @@
 
 .cult-locations__europe-map {
     width: 100%;
-    max-width: 250px;
+    max-width: 150px;
     height: auto;
     object-fit: contain;
     display: block;
@@ -676,7 +678,7 @@
 
 .cult-locations__italy-map {
     width: 100%;
-    max-width: 700px;
+    max-width: 400px;
     height: auto;
     display: block;
 }
@@ -1019,7 +1021,7 @@
 
 .about-feature__title {
     text-align: center;
-    font-size: 40px;
+    font-size: 28px;
     color: #FFC400;
     border-top: 1px solid #002395;
     border-radius: 50px;
@@ -1027,19 +1029,31 @@
 }
 
 .about-feature__text {
-    font-size: 20px;
-}
+    padding-left: 15px;
+    padding-right: 15px;
+    }
 
 .about-feature__text--alt {
-    font-size: 20px;
+    font-size: 18px;
     color: #67768E;
     padding: 0 20px;
 }
 
 .about-feature__text--scripture {
     text-align: center;
-    font-size: 35px !important;
+    margin-top: -20px;
+    font-size: 16px !important;
     color: #FFC400;
+}
+
+.about-feature__scripture-part {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.about-feature__text--scripture {
+    text-align: center;
+    line-height: 1.4;
 }
 
 .about-feature__media {
@@ -1047,7 +1061,8 @@
 }
 
 .about-feature__image {
-    width: 80%;
+    width: 50%;
+    min-width: 200px;
     height: auto;
     border-radius: 8px;
     display: block;
@@ -2027,7 +2042,7 @@ html {
 
 .milano__services {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 10px;
     padding-bottom: 60px;
     display: flex;
     flex-direction: column;
@@ -2513,12 +2528,27 @@ html {
     align-items: center;
 }
 
+.comitato__label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #546373;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
 .comitato__title {
     font-size: 28px;
     font-weight: 600;
     color: #0B0E92;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
     width: 100%;
@@ -2695,8 +2725,13 @@ html {
         font-size: 48px;
     }
 
+    .board__img {
+        margin-top: 0px;
+        width: 50%;
+     }
+
     .board--about .board__text--title {
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .board--about .board__body {
@@ -2812,6 +2847,19 @@ html {
         justify-content: flex-start;
         flex: 1;
     }
+
+        .about-feature__image {
+        max-width: 150px;
+        margin-top: 45px;
+    }
+
+    .about-feature__text {
+        font-size: 18px;
+    }
+
+    .about-feature__scripture-part {
+        font-size: 18px;
+    }    
 
     .about-feature__media {
         flex: 1;
@@ -3152,8 +3200,13 @@ html {
         margin-left: 50px;
     }
 
+    .comitato__label {
+        font-size: 27px;
+    }
+
     .comitato__title {
     font-size: 35px;
+    margin-top: 0px;
     }
 }
 
@@ -3327,6 +3380,13 @@ html {
         font-size: clamp(25px, 3vw, 16px);
     }
 
+    .cult-locations__italy-map {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    }
+
+
     .find-us {
         margin-top: -30px;
     }
@@ -3340,16 +3400,26 @@ html {
         font-size: 0.95rem;
     }
 
+
+    .about-feature__content{
+        margin-top: 10px;
+    }
+
     .about-feature__title {
         font-size: 48px;
     }
 
+    .about-feature__image {
+        max-width: 350px;
+        margin-top: -20px;
+    }
+
     .about-feature__text {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .about-feature__text--alt {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .projection-hero {
@@ -3995,10 +4065,13 @@ html {
         text-align: left;
     }
 
+    .comitato__label {
+        font-size: 27px;
+    }
+
     .comitato__title {
-        font-size: 40px;
-        margin-top: 70px;
-        padding: 0;
+    font-size: 35px;
+    margin-top: 0px;
     }
 
     .comitato__events-title{
