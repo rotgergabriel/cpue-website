@@ -29,9 +29,9 @@
 
         <div class="contact__col contact__col--map">
 
-            <a href="https://www.google.com/maps/search/?api=1&query=Via+delle+Camelie,+19,+20095+Cusano+Milanino+MI" target="_blank" class="contact__map-box">
+            <a href="https://www.google.com/maps/search/?api=1&query=CHIESA+PENTECOSTALE+UNITÀ+IN+EUROPA+(Milano)+Cusano+Milanino" target="_blank" class="contact__map-box">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.123456789!2d9.180000!3d45.550000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786be9a0a0a0a0a%3A0x0!2sVia+delle+Camelie%2C+19%2C+20095+Cusano+Milanino+MI!5e0!3m2!1sit!2sit!4v1600000000000!5m2!1sit!2sit"
+                    src="https://maps.google.com/maps?q=CHIESA+PENTECOSTALE+UNITÀ+IN+EUROPA+(Milano),+Via+delle+Camelie,+19,+Cusano+Milanino&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     class="contact__map-frame"
                     allowfullscreen=""
                     loading="lazy"
@@ -41,12 +41,14 @@
 
             <div class="contact__info contact__info--address">
                 <img src="<?php echo BASE_URL ?>public/assets/img/position.svg" alt="Indirizzo" class="contact__icon">
-                <span class="contact__text">Via delle Camelie, 19, 20095 Cusano Milanino MI</span>
+                <a href="https://maps.google.com/?cid=7403801825769057566&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" style="text-decoration: none; color: inherit;">
+                    Via delle Camelie, 19, 20095 Cusano Milanino MI
+                </a>
             </div>
 
             <div class="contact__info">
                 <img src="<?php echo BASE_URL ?>public/assets/img/phone.svg" alt="Telefono" class="contact__icon">
-                <span class="contact__text">+39 349 463 7023</span>
+                <a href="tel:+393494637023" class="contact__text" style="text-decoration: none; color: inherit;">+39 349 463 7023</a>
             </div>
 
         </div>

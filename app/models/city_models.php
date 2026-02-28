@@ -207,12 +207,9 @@ $cities = [
                 ],
                 [
                     'title'       => '5 Settimana (28 e 29 Marzo)',
-                    'description' => [
-                        'Sabato 28: Culto dei Talenti.',
-                        'Domenica 29: Servizio speciale dedicato alla Lode.'
+                    'description' => 'Sabato 28: Culto dei Talenti. Domenica 29: Servizio speciale dedicato alla Lode.'
                     ]
                 ]
-            ]
         ],
 
         'board' => [
@@ -348,7 +345,7 @@ $cities = [
         'info_box' => [
             [
                 'label'   => 'Luogo di predicazione:',
-                'content' => 'Viale delle Grazie, 9, 33170 Pordenone (PN)'
+                'content' => 'Viale delle Grazie, 9, 33170 Pordenone PN)'
             ],
             [
                 'label'   => 'Servizio di culto:',
