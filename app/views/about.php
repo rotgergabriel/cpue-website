@@ -43,7 +43,8 @@ $boardId = "consiglio-direttivo";
                         </div>
                         <div class="about-feature__item">
                             <p class="about-feature__text--alt about-feature__text--scripture">
-                                Efesini 2:20 – 1 Corinzi 3:11
+                                <span class="about-feature__scripture-part">Efesini 2:20 –</span>
+                                <span class="about-feature__scripture-part">1 Corinzi 3:11</span>
                             </p>
                         </div>
                     </div>
@@ -117,9 +118,9 @@ $boardId = "consiglio-direttivo";
                             </p>
 
                             <ul style="list-style: none; padding: 0;">
-                                <li class="about-feature__text">a. Il Presidente</li>
-                                <li class="about-feature__text">b. Il Segretario</li>
-                                <li class="about-feature__text">d. Il tesoriere</li>
+                                <li class="about-feature__text">a. Presidente</li>
+                                <li class="about-feature__text">b. Segretario</li>
+                                <li class="about-feature__text">d. tesoriere</li>
                             </ul>
                         </div>
                     </div>

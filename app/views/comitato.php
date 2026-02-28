@@ -30,6 +30,7 @@ $meta_description = $comitato_data['info']['meta-description'];
 
             <?php if (!empty($comitato_data['info'])) { ?>
                 <div class="comitato__header">
+                    <span class="comitato__label">Comitato</span>
                     <?php if (!empty($comitato_data['info']['title'])) { ?>
                         <h1 class="comitato__title"><?php echo $comitato_data['info']['title'] ?></h1>
                     <?php } ?>
