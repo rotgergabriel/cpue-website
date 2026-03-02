@@ -12,16 +12,18 @@ $meta_description = 'Admin access';
 </head>
 
 <body>
-    <div class="layout container-fluid">
-        <main class="row min-vh-100 align-items-center justify-content-center">
-            <section class="login col-12 col-md-6 col-lg-4">
-                <div class="card shadow-sm">
-                    <div class="card-body p-4 bg-light rounded">
-                        <h3 class="text-center mb-4 text-secondary">Area Riservata</h3>
+    <div class="layout">
+        <main class="d-flex align-items-center justify-content-center bg-light px-3"
+            style="height: 100dvh; width: 100vw; position: fixed; top: 0; left: 0; overflow: hidden;">
 
-                        <form action="<?php echo BASE_URL; ?>auth/login" method="POST">
+            <section class="login w-100" style="max-width: 380px;">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4 bg-white rounded">
+                        <h3 class="text-center mb-4 text-secondary fw-light">Area Riservata</h3>
+
+                        <form action="<?php echo BASE_URL; ?>dashboard" method="POST">
                             <div class="mb-3">
-                                <label for="username" class="form-label text-dark">Nome utente</label>
+                                <label for="username" class="form-label text-dark small">Nome utente</label>
                                 <input type="text"
                                     id="username"
                                     name="username"
@@ -32,7 +34,7 @@ $meta_description = 'Admin access';
                             </div>
 
                             <div class="mb-3">
-                                <label for="password" class="form-label text-dark">Password</label>
+                                <label for="password" class="form-label text-dark small">Password</label>
                                 <input type="password"
                                     id="password"
                                     name="password"
@@ -47,12 +49,13 @@ $meta_description = 'Admin access';
                         </form>
                     </div>
                 </div>
+
                 <div class="text-center mt-3">
                     <a href="<?php echo BASE_URL; ?>" class="text-decoration-none small text-muted">← Torna alla Home</a>
                 </div>
             </section>
+
         </main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </div>
 </body>
 
