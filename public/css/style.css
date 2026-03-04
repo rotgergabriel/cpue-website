@@ -1031,7 +1031,7 @@
 .about-feature__text {
     padding-left: 15px;
     padding-right: 15px;
-    }
+}
 
 .about-feature__text--alt {
     font-size: 18px;
@@ -2093,7 +2093,6 @@ html {
     justify-content: center;
     height: auto;
     min-height: 120px;
-
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -2756,10 +2755,21 @@ html {
 .repertorio__link {
     display: block;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: #ffffff;
     transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.repertorio__link--logout {
+    color: rgb(230, 57, 70);
+    padding-right: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.repertorio__link--logout:hover {
+    color: #ff0000;
 }
 
 .repertorio__link:hover {
@@ -2869,7 +2879,7 @@ html {
     font-size: 16px;
     font-weight: 500;
     color: #546373;
-}   
+}
 
 .repertorio-panels__actions {
     display: flex;
@@ -3046,7 +3056,7 @@ html {
     width: 17px;
     height: auto;
     display: block;
-}    
+}
 
 .repertorio-panels__preview-text {
     text-align: center;
@@ -3072,7 +3082,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-top: 5px; 
+    margin-top: 5px;
     width: 100%;
 }
 
@@ -3145,7 +3155,7 @@ html {
 }
 
 .repertorio-panels__inner {
-    position: relative; 
+    position: relative;
 }
 
 .repertorio-panels__save-btn {
@@ -3199,10 +3209,6 @@ html {
     width: 24px;
     height: auto;
     display: block;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .repertorio-floating-nav {
@@ -3365,7 +3371,7 @@ html {
     align-items: center;
     gap: 50px;
     z-index: 10005;
-    
+
     background-color: #ffffff;
     padding: 10px 25px;
     border-radius: 50px;
@@ -3453,7 +3459,7 @@ html {
     padding-right: 40px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    color: #343c44; 
+    color: #343c44;
     outline: none;
 }
 
@@ -3518,8 +3524,8 @@ html {
 }
 
 .modal-warning-container {
-    width: 250px; 
-    min-height: 120px; 
+    width: 250px;
+    min-height: 120px;
     background-color: #ffffff;
     border: 1px solid gray;
     border-radius: 0px;
@@ -3921,7 +3927,7 @@ html {
     left: 5px;
     width: 70px;
     height: 30px;
-    background-color: #d3d3d3; 
+    background-color: #d3d3d3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3954,7 +3960,7 @@ html {
 
 /* Modifica per fare spazio alla toolbar grigia in alto a sinistra */
 .modal-step-lyrics__input {
-    padding-top: 45px !important; 
+    padding-top: 45px !important;
 }
 
 
@@ -3978,7 +3984,7 @@ html {
     .board__img {
         margin-top: 0px;
         width: 50%;
-     }
+    }
 
     .board--about .board__text--title {
         font-size: 32px;
@@ -4098,7 +4104,7 @@ html {
         flex: 1;
     }
 
-        .about-feature__image {
+    .about-feature__image {
         max-width: 150px;
         margin-top: 45px;
     }
@@ -4109,7 +4115,7 @@ html {
 
     .about-feature__scripture-part {
         font-size: 18px;
-    }    
+    }
 
     .about-feature__media {
         flex: 1;
@@ -4455,8 +4461,12 @@ html {
     }
 
     .comitato__title {
-    font-size: 35px;
-    margin-top: 0px;
+        font-size: 35px;
+        margin-top: 0px;
+    }
+
+    .repertorio__link {
+        font-size: 16px;
     }
 
     .repertorio-panels__icon {
@@ -4675,9 +4685,9 @@ html {
     }
 
     .cult-locations__italy-map {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
     }
 
 
@@ -4695,7 +4705,7 @@ html {
     }
 
 
-    .about-feature__content{
+    .about-feature__content {
         margin-top: 10px;
     }
 
@@ -5364,11 +5374,11 @@ html {
     }
 
     .comitato__title {
-    font-size: 35px;
-    margin-top: 0px;
+        font-size: 35px;
+        margin-top: 0px;
     }
 
-    .comitato__events-title{
+    .comitato__events-title {
         font-size: 32px;
     }
 
@@ -5395,7 +5405,7 @@ html {
     }
 
     .comitato__director-a {
-        font-size: 14px;    
+        font-size: 14px;
     }
 
     .repertorio__menu {
@@ -5527,13 +5537,16 @@ html {
         width: 540px;
         margin: 10px auto 0 auto;
     }
+
     .modal-step-lyrics {
         width: 540px;
         margin: 10px auto 30px auto;
         min-height: 450px;
     }
+
     .modal-step-lyrics__input {
         height: 450px;
     }
 }
+
 /*the end*/

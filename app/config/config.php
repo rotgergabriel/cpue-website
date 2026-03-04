@@ -33,9 +33,16 @@ define('MODELS_PATH', ROOT_PATH . 'app' . DIRECTORY_SEPARATOR . 'models' . DIREC
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', 'root');
+define('DB_PASS', '');
 define('DB_NAME', 'cpue_db');
 
+$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+if (!$conn) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
+
+define('JS_INACTIVITY', BASE_URL . 'public/js/inactivity.js');
 $cities = include MODELS_PATH . 'city_models.php';
 $comitati = include MODELS_PATH . 'comitati_models.php';
 $site_data = include MODELS_PATH . 'site_settings.php';
