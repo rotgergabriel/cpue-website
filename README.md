@@ -37,6 +37,34 @@ Il progetto separa la logica di business dai file accessibili pubblicamente per 
 
 ---
 
+## 🗄️ Configurazione del Database
+
+Questo progetto utilizza un database MySQL denominato cpue_db. Di seguito sono riportati lo schema e le credenziali predefinite per lo sviluppo.
+
+### 🛠️ Configurazione dello Schema
+Per replicare la struttura del database, esegui il seguente comando SQL nel tuo gestore di database (come phpMyAdmin):
+
+```sql
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` enum('admin','editor') DEFAULT 'admin',
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+### 🔑 Credenziali di Default (Sviluppo)
+| Utente | Password | Ruolo |
+| :--- | :--- | :--- |
+| `torino` | `123456` | Admin |
+
+> [!WARNING] 
+> **Nota di Sicurezza:** Queste credenziali sono fornite solo per scopi di test in ambiente locale.
+
+---
+
 ## 📋 Tareas (Tabellone Kanban)
 * **To Do:** Design in Figma, Modellazione DB, Setup delle rotte in `index.php`.
 * **In Corso:** Configurazione del repository e rami `dev/gabriel` - `dev/john`.
