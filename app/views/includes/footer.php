@@ -78,7 +78,7 @@
         <ul class="footer__list">
           <li class="footer__item"><a href="<?php echo BASE_URL ?>" class="footer__link">Home Page</a></li>
           <li class="footer__item"><a href="<?php echo BASE_URL ?>about" class="footer__link">Chi Siamo</a></li>
-          <li class="footer__item"><a href="<?php echo BASE_URL ?>repertorio-lode-chiese" class="footer__link">Repertorio Lode - Chiese</a></li>        </ul>
+          <li class="footer__item"><a href="<?php echo BASE_URL ?>songbook" class="footer__link">Songbook</a></li>        </ul>
       </nav>
     </div>
   </section>

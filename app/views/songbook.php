@@ -67,6 +67,8 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                 </button>
                             </div>
 
+                            <p class="repertorio-panels__add-hint">Aggiungi all'Evento</p>
+
                             <div class="repertorio-panels__list-container">
                                 <ul class="repertorio-panels__list">
                                     <li class="repertorio-panels__list-item">
@@ -174,7 +176,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                     <div class="repertorio-panels__col">
                         <div class="repertorio-panels__inner">
                             <h2 class="repertorio-panels__title">Anteprima</h2>
-                            <p class="repertorio-panels__preview-text">Questo spazio viene utilizzato per proiettare soltanto qui la canzone che ho cliccato nel container dell'elenco delle canzoni. In questo modo la persona vede subito il contenuto della canzone che vuole inserire nell'evento.</p>
+                            <p class="repertorio-panels__preview-text">Questo spazio viene utilizzato per proiettare soltanto qui la canzone che ho cliccato nel container dell'elenco delle canzoni oppure al cliccare sull elenco delle canzoni del contenitore Evento (ci serve vedere il contenuto de la canzone che clicco, sia dal Repertorio che del Evento che sto). In questo modo la persona vede subito il contenuto della canzone che vuole inserire nell'evento.</p>
                         </div>
                     </div>
 
@@ -206,24 +208,45 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
 
                             <div class="repertorio-panels__list-container">
                                 <ul class="repertorio-panels__list">
+                                    
                                     <li class="repertorio-panels__list-item">
                                         <span class="repertorio-panels__list-title">Ai piedi della croce io starò</span>
-                                        <button class="repertorio-panels__remove-btn">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg" class="repertorio-panels__remove-icon">
-                                        </button>
+                                        
+                                        <div class="repertorio-panels__item-actions">
+                                            <button class="repertorio-panels__edit-btn" data-tooltip="Editare il brano">
+                                                <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg" alt="Modifica" class="repertorio-panels__edit-icon">
+                                            </button>
+                                            <button class="repertorio-panels__remove-btn" data-tooltip="Eliminare brano">
+                                                <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg" alt="Elimina" class="repertorio-panels__remove-icon">
+                                            </button>
+                                        </div>
+                                        
                                     </li>
+                                    
                                     <li class="repertorio-panels__list-item">
                                         <span class="repertorio-panels__list-title">Davanti alla tua presenza</span>
-                                        <button class="repertorio-panels__remove-btn">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg" class="repertorio-panels__remove-icon">
-                                        </button>
+                                        <div class="repertorio-panels__item-actions">
+                                            <button class="repertorio-panels__edit-btn" data-tooltip="Editare il brano">
+                                                <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg" alt="Modifica" class="repertorio-panels__edit-icon">
+                                            </button>
+                                            <button class="repertorio-panels__remove-btn" data-tooltip="Eliminare brano">
+                                                <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg" alt="Elimina" class="repertorio-panels__remove-icon">
+                                            </button>
+                                        </div>
                                     </li>
+                                    
                                     <li class="repertorio-panels__list-item">
                                         <span class="repertorio-panels__list-title">Io vedrò la tua gloria</span>
-                                        <button class="repertorio-panels__remove-btn">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg" class="repertorio-panels__remove-icon">
-                                        </button>
+                                        <div class="repertorio-panels__item-actions">
+                                            <button class="repertorio-panels__edit-btn" data-tooltip="Editare il brano">
+                                                <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg" alt="Modifica" class="repertorio-panels__edit-icon">
+                                            </button>
+                                            <button class="repertorio-panels__remove-btn" data-tooltip="Eliminare brano">
+                                                <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg" alt="Elimina" class="repertorio-panels__remove-icon">
+                                            </button>
+                                        </div>
                                     </li>
+                                    
                                 </ul>
                             </div>
 
@@ -236,6 +259,129 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?php echo BASE_URL ?>public/js/script.js"></script>
+
+
+    <div class="modal-overlay" id="modal-nuovo-brano">
+        <div class="modal-container">
+            
+            <div class="modal-top-actions">
+                <button class="modal-action-btn" id="btn-open-confirm" data-tooltip="Salva e prepara">
+                    <img src="<?php echo BASE_URL; ?>public/assets/img/accept.svg" alt="Accetta" class="modal-accept-icon">
+                </button>
+                <button class="modal-close" id="btn-close-modal">
+                    <img src="<?php echo BASE_URL; ?>public/assets/img/close.svg" alt="Chiudi" class="modal-close-icon">
+                </button>
+            </div>
+
+            <div class="modal-step-title">
+                <input type="text" class="modal-step-title__input" id="input-titolo-brano" placeholder="Inizia scrivendo qui...">
+                <button class="modal-step-title__btn" id="btn-ok-titolo" data-tooltip="Conferma Titolo">
+                    <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="modal-step-title__icon">
+                </button>
+            </div>
+
+            <div class="modal-step-tonality" id="step-tonality">
+                <img src="<?php echo BASE_URL; ?>public/assets/img/categoria-music.svg" alt="Musica" class="modal-step-tonality__main-icon">
+                <div class="modal-step-tonality__col">
+                    <div class="modal-step-tonality__row">
+                        <span class="modal-step-tonality__item select-note" data-tooltip="do" data-val="C">C</span>
+                        <span class="modal-step-tonality__item select-note" data-tooltip="re" data-val="D">D</span>
+                        <span class="modal-step-tonality__item select-note" data-tooltip="mi" data-val="E">E</span>
+                        <span class="modal-step-tonality__item select-note" data-tooltip="fa" data-val="F">F</span>
+                    </div>
+                    <div class="modal-step-tonality__row">
+                        <span class="modal-step-tonality__item select-note" data-tooltip="sol" data-val="G">G</span>
+                        <span class="modal-step-tonality__item select-note" data-tooltip="la" data-val="A">A</span>
+                        <span class="modal-step-tonality__item select-note" data-tooltip="si" data-val="B">B</span>
+                    </div>
+                </div>
+                <div class="modal-step-tonality__col">
+                    <span class="modal-step-tonality__item select-mode" data-tooltip="tonalità maggiore" data-val="">Maggiore</span>
+                    <span class="modal-step-tonality__item select-mode" data-tooltip="tonalità minore" data-val="m">Minore</span>
+                </div>
+                <div class="modal-step-tonality__col">
+                    <span class="modal-step-tonality__item select-acc" data-tooltip="Bemolle" data-val="b">♭</span>
+                    <span class="modal-step-tonality__item select-acc" data-tooltip="Sostenuto" data-val="#">#</span>
+                </div>
+                <div class="modal-step-tonality__preview" id="tonality-preview"></div>
+                <button class="modal-step-tonality__btn" id="btn-ok-tonality">
+                    <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="modal-step-tonality__icon">
+                </button>
+            </div>            
+
+            <div class="modal-step-rhythm" id="step-rhythm">
+                <img src="<?php echo BASE_URL; ?>public/assets/img/categoria-ritmo.svg" alt="Ritmo" class="modal-step-rhythm__main-icon">
+                <div class="modal-step-rhythm__options">
+                    <span class="modal-step-rhythm__item select-rhythm" data-val="Lento">Lento</span>
+                    <span class="modal-step-rhythm__item select-rhythm" data-val="Intermedio">Intermedio</span>
+                    <span class="modal-step-rhythm__item select-rhythm" data-val="Veloce">Veloce</span>
+                    <span class="modal-step-rhythm__item select-rhythm" data-val="3/4">3/4</span>
+                    <button class="modal-step-rhythm__btn" id="btn-ok-rhythm">
+                        <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="modal-step-rhythm__icon">
+                    </button>
+                </div>
+            </div> <div class="modal-step-lang" id="step-lang">
+                <div class="modal-step-lang__options">
+                    <span class="modal-step-lang__item select-lang" data-val="Italiano">Italiano</span>
+                    <span class="modal-step-lang__item select-lang" data-val="Spagnolo">Spagnolo</span>
+                    <button class="modal-step-lang__btn" id="btn-ok-lang">
+                        <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="modal-step-lang__icon">
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal-step-lyrics" id="step-lyrics">
+                <div class="modal-step-lyrics__wrapper">
+                    <div class="modal-step-lyrics__toolbar">
+                        <span class="modal-step-lyrics__tool-btn modal-step-lyrics__tool-btn--light" id="btn-weight-light">B</span>
+                        <span class="modal-step-lyrics__tool-btn modal-step-lyrics__tool-btn--bold" id="btn-weight-bold">B</span>
+                    </div>
+                    
+                    <textarea class="modal-step-lyrics__input" id="input-lyrics" placeholder="Incolla o scrivi qui il testo della canzone..."></textarea>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+        
+
+    <div class="modal-overlay" id="modal-confirm-evento">
+        <div class="modal-confirm-container">  
+            <p class="modal-confirm-text">Aggiungere all'evento</p>
+            <div class="modal-confirm-actions">
+                <button class="modal-action-btn">
+                    <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg" class="repertorio-panels__add-icon">
+                </button>
+                <button class="modal-action-btn" id="btn-final-accept">
+                    <img src="<?php echo BASE_URL; ?>public/assets/img/accept.svg" alt="Conferma finale" class="modal-accept-icon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal-overlay" id="modal-warning-close">
+        <div class="modal-warning-container">
+            <button class="modal-warning-btn modal-warning-btn--continue" id="btn-continue-edit">
+                Continua editando
+            </button>
+            <button class="modal-warning-btn modal-warning-btn--close" id="btn-confirm-close">
+                Chiudi senza salvare
+            </button>
+        </div>
+    </div>
+
+
+    <div class="modal-overlay" id="modal-alert-msg">
+        <div class="modal-alert-container">
+            <p class="modal-alert-text" id="modal-alert-content"></p>
+            <button class="modal-alert-close-btn" id="btn-close-alert">Chiudi</button>
+        </div>
+    </div>
+
 </body>
 
 </html>
