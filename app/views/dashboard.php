@@ -46,6 +46,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
 
         <nav class="repertorio__nav">
             <ul class="repertorio__menu">
+                <li class="repertorio__link"><a href="<?php echo BASE_URL ?>" class="repertorio__link">Home CPUE</a></li>
                 <li><a href="#" class="repertorio__link">Eventi</a></li>
             </ul>
             <a href="<?php echo BASE_URL; ?>app/controllers/logout.php" class="repertorio__link--logout">
@@ -138,7 +139,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -165,7 +166,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -192,7 +193,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -219,7 +220,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -246,7 +247,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -273,7 +274,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -300,7 +301,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -327,7 +328,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -354,7 +355,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -381,7 +382,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -408,7 +409,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -435,7 +436,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -462,7 +463,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -489,7 +490,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -516,7 +517,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -543,7 +544,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Modifica brano">
+                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
@@ -628,6 +629,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                         <button class="repertorio-panels__edit-btn" data-tooltip="Editare il brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg" alt="Modifica" class="repertorio-panels__edit-icon">
                                         </button>
+                                        
                                         <button class="repertorio-panels__remove-btn" data-tooltip="Eliminare brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg" alt="Elimina" class="repertorio-panels__remove-icon">
                                         </button>
@@ -675,9 +677,11 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                 </button>
             </div>
 
+            <h2 class="modal-main-title">Nuovo Brano</h2>
+
             <div class="modal-step-title">
                 <input type="text" class="modal-step-title__input" id="input-titolo-brano"
-                    placeholder="Inizia scrivendo qui...">
+                    placeholder="Inizia con il titolo del brano...">
                 <button class="modal-step-title__btn" id="btn-ok-titolo" data-tooltip="Conferma Titolo">
                     <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="modal-step-title__icon">
                 </button>
@@ -743,15 +747,27 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
             <div class="modal-step-lyrics" id="step-lyrics">
                 <div class="modal-step-lyrics__wrapper">
                     
-                    <div class="modal-step-lyrics__quick-tags">
-                        <span class="modal-step-lyrics__tag" data-tooltip="Strofa della canzone">Verso</span>
-                        <span class="modal-step-lyrics__tag" data-tooltip="(coro, chorus)">Ritornello</span>
-                        <span class="modal-step-lyrics__tag" data-tooltip="contrasto o transizione">Bridge</span>
-                        <span class="modal-step-lyrics__tag" data-tooltip="Breve frase musicale introduttiva">Riff</span>
+                    <div class="modal-step-lyrics__header">
+                        
+                        <div class="modal-step-lyrics__history">
+                            <button class="history-btn" id="btn-undo" data-tooltip="Annulla">
+                                <img src="<?php echo BASE_URL; ?>public/assets/img/anulla.svg" alt="Annulla">
+                            </button>
+                            <button class="history-btn" id="btn-redo" data-tooltip="Ripristina">
+                                <img src="<?php echo BASE_URL; ?>public/assets/img/ripristina.svg" alt="Ripristina">
+                            </button>
+                        </div>
+
+                        <div class="modal-step-lyrics__quick-tags">
+                            <span class="modal-step-lyrics__tag" data-tooltip="Strofa della canzone">Verso</span>
+                            <span class="modal-step-lyrics__tag" data-tooltip="(coro, chorus)">Ritornello</span>
+                            <span class="modal-step-lyrics__tag" data-tooltip="contrasto o transizione">Bridge</span>
+                            <span class="modal-step-lyrics__tag" data-tooltip="Breve frase musicale introduttiva">Riff</span>
+                        </div>
                     </div>
 
                     <textarea class="modal-step-lyrics__input" id="input-lyrics"
-                        placeholder="Incolla o scrivi qui il testo della canzone..."></textarea>
+                        placeholder=""></textarea>
                 </div>
             </div>
 
