@@ -29,7 +29,26 @@ $site_config = [
     'hero' => [
         'home' => [
             'title' => 'Chiesa Pentecostale Unita in Europa',
-            'image' => 'hero-img.png'
+            'image' => 'hero-img.png',
+            // Popup Components
+            'popup' => [
+                'status' => true,
+                'title'    => 'Chiesa Pentecostale Unita in Europa',
+                'subtitle' => 'Convegno Nazionale',
+                'days'     => ' 3 | 4 | 5',
+                'month'    => 'Aprile',
+                'city'     => 'Milano',
+                'schedule' => [
+                    'venerdi'  => 'Venerdi - 19:00',
+                    'sabato'   => 'Sabato - 10:00 | 15:00 | 19:00',
+                    'domenica' => 'Domenica - 10:00 | 15:00'
+                ],
+                'location' => [
+                    'venue'   => 'Teatro Bi',
+                    'address' => 'Via Gianni Rodari, 3, 20032 Cormano (MI)',
+                    'icon'    => 'position.svg'
+                ]
+            ]
         ],
         'la-chiesa' => [
             'title' => 'Chi Siamo?',

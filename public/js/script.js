@@ -1,15 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
-// =========================================
-// CODICE DELL'ARCANGELO (INTATTO E SEPARATO)
-// =========================================  
+    // =========================================
+    // CODICE DELL'ARCANGELO (INTATTO E SEPARATO)
+    // =========================================  
 
     // Seleziona tutti i titoli
     const accordions = document.querySelectorAll('.footer__accordion-header');
 
-    accordions.forEach(function(accordion) {
-        accordion.addEventListener('click', function() {
-            
+    accordions.forEach(function (accordion) {
+        accordion.addEventListener('click', function () {
+
             // Controllo Mobile: esegue solo se lo schermo è piccolo
             if (window.innerWidth > 768) return;
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // =========================================
 // NUOVO CODICE: GESTIONE POPUP REPERTORIO
 // =========================================
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     // 1. FUNZIONE GLOBALE CUSTOM ALERT
     function showCustomAlert(message) {
@@ -44,12 +44,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const alertModal = document.getElementById('modal-alert-msg');
     const btnCloseAlert = document.getElementById('btn-close-alert');
-    
+
     if (alertModal && btnCloseAlert) {
-        btnCloseAlert.addEventListener('click', function() {
+        btnCloseAlert.addEventListener('click', function () {
             alertModal.classList.remove('active');
         });
-        alertModal.addEventListener('click', function(e) {
+        alertModal.addEventListener('click', function (e) {
             if (e.target === alertModal) {
                 alertModal.classList.remove('active');
             }
@@ -61,16 +61,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalNuovoBrano = document.getElementById('modal-nuovo-brano');
     const btnCloseModal = document.getElementById('btn-close-modal');
 
-    const btnResetTitolo = document.getElementById('btn-reset-titolo'); 
+    const btnResetTitolo = document.getElementById('btn-reset-titolo');
     const btnOpenConfirm = document.getElementById('btn-open-confirm');
-    
+
     const modalConfirm = document.getElementById('modal-confirm-evento');
     const btnFinalAccept = document.getElementById('btn-final-accept');
 
     const modalWarning = document.getElementById('modal-warning-close');
     const btnContinueEdit = document.getElementById('btn-continue-edit');
     const btnConfirmClose = document.getElementById('btn-confirm-close');
-    
+
     const modalConfirmReset = document.getElementById('modal-confirm-reset');
     const btnConfirmReset = document.getElementById('btn-confirm-reset');
     const btnCancelReset = document.getElementById('btn-cancel-reset');
@@ -78,32 +78,32 @@ document.addEventListener('DOMContentLoaded', function() {
     // Elementi Progressive Disclosure
     const btnOkTitolo = document.getElementById('btn-ok-titolo');
     const inputTitolo = document.getElementById('input-titolo-brano');
-    
+
     const stepTonality = document.getElementById('step-tonality');
     const btnOkTonality = document.getElementById('btn-ok-tonality');
-    
-    const stepRhythm = document.getElementById('step-rhythm'); 
+
+    const stepRhythm = document.getElementById('step-rhythm');
     const btnOkRhythm = document.getElementById('btn-ok-rhythm');
-    
+
     const stepLang = document.getElementById('step-lang');
     const btnOkLang = document.getElementById('btn-ok-lang');
-    
+
     const stepLyrics = document.getElementById('step-lyrics');
     const inputLyrics = document.getElementById('input-lyrics');
 
     // 2. APRIRE E CHIUDERE POPUP PRINCIPALE
     if (btnNuovoBrano && modalNuovoBrano) {
-        btnNuovoBrano.addEventListener('click', function() {
+        btnNuovoBrano.addEventListener('click', function () {
             modalNuovoBrano.classList.add('active');
         });
     }
 
     if (btnCloseModal && modalWarning && modalNuovoBrano) {
-        btnCloseModal.addEventListener('click', function() {
+        btnCloseModal.addEventListener('click', function () {
             modalWarning.classList.add('active');
         });
-        
-        modalNuovoBrano.addEventListener('click', function(e) {
+
+        modalNuovoBrano.addEventListener('click', function (e) {
             if (e.target === modalNuovoBrano) {
                 modalWarning.classList.add('active');
             }
@@ -112,14 +112,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 3. CHIUDI SENZA SALVARE (RESET TOTALE INVISIBILE)
     if (btnContinueEdit && btnConfirmClose && modalWarning && modalNuovoBrano) {
-        btnContinueEdit.addEventListener('click', function() {
+        btnContinueEdit.addEventListener('click', function () {
             modalWarning.classList.remove('active');
         });
 
-        btnConfirmClose.addEventListener('click', function() {
+        btnConfirmClose.addEventListener('click', function () {
             modalWarning.classList.remove('active');
             modalNuovoBrano.classList.remove('active');
-            
+
             if (btnResetTitolo) btnResetTitolo.style.display = 'none';
 
             if (inputTitolo) {
@@ -129,64 +129,64 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             if (btnOkTitolo) {
                 btnOkTitolo.style.opacity = '1';
-                btnOkTitolo.style.pointerEvents = 'auto'; 
+                btnOkTitolo.style.pointerEvents = 'auto';
             }
-            
-            if(stepTonality) {
+
+            if (stepTonality) {
                 stepTonality.classList.remove('active');
                 stepTonality.style.opacity = '0.4';
                 stepTonality.style.pointerEvents = 'none';
                 document.querySelectorAll('.select-note, .select-acc, .select-mode').forEach(i => i.classList.remove('selected'));
-                if(document.getElementById('tonality-preview')) document.getElementById('tonality-preview').textContent = '';
-                if(btnOkTonality) btnOkTonality.style.opacity = '1';
+                if (document.getElementById('tonality-preview')) document.getElementById('tonality-preview').textContent = '';
+                if (btnOkTonality) btnOkTonality.style.opacity = '1';
                 currentNote = ""; currentAcc = ""; currentMode = "";
             }
 
-            if(stepRhythm) {
+            if (stepRhythm) {
                 stepRhythm.classList.remove('active');
                 stepRhythm.style.opacity = '0.4';
                 stepRhythm.style.pointerEvents = 'none';
                 document.querySelectorAll('.select-rhythm').forEach(i => i.classList.remove('selected'));
-                if(btnOkRhythm) btnOkRhythm.style.opacity = '1';
+                if (btnOkRhythm) btnOkRhythm.style.opacity = '1';
                 currentRhythm = "";
             }
 
-            if(stepLang) {
+            if (stepLang) {
                 stepLang.classList.remove('active');
                 stepLang.style.opacity = '0.4';
                 stepLang.style.pointerEvents = 'none';
                 document.querySelectorAll('.select-lang').forEach(i => i.classList.remove('selected'));
-                if(btnOkLang) btnOkLang.style.opacity = '1';
+                if (btnOkLang) btnOkLang.style.opacity = '1';
                 currentLang = "";
             }
 
-            if(stepLyrics) {
+            if (stepLyrics) {
                 stepLyrics.classList.remove('active');
                 stepLyrics.style.opacity = '0.4';
                 stepLyrics.style.pointerEvents = 'none';
-                if(inputLyrics) inputLyrics.value = '';
+                if (inputLyrics) inputLyrics.value = '';
             }
         });
     }
 
     // 4. RESET GLOBALE SALVAVITA
     if (btnResetTitolo && modalConfirmReset && btnConfirmReset && btnCancelReset) {
-        btnResetTitolo.addEventListener('click', function() {
+        btnResetTitolo.addEventListener('click', function () {
             modalConfirmReset.classList.add('active');
         });
 
-        btnCancelReset.addEventListener('click', function() {
+        btnCancelReset.addEventListener('click', function () {
             modalConfirmReset.classList.remove('active');
         });
 
-        modalConfirmReset.addEventListener('click', function(e) {
+        modalConfirmReset.addEventListener('click', function (e) {
             if (e.target === modalConfirmReset) {
                 modalConfirmReset.classList.remove('active');
             }
         });
 
-        btnConfirmReset.addEventListener('click', function() {
-            modalConfirmReset.classList.remove('active'); 
+        btnConfirmReset.addEventListener('click', function () {
+            modalConfirmReset.classList.remove('active');
 
             inputTitolo.readOnly = false;
             inputTitolo.style.fontWeight = '400';
@@ -194,26 +194,26 @@ document.addEventListener('DOMContentLoaded', function() {
             btnOkTitolo.style.pointerEvents = 'auto';
             btnResetTitolo.style.display = 'none';
 
-            if(stepTonality) stepTonality.classList.remove('active');
-            if(stepRhythm) stepRhythm.classList.remove('active');
-            if(stepLang) stepLang.classList.remove('active');
-            if(stepLyrics) stepLyrics.classList.remove('active');
+            if (stepTonality) stepTonality.classList.remove('active');
+            if (stepRhythm) stepRhythm.classList.remove('active');
+            if (stepLang) stepLang.classList.remove('active');
+            if (stepLyrics) stepLyrics.classList.remove('active');
         });
     }
 
     // 5. APRIRE E SALVARE (POPUP PICCOLO)
     if (btnOpenConfirm && modalConfirm && btnFinalAccept) {
-        btnOpenConfirm.addEventListener('click', function() {
+        btnOpenConfirm.addEventListener('click', function () {
             modalConfirm.classList.add('active');
         });
 
-        btnFinalAccept.addEventListener('click', function() {
+        btnFinalAccept.addEventListener('click', function () {
             modalConfirm.classList.remove('active');
             if (modalNuovoBrano) modalNuovoBrano.classList.remove('active');
-            console.log("Pronto per il Database!"); 
+            console.log("Pronto per il Database!");
         });
 
-        modalConfirm.addEventListener('click', function(e) {
+        modalConfirm.addEventListener('click', function (e) {
             if (e.target === modalConfirm) {
                 modalConfirm.classList.remove('active');
             }
@@ -222,25 +222,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 6. LOGICA TITOLO
     if (btnOkTitolo && inputTitolo && stepTonality) {
-        btnOkTitolo.addEventListener('click', function() {
+        btnOkTitolo.addEventListener('click', function () {
             const titolo = inputTitolo.value.trim();
             if (titolo !== "") {
-                btnOkTitolo.style.opacity = '0.5'; 
-                btnOkTitolo.style.pointerEvents = 'none'; 
-                inputTitolo.style.fontWeight = '600'; 
-                inputTitolo.readOnly = true; 
-                
+                btnOkTitolo.style.opacity = '0.5';
+                btnOkTitolo.style.pointerEvents = 'none';
+                inputTitolo.style.fontWeight = '600';
+                inputTitolo.readOnly = true;
+
                 if (btnResetTitolo) btnResetTitolo.style.display = 'inline-flex';
-                stepTonality.classList.add('active'); 
+                stepTonality.classList.add('active');
             } else {
                 showCustomAlert("Per favore, inserisci un titolo prima di continuare.");
             }
         });
 
-        inputTitolo.addEventListener('keydown', function(event) {
+        inputTitolo.addEventListener('keydown', function (event) {
             if (event.key === 'Enter') {
-                event.preventDefault(); 
-                btnOkTitolo.click();    
+                event.preventDefault();
+                btnOkTitolo.click();
             }
         });
     }
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentMode = "";
 
     function updatePreview() {
-        if(previewBox) {
+        if (previewBox) {
             previewBox.textContent = currentNote + currentAcc + currentMode;
         }
     }
@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleSelection(selector) {
         const items = document.querySelectorAll(selector);
         items.forEach(item => {
-            item.addEventListener('click', function() {
+            item.addEventListener('click', function () {
                 const isSelected = this.classList.contains('selected');
                 const val = this.getAttribute('data-val');
 
@@ -281,12 +281,12 @@ document.addEventListener('DOMContentLoaded', function() {
     handleSelection('.select-mode');
 
     if (btnOkTonality && stepTonality && stepRhythm) {
-        btnOkTonality.addEventListener('click', function() {
+        btnOkTonality.addEventListener('click', function () {
             if (currentNote !== "") {
                 btnOkTonality.style.opacity = '0.5';
-                stepTonality.style.opacity = '0.5'; 
-                stepTonality.style.pointerEvents = 'none'; 
-                stepRhythm.classList.add('active'); 
+                stepTonality.style.opacity = '0.5';
+                stepTonality.style.pointerEvents = 'none';
+                stepRhythm.classList.add('active');
             } else {
                 showCustomAlert("Seleziona almeno la nota principale della tonalità.");
             }
@@ -297,11 +297,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentRhythm = "";
     const rhythmItems = document.querySelectorAll('.select-rhythm');
     rhythmItems.forEach(item => {
-        item.addEventListener('click', function() {
+        item.addEventListener('click', function () {
             const isSelected = this.classList.contains('selected');
             const val = this.getAttribute('data-val');
             rhythmItems.forEach(i => i.classList.remove('selected'));
-            
+
             if (!isSelected) {
                 this.classList.add('selected');
                 currentRhythm = val;
@@ -312,12 +312,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     if (btnOkRhythm && stepRhythm && stepLang) {
-        btnOkRhythm.addEventListener('click', function() {
+        btnOkRhythm.addEventListener('click', function () {
             if (currentRhythm !== "") {
                 btnOkRhythm.style.opacity = '0.5';
-                stepRhythm.style.opacity = '0.5'; 
-                stepRhythm.style.pointerEvents = 'none'; 
-                stepLang.classList.add('active'); 
+                stepRhythm.style.opacity = '0.5';
+                stepRhythm.style.pointerEvents = 'none';
+                stepLang.classList.add('active');
             } else {
                 showCustomAlert("Seleziona la ritmica giusta per continuare.");
             }
@@ -328,11 +328,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentLang = "";
     const langItems = document.querySelectorAll('.select-lang');
     langItems.forEach(item => {
-        item.addEventListener('click', function() {
+        item.addEventListener('click', function () {
             const isSelected = this.classList.contains('selected');
             const val = this.getAttribute('data-val');
             langItems.forEach(i => i.classList.remove('selected'));
-            
+
             if (!isSelected) {
                 this.classList.add('selected');
                 currentLang = val;
@@ -343,19 +343,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     if (btnOkLang && stepLang && stepLyrics) {
-        btnOkLang.addEventListener('click', function() {
+        btnOkLang.addEventListener('click', function () {
             if (currentLang !== "") {
                 btnOkLang.style.opacity = '0.5';
-                stepLang.style.opacity = '0.5'; 
-                stepLang.style.pointerEvents = 'none'; 
-                stepLyrics.classList.add('active'); 
+                stepLang.style.opacity = '0.5';
+                stepLang.style.pointerEvents = 'none';
+                stepLyrics.classList.add('active');
             } else {
                 showCustomAlert("Seleziona la lingua per continuare.");
             }
         });
     }
 
-// =========================================
+    // =========================================
     // 10. LOGICA TEXTAREA: 30 Caratteri
     // =========================================
 
@@ -388,18 +388,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-// =========================================
+    // =========================================
     // 11. LOGICA POPUP ANTEPRIMA BRANO
     // =========================================
     // Usa querySelectorAll per prendere TUTTI i bottoni "Visualizza" della lista
-    const btnsViewBrano = document.querySelectorAll('.btn-view-brano'); 
+    const btnsViewBrano = document.querySelectorAll('.btn-view-brano');
     const modalAnteprima = document.getElementById('modal-anteprima-brano');
     const btnCloseAnteprima = document.getElementById('btn-close-anteprima');
 
     // Apri popup cliccando su QUALSIASI bottone "Visualizza"
     if (btnsViewBrano.length > 0 && modalAnteprima) {
-        btnsViewBrano.forEach(function(btn) {
-            btn.addEventListener('click', function() {
+        btnsViewBrano.forEach(function (btn) {
+            btn.addEventListener('click', function () {
                 modalAnteprima.classList.add('active');
             });
         });
@@ -407,11 +407,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Chiudi popup (cliccando la X o lo sfondo scuro)
     if (btnCloseAnteprima && modalAnteprima) {
-        btnCloseAnteprima.addEventListener('click', function() {
+        btnCloseAnteprima.addEventListener('click', function () {
             modalAnteprima.classList.remove('active');
         });
 
-        modalAnteprima.addEventListener('click', function(e) {
+        modalAnteprima.addEventListener('click', function (e) {
             if (e.target === modalAnteprima) {
                 modalAnteprima.classList.remove('active');
             }
@@ -421,13 +421,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // =========================================
     // 12. LOGICA FILTRI PAGINA PRINCIPALE (LIBERI E INDIPENDENTI)
     // =========================================
-    
+
     // --- FILTRO TONALITÀ ---
     const filterPreviewBox = document.getElementById('filter-tonality-preview');
     let filterNote = ""; let filterAcc = ""; let filterMode = "";
 
     function updateFilterPreview() {
-        if(filterPreviewBox) {
+        if (filterPreviewBox) {
             filterPreviewBox.textContent = filterNote + filterAcc + filterMode;
         }
     }
@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleFilterSelection(selector) {
         const items = document.querySelectorAll(selector);
         items.forEach(item => {
-            item.addEventListener('click', function() {
+            item.addEventListener('click', function () {
                 const isSelected = this.classList.contains('selected');
                 const val = this.getAttribute('data-val');
 
@@ -458,7 +458,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Bottone OK Filtro Tonalità
     const btnFilterTonality = document.getElementById('btn-filter-tonality');
     if (btnFilterTonality) {
-        btnFilterTonality.addEventListener('click', function() {
+        btnFilterTonality.addEventListener('click', function () {
             const tonality = filterNote + filterAcc + filterMode;
             console.log("Eseguo ricerca Tonalità per: " + tonality);
             // QUI ANDRÀ IL CODICE PHP/AJAX PER FILTRARE LA LISTA
@@ -469,14 +469,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- FILTRO RITMO ---
     let filterRhythm = "";
     const filterRhythmItems = document.querySelectorAll('.filter-rhythm');
-    
+
     filterRhythmItems.forEach(item => {
-        item.addEventListener('click', function() {
+        item.addEventListener('click', function () {
             const isSelected = this.classList.contains('selected');
             const val = this.getAttribute('data-val');
-            
+
             filterRhythmItems.forEach(i => i.classList.remove('selected'));
-            
+
             if (!isSelected) {
                 this.classList.add('selected');
                 filterRhythm = val;
@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Bottone OK Filtro Ritmo
     const btnFilterRhythm = document.getElementById('btn-filter-rhythm');
     if (btnFilterRhythm) {
-        btnFilterRhythm.addEventListener('click', function() {
+        btnFilterRhythm.addEventListener('click', function () {
             console.log("Eseguo ricerca Ritmo per: " + filterRhythm);
             // QUI ANDRÀ IL CODICE PHP/AJAX PER FILTRARE LA LISTA
         });
@@ -499,14 +499,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- FILTRO LINGUA ---
     let filterLang = "";
     const filterLangItems = document.querySelectorAll('.filter-lang');
-    
+
     filterLangItems.forEach(item => {
-        item.addEventListener('click', function() {
+        item.addEventListener('click', function () {
             const isSelected = this.classList.contains('selected');
             const val = this.getAttribute('data-val');
-            
+
             filterLangItems.forEach(i => i.classList.remove('selected'));
-            
+
             if (!isSelected) {
                 this.classList.add('selected');
                 filterLang = val;
@@ -519,26 +519,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Bottone OK Filtro Lingua
     const btnFilterLang = document.getElementById('btn-filter-lang');
     if (btnFilterLang) {
-        btnFilterLang.addEventListener('click', function() {
+        btnFilterLang.addEventListener('click', function () {
             console.log("Eseguo ricerca Lingua per: " + filterLang);
             // QUI ANDRÀ IL CODICE PHP/AJAX PER FILTRARE LA LISTA
         });
     }
-    
+
     // =========================================
     // 14. INVIO DA TASTIERA (ENTER) UNIVERSALE
     // =========================================
-    document.addEventListener('keydown', function(event) {
+    document.addEventListener('keydown', function (event) {
         if (event.key === 'Enter') {
-            
+
             // Ignora l'Invio se stiamo scrivendo nel titolo o nelle lyrics
             if (document.activeElement === inputTitolo || document.activeElement === inputLyrics) {
-                return; 
+                return;
             }
 
             // --- CASO 1: POPUP NUOVO BRANO APERTO ---
             if (modalNuovoBrano && modalNuovoBrano.classList.contains('active')) {
-                
+
                 if (stepTonality && stepTonality.classList.contains('active') && stepTonality.style.pointerEvents !== 'none') {
                     event.preventDefault();
                     if (btnOkTonality) btnOkTonality.click();
@@ -566,11 +566,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (activeEl.classList.contains('filter-note') || activeEl.classList.contains('filter-acc') || activeEl.classList.contains('filter-mode')) {
                     event.preventDefault();
                     if (btnFilterTonality) btnFilterTonality.click();
-                } 
+                }
                 else if (activeEl.classList.contains('filter-rhythm')) {
                     event.preventDefault();
                     if (btnFilterRhythm) btnFilterRhythm.click();
-                } 
+                }
                 else if (activeEl.classList.contains('filter-lang')) {
                     event.preventDefault();
                     if (btnFilterLang) btnFilterLang.click();
@@ -587,28 +587,62 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (quickTags.length > 0 && inputLyrics) {
         quickTags.forEach(tag => {
-            tag.addEventListener('click', function() {
+            tag.addEventListener('click', function () {
                 // Prende la parola (es: "Ritornello") e aggiunge due "Invio" invisibili
                 const wordToInsert = this.textContent + "\n\n";
-                
+
                 // Trova l'esatta posizione del cursore
                 const startPos = inputLyrics.selectionStart;
                 const endPos = inputLyrics.selectionEnd;
-                
+
                 // Divide il testo in due parti: prima e dopo il cursore
                 const textBefore = inputLyrics.value.substring(0, startPos);
                 const textAfter = inputLyrics.value.substring(endPos, inputLyrics.value.length);
-                
+
                 // Incolla la parola + i due a capo esattamente nel mezzo
                 inputLyrics.value = textBefore + wordToInsert + textAfter;
-                
+
                 // Sposta il cursore alla fine dei due "a capo", pronto per scrivere la canzone!
                 inputLyrics.selectionStart = inputLyrics.selectionEnd = startPos + wordToInsert.length;
-                
+
                 // Rimette a fuoco il campo di testo
                 inputLyrics.focus();
             });
         });
     }
 
+});
+
+// Close popup
+document.addEventListener('DOMContentLoaded', () => {
+    const eventCard = document.querySelector('.event-card');
+    const closeButton = document.querySelector('.event-card__close');
+
+    if (!eventCard) return;
+
+    const closePopup = () => {
+        eventCard.style.display = 'none';
+        window.removeEventListener('scroll', closePopup);
+    };
+
+    if (closeButton) {
+        closeButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            closePopup();
+        });
+    }
+
+    document.addEventListener('click', (e) => {
+        if (!eventCard.contains(e.target) && eventCard.style.display !== 'none') {
+            closePopup();
+        }
+    });
+    window.addEventListener('scroll', closePopup, { once: true });
+
+    let inactivityTimeout;
+    const resetTimer = () => {
+        clearTimeout(inactivityTimeout);
+        inactivityTimeout = setTimeout(closePopup, 10000);
+    };
+    resetTimer();
 });

@@ -3,6 +3,17 @@ require_once '../app/config/config.php';
 
 $head_title = $site_config['head']['home']['title'];
 $meta_description = $site_config['head']['home']['meta-description'];
+
+// Popup section
+$statusPopup = $site_config['hero']['home']['popup']['status'];
+$titlePopup = $site_config['hero']['home']['popup']['title'];
+$subtitlePopup = $site_config['hero']['home']['popup']['subtitle'];
+$daysPopup = $site_config['hero']['home']['popup']['days'];
+$monthPopup = $site_config['hero']['home']['popup']['month'];
+$cityPopup = $site_config['hero']['home']['popup']['city'];
+$cityPopup = $site_config['hero']['home']['popup']['city'];
+$schedulePopup = $site_config['hero']['home']['popup']['schedule'];
+$locationPopup = $site_config['hero']['home']['popup']['location'];
 ?>
 <!DOCTYPE html>
 <html lang="it">
