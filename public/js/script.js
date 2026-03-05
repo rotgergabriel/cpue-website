@@ -356,35 +356,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 // =========================================
-    // 10. LOGICA TEXTAREA: 27 Caratteri e Grassetto
+    // 10. LOGICA TEXTAREA: 30 Caratteri
     // =========================================
-    const btnWeightLight = document.getElementById('btn-weight-light');
-    const btnWeightBold = document.getElementById('btn-weight-bold');
 
-    // Cambia spessore del font
-    if (btnWeightLight && btnWeightBold && inputLyrics) {
-        btnWeightLight.addEventListener('click', function() {
-            inputLyrics.style.fontWeight = '250';
-        });
-        
-        btnWeightBold.addEventListener('click', function() {
-            inputLyrics.style.fontWeight = '600';
-        });
-    }
-
-    // Forza limite di 27 caratteri (spazi inclusi) con a-capo automatico
+    // Forza limite di 30 caratteri (spazi inclusi) con a-capo automatico
     if (inputLyrics) {
-        inputLyrics.addEventListener('input', function() {
+        inputLyrics.addEventListener('input', function () {
             let cursorPosition = this.selectionStart;
             let originalText = this.value;
             let lines = originalText.split('\n');
             let formattedLines = [];
 
             lines.forEach(line => {
-                // Se la riga supera i 27 caratteri, la spezza e la manda a capo da sola
-                while (line.length > 27) {
-                    formattedLines.push(line.substring(0, 27));
-                    line = line.substring(27);
+                // Se la riga supera i 30 caratteri, la spezza e la manda a capo da sola
+                while (line.length > 30) {
+                    formattedLines.push(line.substring(0, 30));
+                    line = line.substring(30); // <--- CORRETTO QUI (era rimasto 27)
                 }
                 formattedLines.push(line);
             });
@@ -394,12 +381,234 @@ document.addEventListener('DOMContentLoaded', function() {
             // Se il testo è stato modificato dallo script (è andato a capo da solo)
             if (originalText !== newText) {
                 this.value = newText;
-                
+
                 // Sposta il cursore in avanti per farlo scendere fluidamente nella nuova riga
                 this.setSelectionRange(cursorPosition + 1, cursorPosition + 1);
             }
         });
     }
 
+// =========================================
+    // 11. LOGICA POPUP ANTEPRIMA BRANO
+    // =========================================
+    // Usa querySelectorAll per prendere TUTTI i bottoni "Visualizza" della lista
+    const btnsViewBrano = document.querySelectorAll('.btn-view-brano'); 
+    const modalAnteprima = document.getElementById('modal-anteprima-brano');
+    const btnCloseAnteprima = document.getElementById('btn-close-anteprima');
+
+    // Apri popup cliccando su QUALSIASI bottone "Visualizza"
+    if (btnsViewBrano.length > 0 && modalAnteprima) {
+        btnsViewBrano.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                modalAnteprima.classList.add('active');
+            });
+        });
+    }
+
+    // Chiudi popup (cliccando la X o lo sfondo scuro)
+    if (btnCloseAnteprima && modalAnteprima) {
+        btnCloseAnteprima.addEventListener('click', function() {
+            modalAnteprima.classList.remove('active');
+        });
+
+        modalAnteprima.addEventListener('click', function(e) {
+            if (e.target === modalAnteprima) {
+                modalAnteprima.classList.remove('active');
+            }
+        });
+    }
+
+    // =========================================
+    // 12. LOGICA FILTRI PAGINA PRINCIPALE (LIBERI E INDIPENDENTI)
+    // =========================================
+    
+    // --- FILTRO TONALITÀ ---
+    const filterPreviewBox = document.getElementById('filter-tonality-preview');
+    let filterNote = ""; let filterAcc = ""; let filterMode = "";
+
+    function updateFilterPreview() {
+        if(filterPreviewBox) {
+            filterPreviewBox.textContent = filterNote + filterAcc + filterMode;
+        }
+    }
+
+    function handleFilterSelection(selector) {
+        const items = document.querySelectorAll(selector);
+        items.forEach(item => {
+            item.addEventListener('click', function() {
+                const isSelected = this.classList.contains('selected');
+                const val = this.getAttribute('data-val');
+
+                items.forEach(i => i.classList.remove('selected'));
+                if (!isSelected) this.classList.add('selected');
+
+                if (selector === '.filter-note') filterNote = isSelected ? "" : val;
+                if (selector === '.filter-acc') filterAcc = isSelected ? "" : val;
+                if (selector === '.filter-mode') filterMode = isSelected ? "" : val;
+
+                updateFilterPreview();
+            });
+        });
+    }
+
+    handleFilterSelection('.filter-note');
+    handleFilterSelection('.filter-acc');
+    handleFilterSelection('.filter-mode');
+
+    // Bottone OK Filtro Tonalità
+    const btnFilterTonality = document.getElementById('btn-filter-tonality');
+    if (btnFilterTonality) {
+        btnFilterTonality.addEventListener('click', function() {
+            const tonality = filterNote + filterAcc + filterMode;
+            console.log("Eseguo ricerca Tonalità per: " + tonality);
+            // QUI ANDRÀ IL CODICE PHP/AJAX PER FILTRARE LA LISTA
+        });
+    }
+
+
+    // --- FILTRO RITMO ---
+    let filterRhythm = "";
+    const filterRhythmItems = document.querySelectorAll('.filter-rhythm');
+    
+    filterRhythmItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const isSelected = this.classList.contains('selected');
+            const val = this.getAttribute('data-val');
+            
+            filterRhythmItems.forEach(i => i.classList.remove('selected'));
+            
+            if (!isSelected) {
+                this.classList.add('selected');
+                filterRhythm = val;
+            } else {
+                filterRhythm = ""; // Se lo riclicchi, lo deseleziona
+            }
+        });
+    });
+
+    // Bottone OK Filtro Ritmo
+    const btnFilterRhythm = document.getElementById('btn-filter-rhythm');
+    if (btnFilterRhythm) {
+        btnFilterRhythm.addEventListener('click', function() {
+            console.log("Eseguo ricerca Ritmo per: " + filterRhythm);
+            // QUI ANDRÀ IL CODICE PHP/AJAX PER FILTRARE LA LISTA
+        });
+    }
+
+
+    // --- FILTRO LINGUA ---
+    let filterLang = "";
+    const filterLangItems = document.querySelectorAll('.filter-lang');
+    
+    filterLangItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const isSelected = this.classList.contains('selected');
+            const val = this.getAttribute('data-val');
+            
+            filterLangItems.forEach(i => i.classList.remove('selected'));
+            
+            if (!isSelected) {
+                this.classList.add('selected');
+                filterLang = val;
+            } else {
+                filterLang = ""; // Se lo riclicchi, lo deseleziona
+            }
+        });
+    });
+
+    // Bottone OK Filtro Lingua
+    const btnFilterLang = document.getElementById('btn-filter-lang');
+    if (btnFilterLang) {
+        btnFilterLang.addEventListener('click', function() {
+            console.log("Eseguo ricerca Lingua per: " + filterLang);
+            // QUI ANDRÀ IL CODICE PHP/AJAX PER FILTRARE LA LISTA
+        });
+    }
+    
+    // =========================================
+    // 14. INVIO DA TASTIERA (ENTER) UNIVERSALE
+    // =========================================
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            
+            // Ignora l'Invio se stiamo scrivendo nel titolo o nelle lyrics
+            if (document.activeElement === inputTitolo || document.activeElement === inputLyrics) {
+                return; 
+            }
+
+            // --- CASO 1: POPUP NUOVO BRANO APERTO ---
+            if (modalNuovoBrano && modalNuovoBrano.classList.contains('active')) {
+                
+                if (stepTonality && stepTonality.classList.contains('active') && stepTonality.style.pointerEvents !== 'none') {
+                    event.preventDefault();
+                    if (btnOkTonality) btnOkTonality.click();
+                    return;
+                }
+
+                if (stepRhythm && stepRhythm.classList.contains('active') && stepRhythm.style.pointerEvents !== 'none') {
+                    event.preventDefault();
+                    if (btnOkRhythm) btnOkRhythm.click();
+                    return;
+                }
+
+                if (stepLang && stepLang.classList.contains('active') && stepLang.style.pointerEvents !== 'none') {
+                    event.preventDefault();
+                    if (btnOkLang) btnOkLang.click();
+                    return;
+                }
+                return; // Se il popup è aperto, ferma l'esecuzione qui
+            }
+
+            // --- CASO 2: FILTRI PAGINA PRINCIPALE ---
+            const activeEl = document.activeElement;
+
+            if (activeEl) {
+                if (activeEl.classList.contains('filter-note') || activeEl.classList.contains('filter-acc') || activeEl.classList.contains('filter-mode')) {
+                    event.preventDefault();
+                    if (btnFilterTonality) btnFilterTonality.click();
+                } 
+                else if (activeEl.classList.contains('filter-rhythm')) {
+                    event.preventDefault();
+                    if (btnFilterRhythm) btnFilterRhythm.click();
+                } 
+                else if (activeEl.classList.contains('filter-lang')) {
+                    event.preventDefault();
+                    if (btnFilterLang) btnFilterLang.click();
+                }
+            }
+        }
+    });
+
+    // =========================================
+    // 15. INSERIMENTO RAPIDO TESTI (QUICK TAGS)
+    // =========================================
+    const quickTags = document.querySelectorAll('.modal-step-lyrics__tag');
+    // Rimosso: const inputLyrics = document.getElementById('input-lyrics'); <-- ERA QUESTO L'ERRORE!
+
+    if (quickTags.length > 0 && inputLyrics) {
+        quickTags.forEach(tag => {
+            tag.addEventListener('click', function() {
+                // Prende la parola (es: "Ritornello") e aggiunge due "Invio" invisibili
+                const wordToInsert = this.textContent + "\n\n";
+                
+                // Trova l'esatta posizione del cursore
+                const startPos = inputLyrics.selectionStart;
+                const endPos = inputLyrics.selectionEnd;
+                
+                // Divide il testo in due parti: prima e dopo il cursore
+                const textBefore = inputLyrics.value.substring(0, startPos);
+                const textAfter = inputLyrics.value.substring(endPos, inputLyrics.value.length);
+                
+                // Incolla la parola + i due a capo esattamente nel mezzo
+                inputLyrics.value = textBefore + wordToInsert + textAfter;
+                
+                // Sposta il cursore alla fine dei due "a capo", pronto per scrivere la canzone!
+                inputLyrics.selectionStart = inputLyrics.selectionEnd = startPos + wordToInsert.length;
+                
+                // Rimette a fuoco il campo di testo
+                inputLyrics.focus();
+            });
+        });
+    }
 
 });
