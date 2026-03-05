@@ -46,11 +46,11 @@ $locationPopup = $site_config['hero']['home']['popup']['location'];
             <!-- Cult-locations section start -->
             <?php include ROOT_PATH . 'app/views/includes/cult-locations.php'; ?>
             <!-- Cult-locations section end -->
-            
+
             <!-- Find us section start -->
             <?php include ROOT_PATH . 'app/views/includes/find-us.php'; ?>
             <!-- Find us section end -->
-            
+
             <!-- Contact section start -->
             <?php include ROOT_PATH . 'app/views/includes/contact.php'; ?>
             <!-- Contact section end -->
@@ -63,6 +63,7 @@ $locationPopup = $site_config['hero']['home']['popup']['location'];
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?php echo BASE_URL ?>public/js/script.js"></script>
+    <script src="<?php echo BASE_URL ?>public/js/popupClose.js"></script>
 </body>
 
 </html>
