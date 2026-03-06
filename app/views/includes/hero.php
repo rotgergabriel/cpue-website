@@ -52,7 +52,7 @@ $titleName = !empty($heroTitle) ? $heroTitle : 'Chiesa Pentecostale Unita in Eur
                         <div class="event-card__days"><?php echo $daysPopup ?></div>
                         <div class="event-card__month-city">
                             <span class="event-card__month"><?php echo $monthPopup ?></span>
-                            <span class="event-card__city">a <?php echo $cityPopup ?></span>
+                            <span class="event-card__city"><?php echo $cityPopup ?></span>
                         </div>
                     </div>
 

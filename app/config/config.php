@@ -31,10 +31,17 @@ define('BASE_URL', $protocol . $domain . $project_folder);
 define('ROOT_PATH', realpath(dirname(__FILE__) . '/../../') . DIRECTORY_SEPARATOR);
 define('MODELS_PATH', ROOT_PATH . 'app' . DIRECTORY_SEPARATOR . 'models' . DIRECTORY_SEPARATOR);
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'cpue_db');
+if ($is_dev_env) {
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+    define('DB_NAME', 'cpue_db');
+} else {
+    define('DB_HOST', 'siteground');
+    define('DB_USER', 'webcpue@gmail.com');
+    define('DB_PASS', 'andreaweb2017');
+    define('DB_NAME', 'cpue_db');
+}
 
 $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
@@ -43,6 +50,7 @@ if (!$conn) {
 }
 
 define('JS_INACTIVITY', BASE_URL . 'public/js/inactivity.js');
+
 $cities = include MODELS_PATH . 'city_models.php';
 $comitati = include MODELS_PATH . 'comitati_models.php';
 $site_data = include MODELS_PATH . 'site_settings.php';
