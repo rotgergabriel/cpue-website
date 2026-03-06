@@ -245,6 +245,43 @@
     z-index: 1000;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.event-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(transparent,
+            rgba(212, 175, 55, 0.8),
+            #FFD700,
+            #fff9e6,
+            transparent 30%);
+    animation: rotate-border 3s linear infinite;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+.event-card::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: #ffffff;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+@keyframes rotate-border {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .event-card__org {
@@ -296,6 +333,7 @@
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 12px;
+    background: white;
 }
 
 .event-card__schedule-day {
@@ -324,7 +362,7 @@
 .event-card__footer {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 8px;
     margin-top: 10px;
@@ -336,16 +374,16 @@
     width: 18px;
     height: auto;
     flex-shrink: 0;
-    margin-top: 2px;
+    margin: 0;
 }
 
 .event-card__address {
     font-style: normal;
     font-size: 0.75rem;
-    line-height: 1.4;
+    line-height: 1.2;
     font-weight: 600;
     text-align: left;
-    margin-bottom: inherit;
+    margin-bottom: 0;
 }
 
 .event-card__address strong {
