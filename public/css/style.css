@@ -32,6 +32,12 @@
     margin-top: 1rem;
 }
 
+.navbar-login-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 30px;
+}
+
 .dropdown-menu {
     width: 100%;
     border: none;
@@ -50,7 +56,7 @@
     color: white !important;
 }
 
-.search-group-custom {
+/* .search-group-custom {
     width: 100%;
     margin: 1rem 0;
 }
@@ -96,7 +102,7 @@
 .rounded-pill-end {
     border-top-right-radius: 50px !important;
     border-bottom-right-radius: 50px !important;
-}
+} */
 
 /* Layout section */
 .layout {
@@ -412,57 +418,6 @@
 
 .event-card__header {
     padding-top: 10px;
-}
-
-/* MEDIA QUERIES */
-@media (min-width: 769px) {
-    .event-card {
-        max-width: 400px;
-        padding: 40px 20px;
-        top: 120px;
-    }
-
-    .event-card__title {
-        font-size: 1.8rem;
-    }
-
-    .event-card__days {
-        font-size: 3.5rem;
-    }
-
-    .event-card__month {
-        font-size: 1.5rem;
-    }
-
-    .event-card__footer {
-        flex-direction: row;
-        align-items: center;
-        gap: 12px;
-        margin-top: 15px;
-    }
-
-    .event-card__location-icon {
-        width: 22px;
-        margin-top: 0;
-    }
-
-    .event-card__address {
-        font-size: 0.95rem;
-        text-align: left;
-        line-height: 1.2;
-    }
-
-    .event-card__address strong {
-        display: inline;
-    }
-}
-
-/* Desktop (1024px en adelante) */
-@media (min-width: 1024px) {
-    .event-card {
-        max-width: 420px;
-        top: 150px;
-    }
 }
 
 /* board section */
@@ -3560,7 +3515,7 @@ html {
 }
 
 
-[data-tooltip]::after, 
+[data-tooltip]::after,
 [data-tooltip]::before {
     pointer-events: none !important;
 }
@@ -3712,7 +3667,7 @@ html {
     align-items: center;
     position: relative;
     width: calc(100% - 10px);
-    margin: 5px auto 0 auto; 
+    margin: 5px auto 0 auto;
     height: 40px;
     background-color: #ededed;
     border-radius: 0px;
@@ -4233,7 +4188,7 @@ html {
 .modal-step-lyrics__quick-tags {
     position: relative;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     margin-top: 5px;
@@ -4287,7 +4242,7 @@ html {
 }
 
 .modal-step-lyrics__input {
-    padding-top: 30px !important; 
+    padding-top: 30px !important;
 }
 
 #modal-anteprima-brano {
@@ -4543,6 +4498,10 @@ html {
 
     .hero::after {
         height: 300px;
+    }
+
+    .navbar-login-container {
+        width: 100px;
     }
 
     .hero--privacy .hero__title h1 {
@@ -5080,6 +5039,45 @@ html {
         width: 20px;
     }
 
+    .event-card {
+        max-width: 400px;
+        padding: 40px 20px;
+        top: 120px;
+    }
+
+    .event-card__title {
+        font-size: 1.8rem;
+    }
+
+    .event-card__days {
+        font-size: 3.5rem;
+    }
+
+    .event-card__month {
+        font-size: 1.5rem;
+    }
+
+    .event-card__footer {
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .event-card__location-icon {
+        width: 22px;
+        margin-top: 0;
+    }
+
+    .event-card__address {
+        font-size: 0.95rem;
+        text-align: left;
+        line-height: 1.2;
+    }
+
+    .event-card__address strong {
+        display: inline;
+    }
 
 }
 
@@ -6145,8 +6143,9 @@ html {
     .modal-step-lang__btn {
         right: 20px;
     }
+
+    .event-card {
+        max-width: 420px;
+        top: 150px;
+    }
 }
-
-
-
-
