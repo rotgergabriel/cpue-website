@@ -56,54 +56,6 @@
     color: white !important;
 }
 
-/* .search-group-custom {
-    width: 100%;
-    margin: 1rem 0;
-}
-
-.search-group-custom .form-control {
-    color: white !important;
-    background-color: transparent !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-right: none !important;
-}
-
-.search-group-custom .form-control::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.9rem;
-}
-
-.search-group-custom .form-control:focus {
-    box-shadow: none;
-    border-color: rgba(255, 255, 255, 0.4) !important;
-}
-
-.btn-search-white {
-    background-color: #ffffff !important;
-    color: #0b0e92 !important;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-left: none !important;
-}
-
-.btn-search-white:hover {
-    background-color: #f0f0f0 !important;
-}
-
-.rounded-pill-start {
-    border-top-left-radius: 50px !important;
-    border-bottom-left-radius: 50px !important;
-}
-
-.rounded-pill-end {
-    border-top-right-radius: 50px !important;
-    border-bottom-right-radius: 50px !important;
-} */
-
 /* Layout section */
 .layout {
     max-width: 1440px;
