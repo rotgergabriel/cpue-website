@@ -1,29 +1,5 @@
 <?php
 
-
-/*
-====================================================================
-TODO PER IL FUTURO: VISUALIZZAZIONE TESTO CANZONE
-====================================================================
-Quando andremo a creare la pagina o il modale per visualizzare 
-il brano finito, usare questo snippet per trasformare le "quick tags" 
-in parole in grassetto e blu al volo, mantenendo il database pulito:
-
-$testo_canzone = $brano['testo']; 
-$parole_chiave = ['Verso', 'Ritornello', 'Bridge', 'Riff'];
-$parole_grassetto = [
-    '<strong style="font-weight: 600; color: #0b0e92;">Verso</strong>', 
-    '<strong style="font-weight: 600; color: #0b0e92;">Ritornello</strong>', 
-    '<strong style="font-weight: 600; color: #0b0e92;">Bridge</strong>', 
-    '<strong style="font-weight: 600; color: #0b0e92;">Riff</strong>'
-];
-$testo_finale = str_replace($parole_chiave, $parole_grassetto, $testo_canzone);
-
-Stampa finale preservando gli a capo
-echo nl2br($testo_finale);
-====================================================================
-*/
-
 require_once '../app/config/config.php';
 require_once '../app/middlewares/auth.php';
 
@@ -64,64 +40,64 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                         <button class="repertorio-panels__new-btn" data-tooltip="Nuovo brano">
                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-new.svg" alt="Nuovo" class="repertorio-panels__new-icon">
                         </button>
-                                            
+
                         <h2 class="repertorio-panels__title">Libreria</h2>
 
-                            <p class="repertorio-panels__filter-label">Selezionare per categoria:</p>
+                        <p class="repertorio-panels__filter-label">Selezionare per categoria:</p>
 
-                            <div class="repertorio-filter" id="filter-tonality-box">
-                                
-                                <div class="repertorio-filter__options">
-                                    <div class="repertorio-filter__col">
-                                        <div class="repertorio-filter__row">
-                                            <span class="repertorio-filter__item filter-note" data-val="C" tabindex="0">C</span>
-                                            <span class="repertorio-filter__item filter-note" data-val="D" tabindex="0">D</span>
-                                            <span class="repertorio-filter__item filter-note" data-val="E" tabindex="0">E</span>
-                                            <span class="repertorio-filter__item filter-note" data-val="F" tabindex="0">F</span>
-                                        </div>
-                                        <div class="repertorio-filter__row">
-                                            <span class="repertorio-filter__item filter-note" data-val="G" tabindex="0">G</span>
-                                            <span class="repertorio-filter__item filter-note" data-val="A" tabindex="0">A</span>
-                                            <span class="repertorio-filter__item filter-note" data-val="B" tabindex="0">B</span>
-                                        </div>
-                                    </div>
-                                    <div class="repertorio-filter__col">
-                                        <span class="repertorio-filter__item filter-mode" data-val="" tabindex="0">Maggiore</span>
-                                        <span class="repertorio-filter__item filter-mode" data-val="m" tabindex="0">Minore</span>
-                                    </div>
-                                    <div class="repertorio-filter__col">
-                                        <span class="repertorio-filter__item filter-acc" data-val="#" tabindex="0">#</span>
-                                        <span class="repertorio-filter__item filter-acc" data-val="b" tabindex="0">♭</span>
-                                    </div>
-                                    <div class="repertorio-filter__preview" id="filter-tonality-preview"></div>
-                                </div> 
-                                <button class="repertorio-filter__btn" id="btn-filter-tonality">
-                                    <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="repertorio-filter__icon">
-                                </button>
-                            </div>
+                        <div class="repertorio-filter" id="filter-tonality-box">
 
-                            <div class="repertorio-filter" id="filter-rhythm-box">
-                                <div class="repertorio-filter__options">
-                                    <span class="repertorio-filter__item filter-rhythm" data-val="Lento">Lento</span>
-                                    <span class="repertorio-filter__item filter-rhythm" data-val="Intermedio">Intermedio</span>
-                                    <span class="repertorio-filter__item filter-rhythm" data-val="Veloce">Veloce</span>
-                                    <span class="repertorio-filter__item filter-rhythm" data-val="3/4">3/4</span>
+                            <div class="repertorio-filter__options">
+                                <div class="repertorio-filter__col">
+                                    <div class="repertorio-filter__row">
+                                        <span class="repertorio-filter__item filter-note" data-val="C" tabindex="0">C</span>
+                                        <span class="repertorio-filter__item filter-note" data-val="D" tabindex="0">D</span>
+                                        <span class="repertorio-filter__item filter-note" data-val="E" tabindex="0">E</span>
+                                        <span class="repertorio-filter__item filter-note" data-val="F" tabindex="0">F</span>
+                                    </div>
+                                    <div class="repertorio-filter__row">
+                                        <span class="repertorio-filter__item filter-note" data-val="G" tabindex="0">G</span>
+                                        <span class="repertorio-filter__item filter-note" data-val="A" tabindex="0">A</span>
+                                        <span class="repertorio-filter__item filter-note" data-val="B" tabindex="0">B</span>
+                                    </div>
                                 </div>
-                                <button class="repertorio-filter__btn" id="btn-filter-rhythm">
-                                    <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="repertorio-filter__icon">
-                                </button>
-                            </div>
-
-                            <div class="repertorio-filter" id="filter-lang-box">
-                                <div class="repertorio-filter__options">
-                                    <span class="repertorio-filter__item filter-lang" data-val="Italiano">Italiano</span>
-                                    <span class="repertorio-filter__item filter-lang" data-val="Spagnolo">Spagnolo</span>
-                                    <span class="repertorio-filter__item filter-lang" data-val="Tutte">Tutte le lingue</span>
+                                <div class="repertorio-filter__col">
+                                    <span class="repertorio-filter__item filter-mode" data-val="" tabindex="0">Maggiore</span>
+                                    <span class="repertorio-filter__item filter-mode" data-val="m" tabindex="0">Minore</span>
                                 </div>
-                                <button class="repertorio-filter__btn" id="btn-filter-lang">
-                                    <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="repertorio-filter__icon">
-                                </button>
+                                <div class="repertorio-filter__col">
+                                    <span class="repertorio-filter__item filter-acc" data-val="#" tabindex="0">#</span>
+                                    <span class="repertorio-filter__item filter-acc" data-val="b" tabindex="0">♭</span>
+                                </div>
+                                <div class="repertorio-filter__preview" id="filter-tonality-preview"></div>
                             </div>
+                            <button class="repertorio-filter__btn" id="btn-filter-tonality">
+                                <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="repertorio-filter__icon">
+                            </button>
+                        </div>
+
+                        <div class="repertorio-filter" id="filter-rhythm-box">
+                            <div class="repertorio-filter__options">
+                                <span class="repertorio-filter__item filter-rhythm" data-val="Lento">Lento</span>
+                                <span class="repertorio-filter__item filter-rhythm" data-val="Intermedio">Intermedio</span>
+                                <span class="repertorio-filter__item filter-rhythm" data-val="Veloce">Veloce</span>
+                                <span class="repertorio-filter__item filter-rhythm" data-val="3/4">3/4</span>
+                            </div>
+                            <button class="repertorio-filter__btn" id="btn-filter-rhythm">
+                                <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="repertorio-filter__icon">
+                            </button>
+                        </div>
+
+                        <div class="repertorio-filter" id="filter-lang-box">
+                            <div class="repertorio-filter__options">
+                                <span class="repertorio-filter__item filter-lang" data-val="Italiano">Italiano</span>
+                                <span class="repertorio-filter__item filter-lang" data-val="Spagnolo">Spagnolo</span>
+                                <span class="repertorio-filter__item filter-lang" data-val="Tutte">Tutte le lingue</span>
+                            </div>
+                            <button class="repertorio-filter__btn" id="btn-filter-lang">
+                                <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="repertorio-filter__icon">
+                            </button>
+                        </div>
 
                         <div class="repertorio-panels__search-box">
                             <input type="text" class="repertorio-panels__search-input" placeholder="barra di ricerca">
@@ -608,7 +584,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                         <button class="repertorio-panels__action btn-view-brano" data-tooltip="Visualizza brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg" alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
-                                        
+
                                         <button class="repertorio-panels__edit-btn" data-tooltip="Editare il brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg" alt="Modifica" class="repertorio-panels__edit-icon">
                                         </button>
@@ -620,16 +596,16 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
 
                                 <li class="repertorio-panels__list-item">
                                     <span class="repertorio-panels__list-title">Davanti alla tua presenza</span>
-                                    
+
                                     <div class="repertorio-panels__item-actions">
                                         <button class="repertorio-panels__action btn-view-brano" data-tooltip="Visualizza brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg" alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
-                                        
+
                                         <button class="repertorio-panels__edit-btn" data-tooltip="Editare il brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg" alt="Modifica" class="repertorio-panels__edit-icon">
                                         </button>
-                                        
+
                                         <button class="repertorio-panels__remove-btn" data-tooltip="Eliminare brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg" alt="Elimina" class="repertorio-panels__remove-icon">
                                         </button>
@@ -638,12 +614,12 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
 
                                 <li class="repertorio-panels__list-item">
                                     <span class="repertorio-panels__list-title">Io vedrò la tua gloria</span>
-                                    
+
                                     <div class="repertorio-panels__item-actions">
                                         <button class="repertorio-panels__action btn-view-brano" data-tooltip="Visualizza brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg" alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
-                                        
+
                                         <button class="repertorio-panels__edit-btn" data-tooltip="Editare il brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg" alt="Modifica" class="repertorio-panels__edit-icon">
                                         </button>
@@ -689,7 +665,7 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
 
             <div class="modal-step-tonality" id="step-tonality">
                 <img src="<?php echo BASE_URL; ?>public/assets/img/categoria-music.svg" alt="Musica" class="modal-step-tonality__main-icon">
-                
+
                 <div class="modal-step-tonality__options">
                     <div class="modal-step-tonality__col">
                         <div class="modal-step-tonality__row">
@@ -727,18 +703,18 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                     <span class="modal-step-rhythm__item select-rhythm" data-val="Veloce">Veloce</span>
                     <span class="modal-step-rhythm__item select-rhythm" data-val="3/4">3/4</span>
                 </div>
-                
+
                 <button class="modal-step-rhythm__btn" id="btn-ok-rhythm">
                     <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="modal-step-rhythm__icon">
                 </button>
             </div>
-            
+
             <div class="modal-step-lang" id="step-lang">
                 <div class="modal-step-lang__options">
                     <span class="modal-step-lang__item select-lang" data-val="Italiano">Italiano</span>
                     <span class="modal-step-lang__item select-lang" data-val="Spagnolo">Spagnolo</span>
                 </div>
-                
+
                 <button class="modal-step-lang__btn" id="btn-ok-lang">
                     <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="modal-step-lang__icon">
                 </button>
@@ -746,9 +722,9 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
 
             <div class="modal-step-lyrics" id="step-lyrics">
                 <div class="modal-step-lyrics__wrapper">
-                    
+
                     <div class="modal-step-lyrics__header">
-                        
+
                         <div class="modal-step-lyrics__history">
                             <button class="history-btn" id="btn-undo" data-tooltip="Annulla">
                                 <img src="<?php echo BASE_URL; ?>public/assets/img/anulla.svg" alt="Annulla">

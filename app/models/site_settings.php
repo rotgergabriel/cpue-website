@@ -30,7 +30,6 @@ $site_config = [
         'home' => [
             'title' => 'Chiesa Pentecostale Unita in Europa',
             'image' => 'hero-img.png',
-            // Popup Components
             'popup' => [
                 'status' => true,
                 'title'    => 'Chiesa Pentecostale Unita in Europa',
