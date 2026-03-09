@@ -118,7 +118,7 @@ $heroBtnLink  = $site_config['hero']['proiezione']['link'];
                 <div class="missionary__container">
 
                     <div class="missionary__image-col">
-                        <img src="<?php echo BASE_URL ?>/public/assets/img/misionario.webp" alt="Missionario Jair Pedrozo" class="missionary__img">
+                        <img src="<?php echo BASE_URL ?>/public/assets/img/missionario.webp" alt="Missionario Jair Pedrozo" class="missionary__img">
                     </div>
 
                     <div class="missionary__text-col">

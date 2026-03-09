@@ -8,7 +8,7 @@
 /* Navbar section */
 .navbar-custom {
     background-color: #11136E;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
     position: relative;
     z-index: 1000;
     box-shadow:
@@ -22,8 +22,19 @@
     padding: 1rem 0;
 }
 
+.navbar-brand {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex !important;
+    align-items: center;
+    height: 100%;
+}
+
 .navbar-brand img {
-    width: 100px !important;
+    width: 80px !important; 
+    height: auto;
+    vertical-align: middle !important;
+    transition: width 0.3s ease;
 }
 
 .navbar-nav {
@@ -36,6 +47,36 @@
     display: flex;
     justify-content: flex-end;
     width: 30px;
+}
+
+.navbar-scrolled {
+    background-color: rgba(17, 19, 110, 0.91) !important; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    padding: 0.8rem 1rem;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    font-weight: 400 !important; 
+    transition: color 0.3s ease, text-shadow 0.3s ease, font-weight 0.2s ease;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover{
+    color: #ffffff !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    font-weight: 600 !important; 
+}
+
+.navbar-custom .navbar-nav .nav-link:focus,
+.navbar-custom .navbar-nav .nav-link.show,
+.navbar-custom .navbar-nav .nav-link:active {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
 }
 
 .dropdown-menu {
@@ -103,6 +144,8 @@
     text-align: center;
     color: white;
     font-size: clamp(15px, 5vw, 40px);
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .hero::after {
@@ -4444,16 +4487,21 @@ html {
 
 /* Tablet (769px +) */
 @media (min-width: 769px) {
+
+    .navbar-brand img {
+        width: 80px !important;
+    }
+
+    .navbar-login-container {
+        width: 100px;
+    }
+
     .hero__img {
         width: 320px;
     }
 
     .hero::after {
         height: 300px;
-    }
-
-    .navbar-login-container {
-        width: 100px;
     }
 
     .hero--privacy .hero__title h1 {
@@ -5047,11 +5095,18 @@ html {
         display: flex !important;
     }
 
+    .navbar-brand img {
+        width: 90px !important;
+    }
+
     .navbar-nav {
         width: auto;
         margin: 0 auto !important;
         text-align: left;
         margin-top: 0;
+        flex: 1;
+        justify-content: center;
+        transform: translateX(3px);
     }
 
     .search-group-custom {

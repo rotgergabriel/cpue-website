@@ -1,10 +1,10 @@
 <?php $idAttr = isset($boardId) ? 'id="' . $boardId . '"' : ''; ?>
-<section class="board <?php echo $boardModifier ?>" <?php echo $idAttr; ?>>
+<section class="board <?php echo $boardModifier ?? ''; ?>" <?php echo $idAttr; ?>>
     <div class="board__container">
         <figure class="board__content">
             <div class="board__body">
                 <img src="<?php echo BASE_URL ?>public/assets/img/board.webp"
-                    alt="Miembros del Consiglio Direttivo Nazionale"
+                    alt="Miembros del Consiglio Direttivo Nazionale" 
                     class="board__img">
             </div>
             <figcaption class="board__text">

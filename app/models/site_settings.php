@@ -1,6 +1,6 @@
 <?php
 $site_config = [
-    'head'  => [
+    'head' => [
         'home' => [
             'title' => 'Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo.',
             'meta-description' => 'Chiesa Pentecostale Unita in Europa – Un solo Signore, una sola Fede, un solo Battesimo. Efesini 4:5'
@@ -30,23 +30,26 @@ $site_config = [
         'home' => [
             'title' => 'Chiesa Pentecostale Unita in Europa',
             'image' => 'hero-img.png',
-            // Popup Components
+
+            // ==========================================
+            // 🛑 POPUP DISATTIVATO (PROVVISORIO)
+            // ==========================================
             'popup' => [
-                'status' => true,
-                'title'    => 'Chiesa Pentecostale Unita in Europa',
+                'status' => false, // Cambiato in FALSE per nascondere il banner
+                'title' => 'Chiesa Pentecostale Unita in Europa',
                 'subtitle' => 'Convegno Nazionale',
-                'days'     => ' 3 | 4 | 5',
-                'month'    => 'Aprile',
-                'city'     => 'a Milano',
+                'days' => ' 3 | 4 | 5',
+                'month' => 'Aprile',
+                'city' => 'Milano', // Usata la versione pulita di SiteGround
                 'schedule' => [
-                    'venerdi'  => 'Venerdi - 19:00',
-                    'sabato'   => 'Sabato - 10:00 | 15:00 | 19:00',
+                    'venerdi' => 'Venerdi - 19:00',
+                    'sabato' => 'Sabato - 10:00 | 15:00 | 19:00',
                     'domenica' => 'Domenica - 10:00 | 15:00'
                 ],
                 'location' => [
-                    'venue'   => 'Teatro Bi',
+                    'venue' => 'Teatro Bi',
                     'address' => 'Via Gianni Rodari, 3, 20032 Cormano (MI)',
-                    'icon'    => 'position.svg'
+                    'icon' => 'position.svg'
                 ]
             ]
         ],
@@ -67,7 +70,7 @@ $site_config = [
             'image' => ''
         ]
     ],
-    'footer'  => []
+    'footer' => []
 ];
 
 return $site_config;

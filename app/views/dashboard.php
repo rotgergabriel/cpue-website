@@ -1,9 +1,8 @@
 <?php
 
-
 /*
 ====================================================================
-TODO PER IL FUTURO: VISUALIZZAZIONE TESTO CANZONE
+VISUALIZZAZIONE TESTO CANZONE
 ====================================================================
 Quando andremo a creare la pagina o il modale per visualizzare 
 il brano finito, usare questo snippet per trasformare le "quick tags" 
@@ -24,8 +23,13 @@ echo nl2br($testo_finale);
 ====================================================================
 */
 
-require_once '../app/config/config.php';
-require_once '../app/middlewares/auth.php';
+// ==========================================
+// ⚙️ 1. GESTIONE AUTENTICAZIONE
+// ==========================================
+// config.php è già caricato dinamicamente dal vigile urbano (index.php).
+// Qui includiamo solo il middleware auth.php che si assicura che 
+// NESSUNO possa accedere a questa pagina senza essere loggato.
+require_once ROOT_PATH . 'app/middlewares/auth.php';
 
 $head_title = $site_config['head']['repertorio']['title'] ?? 'Repertorio Lode - Chiese';
 $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'Repertorio ufficiale dei canti di lode per le Chiese.';
@@ -46,10 +50,11 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
 
         <nav class="repertorio__nav">
             <ul class="repertorio__menu">
-                <li class="repertorio__link"><a href="<?php echo BASE_URL ?>" class="repertorio__link">Home CPUE</a></li>
+                <li class="repertorio__link"><a href="<?php echo BASE_URL ?>" class="repertorio__link">Home CPUE</a>
+                </li>
                 <li><a href="#" class="repertorio__link">Eventi</a></li>
             </ul>
-            <a href="<?php echo BASE_URL; ?>app/controllers/logout.php" class="repertorio__link--logout">
+            <a href="<?php echo BASE_URL; ?>logout" class="repertorio__link--logout">
                 Logout
             </a>
         </nav>
@@ -62,66 +67,81 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                     <div class="repertorio-panels__inner">
 
                         <button class="repertorio-panels__new-btn" data-tooltip="Nuovo brano">
-                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-new.svg" alt="Nuovo" class="repertorio-panels__new-icon">
+                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-new.svg" alt="Nuovo"
+                                class="repertorio-panels__new-icon">
                         </button>
-                                            
+
                         <h2 class="repertorio-panels__title">Libreria</h2>
 
-                            <p class="repertorio-panels__filter-label">Selezionare per categoria:</p>
+                        <p class="repertorio-panels__filter-label">Selezionare per categoria:</p>
 
-                            <div class="repertorio-filter" id="filter-tonality-box">
-                                
-                                <div class="repertorio-filter__options">
-                                    <div class="repertorio-filter__col">
-                                        <div class="repertorio-filter__row">
-                                            <span class="repertorio-filter__item filter-note" data-val="C" tabindex="0">C</span>
-                                            <span class="repertorio-filter__item filter-note" data-val="D" tabindex="0">D</span>
-                                            <span class="repertorio-filter__item filter-note" data-val="E" tabindex="0">E</span>
-                                            <span class="repertorio-filter__item filter-note" data-val="F" tabindex="0">F</span>
-                                        </div>
-                                        <div class="repertorio-filter__row">
-                                            <span class="repertorio-filter__item filter-note" data-val="G" tabindex="0">G</span>
-                                            <span class="repertorio-filter__item filter-note" data-val="A" tabindex="0">A</span>
-                                            <span class="repertorio-filter__item filter-note" data-val="B" tabindex="0">B</span>
-                                        </div>
-                                    </div>
-                                    <div class="repertorio-filter__col">
-                                        <span class="repertorio-filter__item filter-mode" data-val="" tabindex="0">Maggiore</span>
-                                        <span class="repertorio-filter__item filter-mode" data-val="m" tabindex="0">Minore</span>
-                                    </div>
-                                    <div class="repertorio-filter__col">
-                                        <span class="repertorio-filter__item filter-acc" data-val="#" tabindex="0">#</span>
-                                        <span class="repertorio-filter__item filter-acc" data-val="b" tabindex="0">♭</span>
-                                    </div>
-                                    <div class="repertorio-filter__preview" id="filter-tonality-preview"></div>
-                                </div> 
-                                <button class="repertorio-filter__btn" id="btn-filter-tonality">
-                                    <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="repertorio-filter__icon">
-                                </button>
-                            </div>
+                        <div class="repertorio-filter" id="filter-tonality-box">
 
-                            <div class="repertorio-filter" id="filter-rhythm-box">
-                                <div class="repertorio-filter__options">
-                                    <span class="repertorio-filter__item filter-rhythm" data-val="Lento">Lento</span>
-                                    <span class="repertorio-filter__item filter-rhythm" data-val="Intermedio">Intermedio</span>
-                                    <span class="repertorio-filter__item filter-rhythm" data-val="Veloce">Veloce</span>
-                                    <span class="repertorio-filter__item filter-rhythm" data-val="3/4">3/4</span>
+                            <div class="repertorio-filter__options">
+                                <div class="repertorio-filter__col">
+                                    <div class="repertorio-filter__row">
+                                        <span class="repertorio-filter__item filter-note" data-val="C"
+                                            tabindex="0">C</span>
+                                        <span class="repertorio-filter__item filter-note" data-val="D"
+                                            tabindex="0">D</span>
+                                        <span class="repertorio-filter__item filter-note" data-val="E"
+                                            tabindex="0">E</span>
+                                        <span class="repertorio-filter__item filter-note" data-val="F"
+                                            tabindex="0">F</span>
+                                    </div>
+                                    <div class="repertorio-filter__row">
+                                        <span class="repertorio-filter__item filter-note" data-val="G"
+                                            tabindex="0">G</span>
+                                        <span class="repertorio-filter__item filter-note" data-val="A"
+                                            tabindex="0">A</span>
+                                        <span class="repertorio-filter__item filter-note" data-val="B"
+                                            tabindex="0">B</span>
+                                    </div>
                                 </div>
-                                <button class="repertorio-filter__btn" id="btn-filter-rhythm">
-                                    <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="repertorio-filter__icon">
-                                </button>
-                            </div>
-
-                            <div class="repertorio-filter" id="filter-lang-box">
-                                <div class="repertorio-filter__options">
-                                    <span class="repertorio-filter__item filter-lang" data-val="Italiano">Italiano</span>
-                                    <span class="repertorio-filter__item filter-lang" data-val="Spagnolo">Spagnolo</span>
-                                    <span class="repertorio-filter__item filter-lang" data-val="Tutte">Tutte le lingue</span>
+                                <div class="repertorio-filter__col">
+                                    <span class="repertorio-filter__item filter-mode" data-val=""
+                                        tabindex="0">Maggiore</span>
+                                    <span class="repertorio-filter__item filter-mode" data-val="m"
+                                        tabindex="0">Minore</span>
                                 </div>
-                                <button class="repertorio-filter__btn" id="btn-filter-lang">
-                                    <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="repertorio-filter__icon">
-                                </button>
+                                <div class="repertorio-filter__col">
+                                    <span class="repertorio-filter__item filter-acc" data-val="#" tabindex="0">#</span>
+                                    <span class="repertorio-filter__item filter-acc" data-val="b" tabindex="0">♭</span>
+                                </div>
+                                <div class="repertorio-filter__preview" id="filter-tonality-preview"></div>
                             </div>
+                            <button class="repertorio-filter__btn" id="btn-filter-tonality">
+                                <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK"
+                                    class="repertorio-filter__icon">
+                            </button>
+                        </div>
+
+                        <div class="repertorio-filter" id="filter-rhythm-box">
+                            <div class="repertorio-filter__options">
+                                <span class="repertorio-filter__item filter-rhythm" data-val="Lento">Lento</span>
+                                <span class="repertorio-filter__item filter-rhythm"
+                                    data-val="Intermedio">Intermedio</span>
+                                <span class="repertorio-filter__item filter-rhythm" data-val="Veloce">Veloce</span>
+                                <span class="repertorio-filter__item filter-rhythm" data-val="3/4">3/4</span>
+                            </div>
+                            <button class="repertorio-filter__btn" id="btn-filter-rhythm">
+                                <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK"
+                                    class="repertorio-filter__icon">
+                            </button>
+                        </div>
+
+                        <div class="repertorio-filter" id="filter-lang-box">
+                            <div class="repertorio-filter__options">
+                                <span class="repertorio-filter__item filter-lang" data-val="Italiano">Italiano</span>
+                                <span class="repertorio-filter__item filter-lang" data-val="Spagnolo">Spagnolo</span>
+                                <span class="repertorio-filter__item filter-lang" data-val="Tutte">Tutte le
+                                    lingue</span>
+                            </div>
+                            <button class="repertorio-filter__btn" id="btn-filter-lang">
+                                <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK"
+                                    class="repertorio-filter__icon">
+                            </button>
+                        </div>
 
                         <div class="repertorio-panels__search-box">
                             <input type="text" class="repertorio-panels__search-input" placeholder="barra di ricerca">
@@ -133,528 +153,99 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                                     <span class="repertorio-panels__list-title">Ai piedi della croce io starò</span>
                                     <div class="repertorio-panels__item-actions">
 
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
+                                        <button type="button" class="repertorio-panels__action btn-view-brano"
+                                            data-tooltip="Visualizza brano" aria-label="Visualizza brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
                                                 alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
+                                        <button type="button" class="repertorio-panels__action btn-edit-brano"
+                                            data-tooltip="Modifica brano" aria-label="Modifica brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
                                                 alt="Modifica" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
+                                        <button type="button" class="repertorio-panels__action"
+                                            data-tooltip="Elimina brano" aria-label="Elimina brano">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
                                                 alt="Elimina" class="repertorio-panels__icon">
                                         </button>
 
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
+                                        <button type="button" class="repertorio-panels__add-btn"
+                                            data-tooltip="Carica nell'evento" aria-label="Carica nell'evento">
                                             <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
+                                                alt="Carica nell'evento" class="repertorio-panels__add-icon">
                                         </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Davanti alla tua presenza</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Io vedrò la tua gloria</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">El Señor está en este lugar</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">La única razón de mi adoración</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Grande e forte è il nostro Dio</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Meraviglioso sei</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Gesù tu sei la presenza</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Quiero levantar mis manos</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Elias oraba en el monte carmelo</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Maestoso vittorioso</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">C'è librertà nella casa di Dio</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Adoremos al rey</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">La tua grazia</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Profumo ai tuoi piedi</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
-                                    </div>
-                                </li>
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">La sunamita</span>
-                                    <div class="repertorio-panels__item-actions">
-
-                                        <button class="repertorio-panels__action btn-view-brano"
-                                            data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
-                                                alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action btn-edit-brano" data-tooltip="Modifica brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
-                                                alt="Modifica" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__action" data-tooltip="Elimina brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-delete.svg"
-                                                alt="Elimina" class="repertorio-panels__icon">
-                                        </button>
-
-                                        <button class="repertorio-panels__add-btn" data-tooltip="Caricare nel evento">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-caricare.svg"
-                                                class="repertorio-panels__add-icon">
-                                        </button>
-
                                     </div>
                                 </li>
                             </ul>
                         </div>
 
-                    </div>
-                </div>
+                        <div class="repertorio-panels__col">
+                            <div class="repertorio-panels__inner">
 
-                <div class="repertorio-panels__col">
-                    <div class="repertorio-panels__inner">
+                                <button class="repertorio-panels__save-btn" data-tooltip="Salva Evento">
+                                    <img src="<?php echo BASE_URL; ?>public/assets/img/evento-salva.svg" alt="Salva"
+                                        class="repertorio-panels__save-icon">
+                                </button>
 
-                        <button class="repertorio-panels__save-btn" data-tooltip="Salva Evento">
-                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-salva.svg" alt="Salva"
-                                class="repertorio-panels__save-icon">
-                        </button>
+                                <h2 class="repertorio-panels__title" id="evento">Evento</h2>
 
-                        <h2 class="repertorio-panels__title" id="evento">Evento</h2>
+                                <div class="repertorio-floating-nav">
+                                    <a href="#" class="repertorio-floating-nav__btn" aria-label="Torna su">
+                                        <img src="<?php echo BASE_URL; ?>public/assets/img/freccia-su.svg" alt="Su"
+                                            class="repertorio-floating-nav__icon">
+                                    </a>
+                                    <a href="#evento" class="repertorio-floating-nav__btn" aria-label="Vai a Evento">
+                                        <img src="<?php echo BASE_URL; ?>public/assets/img/freccia-giu.svg" alt="Giù"
+                                            class="repertorio-floating-nav__icon">
+                                    </a>
+                                </div>
 
-                        <div class="repertorio-floating-nav">
-                            <a href="#" class="repertorio-floating-nav__btn" aria-label="Torna su">
-                                <img src="<?php echo BASE_URL; ?>public/assets/img/freccia-su.svg" alt="Su"
-                                    class="repertorio-floating-nav__icon">
-                            </a>
-                            <a href="#evento" class="repertorio-floating-nav__btn" aria-label="Vai a Evento">
-                                <img src="<?php echo BASE_URL; ?>public/assets/img/freccia-giu.svg" alt="Giù"
-                                    class="repertorio-floating-nav__icon">
-                            </a>
-                        </div>
+                                <p class="repertorio-panels__stage-btn-description">Le fasi dell'Evento</p>
 
-                        <p class="repertorio-panels__stage-btn-description">Le fasi dell'Evento</p>
+                                <div class="repertorio-panels__event-stages">
+                                    <button class="repertorio-panels__stage-btn"
+                                        data-tooltip="Canzoni dall'inizio">Inizio</button>
+                                    <button class="repertorio-panels__stage-btn"
+                                        data-tooltip="Canzoni intermedie">Intermedio</button>
+                                    <button class="repertorio-panels__stage-btn"
+                                        data-tooltip="Canzoni dalla fine">Fine</button>
+                                </div>
 
-                        <div class="repertorio-panels__event-stages">
-                            <button class="repertorio-panels__stage-btn"
-                                data-tooltip="Canzoni dall'inizio">Inizio</button>
-                            <button class="repertorio-panels__stage-btn"
-                                data-tooltip="Canzoni intermedie">Intermedio</button>
-                            <button class="repertorio-panels__stage-btn" data-tooltip="Canzoni dalla fine">Fine</button>
-                        </div>
-
-                        <div class="repertorio-panels__list-container">
-                            <ul class="repertorio-panels__list">
-
+                                <div class="repertorio-panels__list-container">
+                                    <ul class="repertorio-panels__list">
+                                    </ul>
+                                </div>
                                 <li class="repertorio-panels__list-item">
                                     <span class="repertorio-panels__list-title">Ai piedi della croce io starò</span>
 
                                     <div class="repertorio-panels__item-actions">
-                                        <button class="repertorio-panels__action btn-view-brano" data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg" alt="Visualizza" class="repertorio-panels__icon">
+                                        <button type="button" class="repertorio-panels__action btn-view-brano"
+                                            data-tooltip="Visualizza brano" aria-label="Visualizza brano">
+                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg"
+                                                alt="Visualizza" class="repertorio-panels__icon">
                                         </button>
-                                        
-                                        <button class="repertorio-panels__edit-btn" data-tooltip="Editare il brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg" alt="Modifica" class="repertorio-panels__edit-icon">
+
+                                        <button type="button" class="repertorio-panels__edit-btn"
+                                            data-tooltip="Modifica brano" aria-label="Modifica brano">
+                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg"
+                                                alt="Modifica" class="repertorio-panels__edit-icon">
                                         </button>
-                                        <button class="repertorio-panels__remove-btn" data-tooltip="Eliminare brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg" alt="Elimina" class="repertorio-panels__remove-icon">
+
+                                        <button type="button" class="repertorio-panels__remove-btn"
+                                            data-tooltip="Elimina brano" aria-label="Elimina brano">
+                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg"
+                                                alt="Elimina" class="repertorio-panels__remove-icon">
                                         </button>
                                     </div>
                                 </li>
 
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Davanti alla tua presenza</span>
-                                    
-                                    <div class="repertorio-panels__item-actions">
-                                        <button class="repertorio-panels__action btn-view-brano" data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg" alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-                                        
-                                        <button class="repertorio-panels__edit-btn" data-tooltip="Editare il brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg" alt="Modifica" class="repertorio-panels__edit-icon">
-                                        </button>
-                                        
-                                        <button class="repertorio-panels__remove-btn" data-tooltip="Eliminare brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg" alt="Elimina" class="repertorio-panels__remove-icon">
-                                        </button>
-                                    </div>
-                                </li>
+                                </ul>
+                            </div>
 
-                                <li class="repertorio-panels__list-item">
-                                    <span class="repertorio-panels__list-title">Io vedrò la tua gloria</span>
-                                    
-                                    <div class="repertorio-panels__item-actions">
-                                        <button class="repertorio-panels__action btn-view-brano" data-tooltip="Visualizza brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/view.svg" alt="Visualizza" class="repertorio-panels__icon">
-                                        </button>
-                                        
-                                        <button class="repertorio-panels__edit-btn" data-tooltip="Editare il brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/file-edit.svg" alt="Modifica" class="repertorio-panels__edit-icon">
-                                        </button>
-                                        <button class="repertorio-panels__remove-btn" data-tooltip="Eliminare brano">
-                                            <img src="<?php echo BASE_URL; ?>public/assets/img/evento-cancella.svg" alt="Elimina" class="repertorio-panels__remove-icon">
-                                        </button>
-                                    </div>
-                                </li>
-
-                            </ul>
                         </div>
+                    </div>
             </section>
         </div>
 
@@ -688,8 +279,9 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
             </div>
 
             <div class="modal-step-tonality" id="step-tonality">
-                <img src="<?php echo BASE_URL; ?>public/assets/img/categoria-music.svg" alt="Musica" class="modal-step-tonality__main-icon">
-                
+                <img src="<?php echo BASE_URL; ?>public/assets/img/categoria-music.svg" alt="Musica"
+                    class="modal-step-tonality__main-icon">
+
                 <div class="modal-step-tonality__options">
                     <div class="modal-step-tonality__col">
                         <div class="modal-step-tonality__row">
@@ -705,40 +297,45 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                         </div>
                     </div>
                     <div class="modal-step-tonality__col">
-                        <span class="modal-step-tonality__item select-mode" data-tooltip="tonalità maggiore" data-val="">Maggiore</span>
-                        <span class="modal-step-tonality__item select-mode" data-tooltip="tonalità minore" data-val="m">Minore</span>
+                        <span class="modal-step-tonality__item select-mode" data-tooltip="tonalità maggiore"
+                            data-val="">Maggiore</span>
+                        <span class="modal-step-tonality__item select-mode" data-tooltip="tonalità minore"
+                            data-val="m">Minore</span>
                     </div>
                     <div class="modal-step-tonality__col">
                         <span class="modal-step-tonality__item select-acc" data-tooltip="Bemolle" data-val="b">♭</span>
-                        <span class="modal-step-tonality__item select-acc" data-tooltip="Sostenuto" data-val="#">#</span>
+                        <span class="modal-step-tonality__item select-acc" data-tooltip="Sostenuto"
+                            data-val="#">#</span>
                     </div>
                     <div class="modal-step-tonality__preview" id="tonality-preview"></div>
                 </div>
                 <button class="modal-step-tonality__btn" id="btn-ok-tonality">
-                    <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="modal-step-tonality__icon">
+                    <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK"
+                        class="modal-step-tonality__icon">
                 </button>
             </div>
 
             <div class="modal-step-rhythm" id="step-rhythm">
-                <img src="<?php echo BASE_URL; ?>public/assets/img/categoria-ritmo.svg" alt="Ritmo" class="modal-step-rhythm__main-icon">
+                <img src="<?php echo BASE_URL; ?>public/assets/img/categoria-ritmo.svg" alt="Ritmo"
+                    class="modal-step-rhythm__main-icon">
                 <div class="modal-step-rhythm__options">
                     <span class="modal-step-rhythm__item select-rhythm" data-val="Lento">Lento</span>
                     <span class="modal-step-rhythm__item select-rhythm" data-val="Intermedio">Intermedio</span>
                     <span class="modal-step-rhythm__item select-rhythm" data-val="Veloce">Veloce</span>
                     <span class="modal-step-rhythm__item select-rhythm" data-val="3/4">3/4</span>
                 </div>
-                
+
                 <button class="modal-step-rhythm__btn" id="btn-ok-rhythm">
                     <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="modal-step-rhythm__icon">
                 </button>
             </div>
-            
+
             <div class="modal-step-lang" id="step-lang">
                 <div class="modal-step-lang__options">
                     <span class="modal-step-lang__item select-lang" data-val="Italiano">Italiano</span>
                     <span class="modal-step-lang__item select-lang" data-val="Spagnolo">Spagnolo</span>
                 </div>
-                
+
                 <button class="modal-step-lang__btn" id="btn-ok-lang">
                     <img src="<?php echo BASE_URL; ?>public/assets/img/ok.svg" alt="OK" class="modal-step-lang__icon">
                 </button>
@@ -746,9 +343,9 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
 
             <div class="modal-step-lyrics" id="step-lyrics">
                 <div class="modal-step-lyrics__wrapper">
-                    
+
                     <div class="modal-step-lyrics__header">
-                        
+
                         <div class="modal-step-lyrics__history">
                             <button class="history-btn" id="btn-undo" data-tooltip="Annulla">
                                 <img src="<?php echo BASE_URL; ?>public/assets/img/anulla.svg" alt="Annulla">
@@ -762,19 +359,17 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
                             <span class="modal-step-lyrics__tag" data-tooltip="Strofa della canzone">Verso</span>
                             <span class="modal-step-lyrics__tag" data-tooltip="(coro, chorus)">Ritornello</span>
                             <span class="modal-step-lyrics__tag" data-tooltip="contrasto o transizione">Bridge</span>
-                            <span class="modal-step-lyrics__tag" data-tooltip="Breve frase musicale introduttiva">Riff</span>
+                            <span class="modal-step-lyrics__tag"
+                                data-tooltip="Breve frase musicale introduttiva">Riff</span>
                         </div>
                     </div>
 
-                    <textarea class="modal-step-lyrics__input" id="input-lyrics"
-                        placeholder=""></textarea>
+                    <textarea class="modal-step-lyrics__input" id="input-lyrics" placeholder=""></textarea>
                 </div>
             </div>
 
         </div>
     </div>
-
-
 
     <div class="modal-overlay" id="modal-confirm-evento">
         <div class="modal-confirm-container">
@@ -792,7 +387,6 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
         </div>
     </div>
 
-
     <div class="modal-overlay" id="modal-warning-close">
         <div class="modal-warning-container">
             <button class="modal-warning-btn modal-warning-btn--continue" id="btn-continue-edit">
@@ -803,7 +397,6 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
             </button>
         </div>
     </div>
-
 
     <div class="modal-overlay" id="modal-alert-msg">
         <div class="modal-alert-container">
@@ -822,10 +415,10 @@ $meta_description = $site_config['head']['repertorio']['meta-description'] ?? 'R
             <h2 class="repertorio-panels__title">Anteprima</h2>
 
             <div class="modal-anteprima-content">
-                <p class="repertorio-panels__preview-text">Sono Gabriele l'Arcangelo Argentino</p>
+                <p class="repertorio-panels__preview-text">
+                    L'anteprima del testo del brano apparirà qui...
+                </p>
 
-                <img src="<?php echo BASE_URL; ?>public/assets/img/developer.webp" alt="Developer disponibile"
-                    class="modal-anteprima-developer-img">
             </div>
 
         </div>

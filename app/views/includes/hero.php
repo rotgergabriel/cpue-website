@@ -1,19 +1,28 @@
 <?php
-$imageName = !empty($heroImage) ? $heroImage : 'hero-img.png';
+// ==========================================
+// ✅ 1. INIZIALIZZAZIONE VARIABILI (Condivisa)
+// ==========================================
+// Questa parte è identica sia su Mac che su SiteGround.
+// Usa l'operatore ternario per impostare valori di default se mancano.
+$imageName = !empty($heroImage) ? $heroImage : 'hero-img.webp';
 $titleName = !empty($heroTitle) ? $heroTitle : 'Chiesa Pentecostale Unita in Europa';
 ?>
+
 <section class="hero <?php echo $heroModifier ?? ''; ?>">
     <div class="hero__container">
         <div class="hero__spacer"></div>
         <div class="hero__body">
-            <img src="<?php echo BASE_URL ?>public/assets/img/<?php echo $imageName; ?>"
-                alt="Costruendo sulla roccia"
+            <img src="<?php echo BASE_URL ?>public/assets/img/<?php echo $imageName; ?>" alt="Costruendo sulla roccia"
                 class="hero__img">
         </div>
 
         <div class="hero__title">
             <h1>
-                <?php echo $titleName; ?>
+                <?php
+                // Questo trucco inserisce un 'a capo' (<br>) che è visibile solo su mobile. 
+                // Su desktop (grazie a d-md-none di Bootstrap) scompare e il testo resta su una riga!
+                echo str_replace(' Unita in', '<br class="d-md-none"> Unita in', $titleName);
+                ?>
             </h1>
 
             <?php if (!empty($heroSubtitle)) { ?>
@@ -52,7 +61,8 @@ $titleName = !empty($heroTitle) ? $heroTitle : 'Chiesa Pentecostale Unita in Eur
                         <div class="event-card__days"><?php echo $daysPopup ?></div>
                         <div class="event-card__month-city">
                             <span class="event-card__month"><?php echo $monthPopup ?></span>
-                            <span class="event-card__city"><?php echo $cityPopup ?></span>
+
+                            <span class="event-card__city">a <?php echo $cityPopup ?></span>
                         </div>
                     </div>
 
@@ -61,7 +71,7 @@ $titleName = !empty($heroTitle) ? $heroTitle : 'Chiesa Pentecostale Unita in Eur
                             $parts = explode('-', $schedule);
                             $day = trim($parts[0]);
                             $time = isset($parts[1]) ? trim($parts[1]) : '';
-                        ?>
+                            ?>
                             <div class="event-card__schedule-item">
                                 <div class="event-card__schedule-day"><?php echo strtoupper($day) ?></div>
                                 <div class="event-card__schedule-time"><?php echo $time ?></div>
@@ -73,7 +83,9 @@ $titleName = !empty($heroTitle) ? $heroTitle : 'Chiesa Pentecostale Unita in Eur
                     </div>
 
                     <footer class="event-card__footer">
-                        <img class="event-card__location-icon" src="<?php echo BASE_URL ?>public/assets/img/<?php echo $locationPopup['icon'] ?>" alt="Map Icon">
+                        <img class="event-card__location-icon"
+                            src="<?php echo BASE_URL ?>public/assets/img/<?php echo $locationPopup['icon'] ?>"
+                            alt="Map Icon">
                         <address class="event-card__address">
                             <strong><?php echo $locationPopup['venue'] ?></strong> | <?php echo $locationPopup['address'] ?>
                         </address>
