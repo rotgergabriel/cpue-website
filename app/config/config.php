@@ -37,10 +37,10 @@ if ($is_dev_env) {
     define('DB_PASS', '');
     define('DB_NAME', 'cpue_db');
 } else {
-    define('DB_HOST', 'siteground');
-    define('DB_USER', 'webcpue@gmail.com');
-    define('DB_PASS', 'andreaweb2017');
-    define('DB_NAME', 'cpue_db');
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'usuario');
+    define('DB_PASS', 'password');
+    define('DB_NAME', 'nombre_db');
 }
 
 $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
